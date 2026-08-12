@@ -7,7 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "figma:init": "figma init --project .",
+    "figma:fetch": "figma fetch --project .",
+    "figma:tokens": "figma tokens --project .",
+    "figma:assets": "figma assets --project .",
+    "figma:components": "figma components --project .",
+    "figma:sync": "figma sync --project ."
   },
   "dependencies": {
     "react": "^19.1.0",

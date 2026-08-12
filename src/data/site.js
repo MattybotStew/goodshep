@@ -32,14 +32,14 @@ export const stories = [
   {
     title: "GSM's 35th Annual Fall Festival",
     excerpt:
-      'A family-friendly day that funds essential programs and services for the men we serve.',
+      'Saturday, September 12 on campus. No admission fee and no parking fees. This family-friendly event funds essential programs and services for over 100 men.',
     path: '/events#fall-festival',
     tag: 'Events',
   },
   {
-    title: 'A new Digital Den in Community Day Services',
+    title: "GSM's New Digital Den in Community Day Services",
     excerpt:
-      'Our technology classroom brings digital literacy and enrichment to residents.',
+      'The Communications Classroom, reimagined. New tables, tablets, computers, and headphones — made possible by this year’s Meet A Manor Need donors.',
     path: '/programs/community-day-services#digital-den',
     tag: 'Programs',
   },
@@ -48,7 +48,7 @@ export const stories = [
 export const newsItems = [
   {
     date: 'Aug 2026',
-    tag: 'Events',
+    tag: 'News',
     title: "GSM's 35th Annual Fall Festival",
     excerpt: 'This family-friendly event supports our mission by funding essential programs and services.',
     path: '/events#fall-festival',
@@ -70,26 +70,19 @@ export const newsItems = [
 ]
 
 export const affiliations = [
-  'Illinois Department of Human Services',
-  'Community Partners of Kankakee County',
-  'Local healthcare providers',
-  'Vocational partners',
+  'Brothers of the Good Shepherd',
+  'Special Olympics',
 ]
 
 export const jobs = [
   {
     title: 'Direct Service Provider',
     type: 'Full-time',
-    note: 'Now hiring — multiple openings. Support residents in daily living, activities, and community outings.',
+    note: 'Compassionate, caring men and women. Apply on Indeed or call/text 815-592-7423.',
   },
   {
-    title: 'Direct Service Provider (Part-time)',
-    type: 'Part-time',
-    note: 'Evening and weekend shifts available.',
-  },
-  {
-    title: 'Nursing support',
-    type: 'Full-time',
-    note: 'Work alongside our on-site nursing team. Licensure required.',
+    title: 'Direct Service Provider',
+    type: 'Openings',
+    note: 'Support 105 men on our 60-acre campus and 13 modern group homes.',
   },
 ]

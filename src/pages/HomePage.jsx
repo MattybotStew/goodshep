@@ -1,120 +1,169 @@
 import { Link } from 'react-router-dom'
-import { affiliations, stats, stories } from '../data/site'
+import { newsItems, programs } from '../data/site'
 import './HomePage.css'
 
 function HomePage() {
   return (
     <div className="home">
       <section className="home-hero">
-        <div className="wrap home-hero__inner">
-          <h1>Compassionate care for men with intellectual &amp; developmental disabilities</h1>
+        <div className="home-hero__photo" aria-hidden="true" />
+        <div className="home-hero__inner">
+          <h1>A Community of Compassion, Dignity, and Purpose.</h1>
           <p>
-            A nurturing home, meaningful work, and a caring community for over 100 men
-            in Momence, Illinois since 1971.
+            Good Shepherd Manor provides hands-on programs, caring services, and
+            a supportive home for men with intellectual and developmental disabilities.
           </p>
-          <div className="btn-row home-hero__btns">
-            <Link to="/ways-to-give" className="btn btn--primary">Donate Now</Link>
-            <Link to="/programs" className="btn btn--ghost">Explore Programs</Link>
-          </div>
+          <Link to="/careers" className="home-btn home-btn--blue">Now Hiring! Apply Today</Link>
         </div>
       </section>
 
-      <section className="band">
-        <div className="wrap num-grid">
-          <article className="num-card">
-            <div className="num-card__index">01.</div>
-            <h3>Programs</h3>
-            <p>Residential living, day services, vocational work, and on-site health care.</p>
-            <Link to="/programs" className="text-link">See our work &rarr;</Link>
+      <section className="home-intro" aria-label="Ways to engage">
+        <div className="home-intro__card">
+          <article className="home-intro__col">
+            <p className="home-intro__num">01.</p>
+            <h2>Projects</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+            <Link to="/programs">Learn more &rarr;</Link>
           </article>
-          <article className="num-card">
-            <div className="num-card__index">02.</div>
-            <h3>Get involved</h3>
-            <p>Volunteer at an event, join the Foundation, or apply as a Direct Service Provider.</p>
-            <Link to="/support-gsm" className="text-link">Get involved &rarr;</Link>
+          <article className="home-intro__col">
+            <p className="home-intro__num">02.</p>
+            <h2>Get Involved</h2>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo.
+            </p>
+            <Link to="/support-gsm">Learn more &rarr;</Link>
           </article>
-          <article className="num-card">
-            <div className="num-card__index">03.</div>
-            <h3>Donate</h3>
-            <p>Your gift funds homes, programs, and daily care for the men we serve.</p>
-            <Link to="/ways-to-give" className="text-link">Learn more &rarr;</Link>
+          <article className="home-intro__col">
+            <p className="home-intro__num">03.</p>
+            <h2>Donate</h2>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <Link to="/ways-to-give">Learn more &rarr;</Link>
           </article>
         </div>
       </section>
 
-      <section className="split">
-        <div className="wrap split__inner">
-          <div className="split__copy">
-            <span className="eyebrow">About Us</span>
+      <section className="home-mission">
+        <div className="home-mission__inner">
+          <div className="home-mission__copy">
+            <p className="home-mission__eyebrow">About Us</p>
             <h2>Our journey of compassion and hope</h2>
             <p>
-              Good Shepherd Manor was founded in 1971 to serve men with intellectual and
-              developmental disabilities who need a structured home and a community that
-              will not give up on them.
+              Join us on a journey towards compassion and hope. Through our
+              non-profit organisation, we strive to make a positive impact on
+              the world. Give back to your community and be a part of something
+              greater than yourself.
             </p>
             <p>
-              We strive to improve and maintain skills that enhance the quality of life
-              for every resident.
+              A transformational journey towards bringing hope and compassion
+              to the world.
             </p>
-            <Link to="/about" className="text-link">Read More &rarr;</Link>
+            <Link to="/about" className="home-mission__btn">Read More</Link>
           </div>
-          <div className="img-ph img-ph--tall" aria-hidden="true" />
+          <div className="home-mission__mosaic" aria-hidden="true">
+            <div className="home-mission__col">
+              <div className="home-mission__ph home-mission__ph--tall" />
+              <div className="home-mission__ph home-mission__ph--short" />
+            </div>
+            <div className="home-mission__col home-mission__col--offset">
+              <div className="home-mission__ph home-mission__ph--short" />
+              <div className="home-mission__ph home-mission__ph--tall" />
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="impact">
-        <div className="wrap">
-          <div className="impact__intro">
-            <span className="eyebrow">Our Impact</span>
-            <h2>The difference we make in Momence</h2>
-            <p>
-              For more than five decades we have provided a home, work, and health care
-              on one campus — so the men we serve can live with dignity.
-            </p>
+      <section className="home-programs">
+        <div className="home-wrap">
+          <h2>Our Programs &amp; Services</h2>
+          <p className="home-lead">
+            We offer well-maintained residential facilities paired with a comprehensive
+            Health Care Program and meaningful day programs.
+          </p>
+          <div className="home-program-grid">
+            {programs.map((p) => (
+              <Link to={p.path} className="home-program-card" key={p.path}>
+                <div className="home-program-card__img" aria-hidden="true" />
+                <div className="home-program-card__body">
+                  <h3>{p.name}</h3>
+                  <p>{p.desc}</p>
+                  <span>Learn more &rarr;</span>
+                </div>
+              </Link>
+            ))}
           </div>
-          <div className="impact__grid">
-            {stats.map((s) => (
-              <div className="impact__stat" key={s.label}>
-                <span className="impact__value">{s.value}</span>
-                <span className="impact__label">{s.label}</span>
+          <Link to="/programs" className="home-more">View all programs &rarr;</Link>
+        </div>
+      </section>
+
+      <section className="home-news">
+        <div className="home-wrap home-news__grid">
+          <div>
+            <h2>What&rsquo;s Happening at GSM</h2>
+            <div className="home-feed">
+              {newsItems.map((item) => (
+                <article className="home-feed-item" key={item.title}>
+                  <div className="home-feed-item__thumb" aria-hidden="true" />
+                  <div>
+                    <span className="home-feed-item__meta">
+                      {item.date} &middot; {item.tag}
+                    </span>
+                    <h3>{item.title}</h3>
+                    <p>{item.excerpt}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+            <Link to="/news" className="home-more home-more--left">View all news &rarr;</Link>
+          </div>
+
+          <div>
+            <h2>Upcoming Event</h2>
+            <div className="home-event">
+              <div className="home-event__img" aria-hidden="true" />
+              <div className="home-event__body">
+                <span className="home-event__date">October 2026</span>
+                <h3>35th Annual Fall Festival</h3>
+                <p>
+                  A family-friendly event supporting Good Shepherd Manor&rsquo;s mission
+                  by funding essential programs and services for the men we serve.
+                </p>
+                <Link to="/events#fall-festival">Event details &rarr;</Link>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="cta-band">
-        <h2>We can create a better tomorrow</h2>
-        <p>Every gift supports housing, day programs, and the nursing care our residents rely on.</p>
-        <Link to="/ways-to-give" className="btn btn--primary">Donate Now</Link>
-      </section>
-
-      <section className="band">
-        <div className="wrap">
-          <span className="eyebrow">Stories</span>
-          <h2 className="home-stories__title">Inspiring tales from our community</h2>
-          <div className="story-grid">
-            {stories.map((s) => (
-              <article className="story-card" key={s.title}>
-                <div className="story-card__img" aria-hidden="true" />
-                <span className="eyebrow">{s.tag}</span>
-                <h3>{s.title}</h3>
-                <p>{s.excerpt}</p>
-                <Link to={s.path} className="text-link">Read More &rarr;</Link>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="band band--alt">
-        <div className="wrap">
-          <span className="eyebrow">Our Partners</span>
-          <h2 className="home-stories__title">Affiliations</h2>
-          <div className="partners">
-            {affiliations.map((name) => (
-              <span className="partner-pill" key={name}>{name}</span>
-            ))}
+      <section className="home-involved">
+        <div className="home-wrap home-involved__inner">
+          <h2>Get Involved</h2>
+          <p>Your support makes a difference in the lives of the men at Good Shepherd Manor.</p>
+          <div className="home-pathways">
+            <Link to="/ways-to-give" className="home-pathway">
+              <span className="home-pathway__icon" aria-hidden="true">&#10084;</span>
+              <h3>Donate</h3>
+              <p>Your gift provides essential care, programs, and enrichment.</p>
+              <span>Give now &rarr;</span>
+            </Link>
+            <Link to="/support-gsm" className="home-pathway">
+              <span className="home-pathway__icon" aria-hidden="true">&#10003;</span>
+              <h3>Volunteer</h3>
+              <p>Attend an event or volunteer your time to support our community.</p>
+              <span>Get involved &rarr;</span>
+            </Link>
+            <Link to="/careers" className="home-pathway">
+              <span className="home-pathway__icon" aria-hidden="true">&#9679;</span>
+              <h3>Careers</h3>
+              <p>Join our team as a Direct Service Provider and make an impact.</p>
+              <span>View openings &rarr;</span>
+            </Link>
           </div>
         </div>
       </section>

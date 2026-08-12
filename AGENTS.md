@@ -128,15 +128,16 @@ Phase 2 may promote a section to a page. Keep the original hash when promoting s
 
 Duplicate those same layouts for GSM Foundation, Endowment, Events, Newsletters, and Careers. Do not start blank Elementor canvases.
 
-Home section order (match the demo):
+Homepage wire is Figma node `9009:2` (`design/node-9009-2.png`). Section order:
 
-1. Hero + Donate Now
-2. Numbered 01 Programs / 02 Get involved / 03 Donate
-3. About split + Read More
-4. Impact counters
-5. Dark “better tomorrow” donate band
-6. Two story cards
-7. Partners / affiliations
+1. Hero — Figma `9046:787` (photo overlay, one CTA). Headline: “A Community of Compassion, Dignity, and Purpose.” Sub-headline: hands-on programs, caring services, and a supportive home. CTA: “Now Hiring! Apply Today” → `/careers`. Button uses GSM blue, not 04 lime. Home uses the **hero header** (transparent at top, white on scroll). Other pages keep the solid white header. To reuse the hero header, add the slug to `HERO_HEADER_PATHS` in `src/data/header.js`.
+2. Intro strip — Figma `9046:813` overlapping the hero: 01 Projects / 02 Get Involved / 03 Donate, greek body, Learn more.
+3. Mission — Figma `9046:901`: About Us + journey copy + Read More, staggered photo mosaic. Then Programs.
+3. Our Programs & Services — 4 cards + View all
+4. What’s Happening at GSM (3 news rows) + Upcoming Event
+5. Get Involved — Donate / Volunteer / Careers
+
+Header nav on the wire: About, Programs, Get Involved, News, Careers, Contact + Donate. Do not replace this Home layout with the 04 01/02/03 / stories / partners pattern.
 
 ## URLs that must not be used
 
@@ -160,14 +161,22 @@ Footer: phone `(815) 472-3700`, P.O. Box 260, 4129 N. State Route 1-17, Momence,
 
 Set once. Do not restyle per page in Elementor.
 
-| Token | Value |
-|---|---|
-| Primary / navy | `#002A4E` |
-| Secondary navy | `#033761` |
-| Accent | `#0089DF` |
-| Body text | `#303336` |
-| Page background | `#FAFCFE` |
-| Font | Source Sans 3 |
+Astra 04 layout, GSM blue as the primary (replace 04 lime in Customizer).
+
+| Token | Astra var | Value |
+|---|---|---|
+| Accent / buttons | `--ast-global-color-0` | `#0089DF` |
+| Accent hover | `--ast-global-color-1` | `#006BB3` |
+| Headings | `--ast-global-color-2` | `#002A4E` |
+| Body text | `--ast-global-color-3` | `#303336` |
+| Alternate background | `--ast-global-color-4` | `#FAFCFE` |
+| White / header / footer | `--ast-global-color-5` | `#FFFFFF` |
+| Muted | `--ast-global-color-6` | `#C8D4E0` |
+| Rules | `--ast-global-color-7` | `#000000` |
+| Font | | DM Sans |
+| Container | | 1200px |
+
+Home uses Astra’s transparent header over the hero (white type, white Donate). Inner pages use a solid white header and navy type. Footer is white with a top rule — not a dark bar.
 
 ## Content sources in this repo
 
@@ -176,7 +185,8 @@ Use these for copy, section order, and IA. Do not treat their CSS as a spec.
 | File | Use for |
 |---|---|
 | `src/pages/SitemapPage.jsx` | 15-page IA, sections, SOW notes |
-| `src/pages/HomePage.jsx` | Home copy and 04 section order |
+| `src/pages/HomePage.jsx` | Homepage wire — Figma `9009:2` |
+| `design/node-9009-2.png` | Shared homepage wireframe export |
 | `src/pages/*.jsx` | Remaining 15-page wires (About through Contact) |
 | `src/data/site.js` | Shared stats, program cards, news, jobs |
 | `src/data/programs.js` / `src/data/health.js` | Program page copy and section IDs |
@@ -205,7 +215,7 @@ Health & Well Being is the first program to build. Its section IDs: `nursing`, `
 This app is a clickable wire. Further React work is optional and should stay thin.
 
 - Keep the 15-page IA and the locked slugs if you add pages.
-- Do not polish CSS to match Astra/Elderly Home.
+- Keep visual tokens in `src/styles/tokens.css`. Primary is GSM blue `#0089DF`, not the 04 lime.
 - Do not add routes, components, or comments that invent a different sitemap.
 - `/sitemap` is for stakeholders. Production will not have it.
 - Do not commit `.env` secrets or copy them into docs.
@@ -229,3 +239,8 @@ Local: `npm install` then `npm run dev` (http://localhost:5173).
 2. `src/pages/SitemapPage.jsx` wins over `design/sitemap-structure.md`.
 3. Locked slugs in this file win over hash links in `HomePage.jsx` / `Layout.jsx`.
 4. Non-Profit Organization 04 layout wins over React CSS when building WordPress.
+
+
+## Figma MCP
+
+Official remote server: `https://mcp.figma.com/mcp`. Read `FIGMA.md` before implementing from a Figma URL.

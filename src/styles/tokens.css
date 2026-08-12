@@ -1,0 +1,14 @@
+/* Astra 04 layout + GSM blue primary */
+
+:root {
+  --ast-color-0: #0089df;
+  --ast-color-1: #006bb3;
+  --ast-color-2: #002a4e;
+  --ast-color-3: #303336;
+  --ast-color-4: #fafcfe;
+  --ast-color-5: #ffffff;
+  --ast-color-6: #c8d4e0;
+  --ast-color-7: #000000;
+  --ast-container: 1200px;
+  --ast-font: 'DM Sans', sans-serif;
+}
