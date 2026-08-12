@@ -6,18 +6,15 @@ export default function ImpactSection() {
     <section className="home-impact">
       <div className="home-impact__container">
         <div className="home-impact__intro">
-          <p className="home-impact__label">Our Impact</p>
           <div className="home-impact__header">
             <div className="home-impact__col">
-              <h2>The impact we have made in our community</h2>
+              <h2>Our Mission &amp; Heritage: Serving with Dignity Since 1971</h2>
             </div>
             <div className="home-impact__col">
               <p>
-                We have made a significant impact in our community through our
-                non-profit organization. By providing services and support to
-                those in need, we have created a positive change. Our efforts
-                have helped to improve the lives of many and we are committed to
-                continuing to make a difference.
+                To serve men with intellectual and developmental disabilities by
+                providing a structured, supportive home where they can grow,
+                contribute, and live with dignity.
               </p>
             </div>
           </div>

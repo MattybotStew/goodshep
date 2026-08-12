@@ -58,16 +58,33 @@ function HomePage() {
         <div className="home-mission__inner">
           <div className="home-mission__copy">
             <p className="home-mission__eyebrow">About Us</p>
-            <h2>Our journey of compassion and hope</h2>
+            <h2>A community of care, growth, and dignity for over 50 years.</h2>
             <p>
-              Join us on a journey towards compassion and hope. Through our
-              non-profit organisation, we strive to make a positive impact on
-              the world. Give back to your community and be a part of something
-              greater than yourself.
+              Good Shepherd Manor is a residential facility for 124 men with
+              developmental disabilities in Momence, IL, about 45 miles south of
+              Chicago. The Brothers of the Good Shepherd and our professional
+              staff are dedicated to providing high standards of care.
             </p>
             <p>
-              A transformational journey towards bringing hope and compassion to
-              the world.
+              We offer academic and vocational stimulation to prevent regression
+              and develop skills. Our programs and daily activities stimulate
+              the body, mind, and spirit through broad-range health care,
+              instruction in functional life skills, vocational training,
+              recreation, and Special Olympics competition. A Work Center
+              provides meaningful jobs for local industry, including sorting,
+              packaging, and assembling.
+            </p>
+            <p>
+              Our growth has included extensive phases of building
+              handicapped-accessible group homes, including a home for residents
+              with Alzheimer&rsquo;s Disease. In 2004, our 7,000 square foot
+              infirmary opened to provide on-site medical, wellness, and
+              rehabilitative care.
+            </p>
+            <p>
+              With the support of individual donations and fundraising events,
+              we continue to meet the needs of our residents as they age,
+              ensuring a secure and caring future for all.
             </p>
             <Link to="/about" className="home-mission__btn">
               Read More
@@ -85,6 +102,8 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      <ImpactSection />
 
       <section className="home-programs">
         <div className="home-wrap">
@@ -110,8 +129,6 @@ function HomePage() {
           </Link>
         </div>
       </section>
-
-      <ImpactSection />
 
       <section className="home-involved" aria-label="Get Involved">
         <div className="home-involved__card">

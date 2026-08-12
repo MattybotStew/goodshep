@@ -6,10 +6,10 @@ export const stats = [
 ];
 
 export const impactStats = [
-  { value: "100+", label: "Men served annually" },
-  { value: "55", label: "Years of compassionate care" },
-  { value: "4", label: "Core programs" },
-  { value: "13", label: "Residential homes" },
+  { value: "55", label: "Years serving our community" },
+  { value: "100+", label: "Men supported daily" },
+  { value: "4", label: "Core programs offered" },
+  { value: "1971", label: "Founded in Momence, IL" },
 ];
 
 export const programs = [
