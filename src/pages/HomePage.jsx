@@ -114,14 +114,14 @@ function HomePage() {
           </p>
           <div className="home-program-grid">
             {programs.map((p) => (
-              <Link to={p.path} className="home-program-card" key={p.path}>
-                <div className="home-program-card__img" aria-hidden="true" />
-                <div className="home-program-card__body">
-                  <h3>{p.name}</h3>
-                  <p>{p.desc}</p>
-                  <span>Learn more &rarr;</span>
-                </div>
-              </Link>
+              <article className="home-program-card" key={p.path}>
+                <div className="home-program-card__icon" aria-hidden="true" />
+                <h3>{p.name}</h3>
+                <p>{p.desc}</p>
+                <Link to={p.path} className="home-program-card__link">
+                  Learn more &rarr;
+                </Link>
+              </article>
             ))}
           </div>
           <Link to="/programs" className="home-more">
