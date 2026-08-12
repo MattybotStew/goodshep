@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom'
-import { newsItems, programs } from '../data/site'
-import './HomePage.css'
+import { Link } from "react-router-dom";
+import { newsItems, programs } from "../data/site";
+import ImpactSection from "../components/ImpactSection";
+import "./HomePage.css";
 
 function HomePage() {
   return (
@@ -11,9 +12,12 @@ function HomePage() {
           <h1>A Community of Compassion, Dignity, and Purpose.</h1>
           <p>
             Good Shepherd Manor provides hands-on programs, caring services, and
-            a supportive home for men with intellectual and developmental disabilities.
+            a supportive home for men with intellectual and developmental
+            disabilities.
           </p>
-          <Link to="/careers" className="home-btn home-btn--blue">Now Hiring! Apply Today</Link>
+          <Link to="/careers" className="home-btn home-btn--blue">
+            Now Hiring! Apply Today
+          </Link>
         </div>
       </section>
 
@@ -61,10 +65,12 @@ function HomePage() {
               greater than yourself.
             </p>
             <p>
-              A transformational journey towards bringing hope and compassion
-              to the world.
+              A transformational journey towards bringing hope and compassion to
+              the world.
             </p>
-            <Link to="/about" className="home-mission__btn">Read More</Link>
+            <Link to="/about" className="home-mission__btn">
+              Read More
+            </Link>
           </div>
           <div className="home-mission__mosaic" aria-hidden="true">
             <div className="home-mission__col">
@@ -83,8 +89,8 @@ function HomePage() {
         <div className="home-wrap">
           <h2>Our Programs &amp; Services</h2>
           <p className="home-lead">
-            We offer well-maintained residential facilities paired with a comprehensive
-            Health Care Program and meaningful day programs.
+            We offer well-maintained residential facilities paired with a
+            comprehensive Health Care Program and meaningful day programs.
           </p>
           <div className="home-program-grid">
             {programs.map((p) => (
@@ -98,9 +104,13 @@ function HomePage() {
               </Link>
             ))}
           </div>
-          <Link to="/programs" className="home-more">View all programs &rarr;</Link>
+          <Link to="/programs" className="home-more">
+            View all programs &rarr;
+          </Link>
         </div>
       </section>
+
+      <ImpactSection />
 
       <section className="home-news">
         <div className="home-wrap home-news__grid">
@@ -120,7 +130,9 @@ function HomePage() {
                 </article>
               ))}
             </div>
-            <Link to="/news" className="home-more home-more--left">View all news &rarr;</Link>
+            <Link to="/news" className="home-more home-more--left">
+              View all news &rarr;
+            </Link>
           </div>
 
           <div>
@@ -131,8 +143,9 @@ function HomePage() {
                 <span className="home-event__date">October 2026</span>
                 <h3>35th Annual Fall Festival</h3>
                 <p>
-                  A family-friendly event supporting Good Shepherd Manor&rsquo;s mission
-                  by funding essential programs and services for the men we serve.
+                  A family-friendly event supporting Good Shepherd Manor&rsquo;s
+                  mission by funding essential programs and services for the men
+                  we serve.
                 </p>
                 <Link to="/events#fall-festival">Event details &rarr;</Link>
               </div>
@@ -144,31 +157,46 @@ function HomePage() {
       <section className="home-involved">
         <div className="home-wrap home-involved__inner">
           <h2>Get Involved</h2>
-          <p>Your support makes a difference in the lives of the men at Good Shepherd Manor.</p>
+          <p>
+            Your support makes a difference in the lives of the men at Good
+            Shepherd Manor.
+          </p>
           <div className="home-pathways">
             <Link to="/ways-to-give" className="home-pathway">
-              <span className="home-pathway__icon" aria-hidden="true">&#10084;</span>
+              <span className="home-pathway__icon" aria-hidden="true">
+                &#10084;
+              </span>
               <h3>Donate</h3>
-              <p>Your gift provides essential care, programs, and enrichment.</p>
+              <p>
+                Your gift provides essential care, programs, and enrichment.
+              </p>
               <span>Give now &rarr;</span>
             </Link>
             <Link to="/support-gsm" className="home-pathway">
-              <span className="home-pathway__icon" aria-hidden="true">&#10003;</span>
+              <span className="home-pathway__icon" aria-hidden="true">
+                &#10003;
+              </span>
               <h3>Volunteer</h3>
-              <p>Attend an event or volunteer your time to support our community.</p>
+              <p>
+                Attend an event or volunteer your time to support our community.
+              </p>
               <span>Get involved &rarr;</span>
             </Link>
             <Link to="/careers" className="home-pathway">
-              <span className="home-pathway__icon" aria-hidden="true">&#9679;</span>
+              <span className="home-pathway__icon" aria-hidden="true">
+                &#9679;
+              </span>
               <h3>Careers</h3>
-              <p>Join our team as a Direct Service Provider and make an impact.</p>
+              <p>
+                Join our team as a Direct Service Provider and make an impact.
+              </p>
               <span>View openings &rarr;</span>
             </Link>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
