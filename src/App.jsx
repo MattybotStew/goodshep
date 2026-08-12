@@ -1,7 +1,51 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+import HomePage from './pages/HomePage'
 import SitemapPage from './pages/SitemapPage'
+import AboutPage from './pages/AboutPage'
+import ProgramsPage from './pages/ProgramsPage'
+import CommunityDayPage from './pages/CommunityDayPage'
+import VocationalPage from './pages/VocationalPage'
+import ResidentialPage from './pages/ResidentialPage'
+import HealthWellBeingPage from './pages/HealthWellBeingPage'
+import FoundationPage from './pages/FoundationPage'
+import WaysToGivePage from './pages/WaysToGivePage'
+import EndowmentPage from './pages/EndowmentPage'
+import EventsPage from './pages/EventsPage'
+import NewsPage from './pages/NewsPage'
+import NewslettersPage from './pages/NewslettersPage'
+import CareersPage from './pages/CareersPage'
+import ContactPage from './pages/ContactPage'
+import PrivacyPage from './pages/PrivacyPage'
+import NotFoundPage from './pages/NotFoundPage'
 
 function App() {
-  return <SitemapPage />
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/programs" element={<ProgramsPage />} />
+          <Route path="/programs/community-day-services" element={<CommunityDayPage />} />
+          <Route path="/programs/vocational" element={<VocationalPage />} />
+          <Route path="/programs/residential-living" element={<ResidentialPage />} />
+          <Route path="/programs/health-well-being" element={<HealthWellBeingPage />} />
+          <Route path="/support-gsm" element={<FoundationPage />} />
+          <Route path="/ways-to-give" element={<WaysToGivePage />} />
+          <Route path="/shepherd-endowment-society" element={<EndowmentPage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/newsletters" element={<NewslettersPage />} />
+          <Route path="/careers" element={<CareersPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/sitemap" element={<SitemapPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App

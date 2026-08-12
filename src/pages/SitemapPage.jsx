@@ -2,7 +2,7 @@ import './SitemapPage.css'
 
 const navGroups = [
   { name: 'About', pages: [
-    { name: 'About Us', page: 2, sections: ['Our History', 'Mission, Vision & Values', 'Leadership & Staff', 'Affiliations', 'Accessibility Statement'] },
+    { name: 'About Us', page: 2, sections: ['Our History', 'Mission, Vision & Values', 'Affiliations', 'Accessibility Statement'] },
   ]},
   { name: 'Programs', pages: [
     { name: 'Programs & Services', page: 3, note: 'Landing' },
@@ -15,17 +15,17 @@ const navGroups = [
     { name: 'GSM Foundation', page: 8 },
     { name: 'Ways to Give / Donate', page: 9 },
     { name: 'Shepherd Endowment Society', page: 10 },
-    { name: 'Events', page: 11 },
+    { name: 'Events', page: 11, sections: ['Fall Festival', 'Golf Invitational', 'Family Events'] },
   ]},
   { name: 'News', pages: [
     { name: 'News & Updates', page: 12, note: 'Blog / press' },
-    { name: 'Newsletters', page: 13, sections: ['Archive + signup', 'Friends & Family Communication'] },
+    { name: 'Newsletters & Family Resources', page: 13, sections: ['Archive + signup'] },
   ]},
   { name: 'Careers', pages: [
-    { name: 'Careers', page: 14, sections: ['Job Openings (DSP hiring)', 'Benefits', 'Thank a Staff Member'] },
+    { name: 'Careers', page: 14, sections: ['Job Openings (DSP hiring)', 'Benefits'] },
   ]},
   { name: 'Contact', pages: [
-    { name: 'Contact Us', page: 15, sections: ['Contact form', 'Staff directory', 'Map'] },
+    { name: 'Contact Us', page: 15, sections: ['Contact form', 'Staff directory', 'Map', 'Thank a Staff Member'] },
   ]},
 ]
 
@@ -122,14 +122,13 @@ function SitemapPage() {
             <ul>
               <li><strong>Our History</strong> &rarr; section of <em>About Us</em></li>
               <li><strong>Mission, Vision &amp; Values</strong> &rarr; section of <em>About Us</em></li>
-              <li><strong>Leadership &amp; Staff</strong> &rarr; section of <em>About Us</em> (also linked from Contact)</li>
               <li><strong>Affiliations</strong> &rarr; section of <em>About Us</em></li>
               <li><strong>Accessibility Statement</strong> &rarr; section of <em>About Us</em> (also footer link)</li>
               <li><strong>Digital Den</strong> &rarr; section of <em>Community Day Services</em></li>
               <li><strong>Nursing / Clinic / Pharmacy / Supports / Transportation</strong> &rarr; sections of <em>Health &amp; Well Being</em></li>
-              <li><strong>Friends &amp; Family Communication</strong> &rarr; section of <em>Newsletters</em></li>
-              <li><strong>Job Openings / Benefits / Thank a Staff Member</strong> &rarr; sections of <em>Careers</em></li>
-              <li><strong>Contact form / Staff directory / Map</strong> &rarr; sections of <em>Contact Us</em></li>
+              <li><strong>Fall Festival / Golf Invitational / Family Events</strong> &rarr; sections of <em>Events</em></li>
+              <li><strong>Job Openings / Benefits</strong> &rarr; sections of <em>Careers</em></li>
+              <li><strong>Contact form / Staff directory / Map / Thank a Staff Member</strong> &rarr; sections of <em>Contact Us</em></li>
             </ul>
           </div>
 
@@ -137,7 +136,7 @@ function SitemapPage() {
             <h3>The 15 main pages</h3>
             <ul>
               <li><strong>Home</strong> (1) — gateway</li>
-              <li><strong>About Us</strong> (2) — 5 sections, anchor-linked</li>
+              <li><strong>About Us</strong> (2) — 4 sections, anchor-linked</li>
               <li><strong>Programs &amp; Services</strong> (3) — landing</li>
               <li><strong>Community Day Services</strong> (4)</li>
               <li><strong>Vocational Program</strong> (5) — TBD</li>
@@ -148,7 +147,7 @@ function SitemapPage() {
               <li><strong>Shepherd Endowment Society</strong> (10)</li>
               <li><strong>Events</strong> (11)</li>
               <li><strong>News &amp; Updates</strong> (12)</li>
-              <li><strong>Newsletters</strong> (13)</li>
+              <li><strong>Newsletters &amp; Family Resources</strong> (13)</li>
               <li><strong>Careers</strong> (14)</li>
               <li><strong>Contact Us</strong> (15)</li>
             </ul>
@@ -156,11 +155,11 @@ function SitemapPage() {
           <div className="consolidation-notes__col">
             <h3>Key decisions &amp; rationale</h3>
             <ul>
-              <li><strong>About collapsed 5&rarr;1</strong> — static reference content; one page with anchor links saves 4 slots so News, Careers &amp; Contact can be counted honestly</li>
+              <li><strong>About collapsed 4&rarr;1</strong> — static reference content; one page with anchor links saves 3 slots so News, Careers &amp; Contact can be counted honestly</li>
               <li><strong>SOW counting</strong> — hub pages (News, Careers, Contact) count toward the 15; only individual posts/archive items are exempt</li>
               <li><strong>Contact = Page 15</strong> — primary conversion path; belongs in top-level nav, not a footer-only utility link</li>
-              <li><strong>Friends &amp; Family</strong> &rarr; Newsletters section — niche audience; may become portal content in a future phase</li>
-              <li><strong>Events standalone</strong> — kept under Support GSM (philanthropy framing) per original Figma sitemap</li>
+              <li><strong>Newsletters &amp; Family Resources</strong> — combined newsletter archive and family communication into single page</li>
+              <li><strong>Events with sub-sections</strong> — Fall Festival, Golf Invitational, and Family Events as anchor-linked sections</li>
               <li><strong>Vocational TBD</strong> — client flagged it; cheapest release valve if scope tightens</li>
               <li><strong>Phase-2 promotion</strong> — any section can become a page without breaking URLs; keep teaser anchors when promoting</li>
             </ul>
