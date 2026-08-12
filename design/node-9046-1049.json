@@ -1,0 +1,1221 @@
+{
+  "name": "gS-Design",
+  "framelinkExport": {
+    "pluginVersion": "1.3.0",
+    "exportedAt": "2026-08-12T18:52:57.084Z",
+    "scope": "selection",
+    "depth": null,
+    "fileName": "gS-Design",
+    "pageId": "3:55487",
+    "pageName": "⚠️ Wireframes Pages",
+    "rootNodeIds": [
+      "9046:1049"
+    ],
+    "assetsFolder": "gs-design_20260812-145248.assets",
+    "assets": {
+      "9046:1049": {
+        "image": "gs-design_20260812-145248.assets/node_9046_1049.png",
+        "imageScale": 2
+      }
+    },
+    "imageFills": {
+      "bd129d140f3c803d9d01ee8712fdc6dbac451d3b": "gs-design_20260812-145248.assets/image_bd129d140f3c803d9d01ee8712fdc6dbac451d3b.png"
+    },
+    "options": {
+      "exportFrameImages": true,
+      "exportSvgs": true,
+      "exportImageFills": true
+    },
+    "errors": []
+  },
+  "nodes": {
+    "9046:1049": {
+      "document": {
+        "id": "9046:1049",
+        "name": "Container",
+        "type": "FRAME",
+        "visible": true,
+        "absoluteBoundingBox": {
+          "x": 1299,
+          "y": 1110.75,
+          "width": 1920,
+          "height": 751
+        },
+        "absoluteRenderBounds": {
+          "x": 1299,
+          "y": 1110.75,
+          "width": 1920,
+          "height": 751
+        },
+        "size": {
+          "x": 1920,
+          "y": 751
+        },
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "blendMode": "PASS_THROUGH",
+        "opacity": 1,
+        "isMask": false,
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.9686274528503418,
+              "g": 0.9764705896377563,
+              "b": 0.9450980424880981,
+              "a": 1
+            }
+          }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "cornerRadius": 0,
+        "effects": [],
+        "clipsContent": false,
+        "layoutMode": "VERTICAL",
+        "primaryAxisSizingMode": "AUTO",
+        "counterAxisSizingMode": "FIXED",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "itemSpacing": 0,
+        "counterAxisSpacing": 0,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "layoutWrap": "NO_WRAP",
+        "layoutSizingHorizontal": "FIXED",
+        "layoutSizingVertical": "HUG",
+        "layoutGrow": 0,
+        "layoutAlign": "INHERIT",
+        "layoutPositioning": "AUTO",
+        "children": [
+          {
+            "id": "9046:1050",
+            "name": "Container",
+            "type": "FRAME",
+            "visible": true,
+            "absoluteBoundingBox": {
+              "x": 1659,
+              "y": 1110.75,
+              "width": 1200,
+              "height": 751
+            },
+            "absoluteRenderBounds": {
+              "x": 1619,
+              "y": 1110.75,
+              "width": 1240,
+              "height": 751
+            },
+            "size": {
+              "x": 1200,
+              "y": 751
+            },
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "blendMode": "PASS_THROUGH",
+            "opacity": 1,
+            "isMask": false,
+            "fills": [],
+            "strokes": [],
+            "strokeWeight": 1,
+            "strokeAlign": "INSIDE",
+            "cornerRadius": 0,
+            "effects": [],
+            "clipsContent": false,
+            "layoutMode": "VERTICAL",
+            "primaryAxisSizingMode": "FIXED",
+            "counterAxisSizingMode": "FIXED",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "MIN",
+            "itemSpacing": 0,
+            "counterAxisSpacing": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 100,
+            "paddingBottom": 0,
+            "layoutWrap": "NO_WRAP",
+            "layoutSizingHorizontal": "FIXED",
+            "layoutSizingVertical": "FILL",
+            "layoutGrow": 751,
+            "layoutAlign": "CENTER",
+            "layoutPositioning": "AUTO",
+            "children": [
+              {
+                "id": "9046:1051",
+                "name": "Container",
+                "type": "FRAME",
+                "visible": true,
+                "absoluteBoundingBox": {
+                  "x": 1659,
+                  "y": 1210.75,
+                  "width": 1200,
+                  "height": 651
+                },
+                "absoluteRenderBounds": {
+                  "x": 1619,
+                  "y": 1194.75,
+                  "width": 1240,
+                  "height": 667
+                },
+                "size": {
+                  "x": 1200,
+                  "y": 651
+                },
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                },
+                "blendMode": "PASS_THROUGH",
+                "opacity": 1,
+                "isMask": false,
+                "fills": [],
+                "strokes": [
+                  {
+                    "type": "SOLID",
+                    "visible": true,
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "color": {
+                      "r": 0.8235294222831726,
+                      "g": 0.8470588326454163,
+                      "b": 0.7529411911964417,
+                      "a": 1
+                    }
+                  }
+                ],
+                "strokeAlign": "INSIDE",
+                "cornerRadius": 0,
+                "effects": [],
+                "clipsContent": false,
+                "layoutMode": "HORIZONTAL",
+                "primaryAxisSizingMode": "FIXED",
+                "counterAxisSizingMode": "AUTO",
+                "primaryAxisAlignItems": "MIN",
+                "counterAxisAlignItems": "MIN",
+                "itemSpacing": 20,
+                "counterAxisSpacing": 20,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "paddingBottom": 100,
+                "layoutWrap": "NO_WRAP",
+                "layoutSizingHorizontal": "FIXED",
+                "layoutSizingVertical": "HUG",
+                "layoutGrow": 0,
+                "layoutAlign": "INHERIT",
+                "layoutPositioning": "AUTO",
+                "children": [
+                  {
+                    "id": "9046:1052",
+                    "name": "Container",
+                    "type": "FRAME",
+                    "visible": true,
+                    "absoluteBoundingBox": {
+                      "x": 1659,
+                      "y": 1210.75,
+                      "width": 590,
+                      "height": 550
+                    },
+                    "absoluteRenderBounds": {
+                      "x": 1619,
+                      "y": 1194.75,
+                      "width": 630,
+                      "height": 630
+                    },
+                    "size": {
+                      "x": 590,
+                      "y": 550
+                    },
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    },
+                    "blendMode": "PASS_THROUGH",
+                    "opacity": 1,
+                    "isMask": false,
+                    "fills": [],
+                    "strokes": [],
+                    "strokeWeight": 1,
+                    "strokeAlign": "INSIDE",
+                    "cornerRadius": 0,
+                    "effects": [],
+                    "clipsContent": false,
+                    "layoutMode": "VERTICAL",
+                    "primaryAxisSizingMode": "AUTO",
+                    "counterAxisSizingMode": "FIXED",
+                    "primaryAxisAlignItems": "MIN",
+                    "counterAxisAlignItems": "MIN",
+                    "itemSpacing": 0,
+                    "counterAxisSpacing": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 40,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "layoutWrap": "NO_WRAP",
+                    "layoutSizingHorizontal": "FIXED",
+                    "layoutSizingVertical": "HUG",
+                    "layoutGrow": 0,
+                    "layoutAlign": "INHERIT",
+                    "layoutPositioning": "AUTO",
+                    "children": [
+                      {
+                        "id": "9046:1055",
+                        "name": "Image",
+                        "type": "FRAME",
+                        "visible": true,
+                        "absoluteBoundingBox": {
+                          "x": 1659,
+                          "y": 1210.75,
+                          "width": 550,
+                          "height": 550
+                        },
+                        "absoluteRenderBounds": {
+                          "x": 1619,
+                          "y": 1194.75,
+                          "width": 630,
+                          "height": 630
+                        },
+                        "size": {
+                          "x": 550,
+                          "y": 550
+                        },
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        },
+                        "blendMode": "PASS_THROUGH",
+                        "opacity": 1,
+                        "isMask": false,
+                        "fills": [
+                          {
+                            "type": "SOLID",
+                            "visible": true,
+                            "opacity": 0.000009999999747378752,
+                            "blendMode": "NORMAL",
+                            "color": {
+                              "r": 1,
+                              "g": 1,
+                              "b": 1,
+                              "a": 1
+                            }
+                          },
+                          {
+                            "type": "IMAGE",
+                            "visible": true,
+                            "opacity": 1,
+                            "blendMode": "NORMAL",
+                            "scaleMode": "FILL",
+                            "imageRef": "bd129d140f3c803d9d01ee8712fdc6dbac451d3b",
+                            "imageTransform": [
+                              [
+                                1,
+                                0,
+                                0
+                              ],
+                              [
+                                0,
+                                1,
+                                0
+                              ]
+                            ]
+                          }
+                        ],
+                        "strokes": [],
+                        "strokeWeight": 1,
+                        "strokeAlign": "INSIDE",
+                        "cornerRadius": 16,
+                        "effects": [
+                          {
+                            "type": "DROP_SHADOW",
+                            "visible": true,
+                            "radius": 64,
+                            "color": {
+                              "r": 0.1725490242242813,
+                              "g": 0.22745098173618317,
+                              "b": 0.01568627543747425,
+                              "a": 0.4000000059604645
+                            },
+                            "offset": {
+                              "x": 0,
+                              "y": 24
+                            },
+                            "spread": -24,
+                            "blendMode": "NORMAL"
+                          }
+                        ],
+                        "clipsContent": true,
+                        "layoutSizingHorizontal": "FILL",
+                        "layoutSizingVertical": "FIXED",
+                        "layoutGrow": 0,
+                        "layoutAlign": "STRETCH",
+                        "layoutPositioning": "AUTO",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "9046:1056",
+                    "name": "Container",
+                    "type": "FRAME",
+                    "visible": true,
+                    "absoluteBoundingBox": {
+                      "x": 2269,
+                      "y": 1210.75,
+                      "width": 590,
+                      "height": 550
+                    },
+                    "absoluteRenderBounds": {
+                      "x": 2269,
+                      "y": 1210.75,
+                      "width": 590,
+                      "height": 550
+                    },
+                    "size": {
+                      "x": 590,
+                      "y": 550
+                    },
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    },
+                    "blendMode": "PASS_THROUGH",
+                    "opacity": 1,
+                    "isMask": false,
+                    "fills": [],
+                    "strokes": [],
+                    "strokeWeight": 1,
+                    "strokeAlign": "INSIDE",
+                    "cornerRadius": 0,
+                    "effects": [],
+                    "clipsContent": false,
+                    "layoutMode": "VERTICAL",
+                    "primaryAxisSizingMode": "FIXED",
+                    "counterAxisSizingMode": "FIXED",
+                    "primaryAxisAlignItems": "MIN",
+                    "counterAxisAlignItems": "MIN",
+                    "itemSpacing": 0,
+                    "counterAxisSpacing": 0,
+                    "paddingLeft": 40,
+                    "paddingRight": 0,
+                    "paddingTop": 43,
+                    "paddingBottom": 0,
+                    "layoutWrap": "NO_WRAP",
+                    "layoutSizingHorizontal": "FIXED",
+                    "layoutSizingVertical": "FIXED",
+                    "layoutGrow": 0,
+                    "layoutAlign": "INHERIT",
+                    "layoutPositioning": "AUTO",
+                    "children": [
+                      {
+                        "id": "9046:1057",
+                        "name": "Paragraph",
+                        "type": "FRAME",
+                        "visible": true,
+                        "absoluteBoundingBox": {
+                          "x": 2309,
+                          "y": 1253.75,
+                          "width": 550,
+                          "height": 36.796875
+                        },
+                        "absoluteRenderBounds": {
+                          "x": 2309,
+                          "y": 1253.75,
+                          "width": 550,
+                          "height": 36.796875
+                        },
+                        "size": {
+                          "x": 550,
+                          "y": 36.796875
+                        },
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        },
+                        "blendMode": "PASS_THROUGH",
+                        "opacity": 1,
+                        "isMask": false,
+                        "fills": [],
+                        "strokes": [],
+                        "strokeWeight": 1,
+                        "strokeAlign": "INSIDE",
+                        "cornerRadius": 0,
+                        "effects": [],
+                        "clipsContent": false,
+                        "layoutMode": "VERTICAL",
+                        "primaryAxisSizingMode": "FIXED",
+                        "counterAxisSizingMode": "FIXED",
+                        "primaryAxisAlignItems": "MIN",
+                        "counterAxisAlignItems": "MIN",
+                        "itemSpacing": 0,
+                        "counterAxisSpacing": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "paddingBottom": 20,
+                        "layoutWrap": "NO_WRAP",
+                        "layoutSizingHorizontal": "FILL",
+                        "layoutSizingVertical": "FIXED",
+                        "layoutGrow": 0,
+                        "layoutAlign": "STRETCH",
+                        "layoutPositioning": "AUTO",
+                        "children": [
+                          {
+                            "id": "9046:1060",
+                            "name": "Get Involved",
+                            "type": "TEXT",
+                            "visible": true,
+                            "absoluteBoundingBox": {
+                              "x": 2309,
+                              "y": 1253.75,
+                              "width": 118,
+                              "height": 17
+                            },
+                            "absoluteRenderBounds": {
+                              "x": 2309.672119140625,
+                              "y": 1256.781982421875,
+                              "width": 116.147216796875,
+                              "height": 10.135986328125
+                            },
+                            "size": {
+                              "x": 118,
+                              "y": 17
+                            },
+                            "constraints": {
+                              "horizontal": "MIN",
+                              "vertical": "MIN"
+                            },
+                            "blendMode": "PASS_THROUGH",
+                            "opacity": 1,
+                            "isMask": false,
+                            "fills": [
+                              {
+                                "type": "SOLID",
+                                "visible": true,
+                                "opacity": 1,
+                                "blendMode": "NORMAL",
+                                "color": {
+                                  "r": 0,
+                                  "g": 0,
+                                  "b": 0,
+                                  "a": 1
+                                }
+                              }
+                            ],
+                            "strokes": [],
+                            "strokeWeight": 1,
+                            "strokeAlign": "OUTSIDE",
+                            "effects": [],
+                            "layoutSizingHorizontal": "HUG",
+                            "layoutSizingVertical": "HUG",
+                            "layoutGrow": 0,
+                            "layoutAlign": "INHERIT",
+                            "layoutPositioning": "AUTO",
+                            "characters": "Get Involved",
+                            "style": {
+                              "fontFamily": "DM Sans",
+                              "fontPostScriptName": "DM Sans-Regular",
+                              "fontWeight": 400,
+                              "fontSize": 14,
+                              "textAlignHorizontal": "LEFT",
+                              "textAlignVertical": "TOP",
+                              "letterSpacing": 2,
+                              "lineHeightPx": 16.799999237060547,
+                              "lineHeightUnit": "PIXELS",
+                              "textDecoration": "NONE",
+                              "textCase": "UPPER"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "9046:1062",
+                        "name": "Container",
+                        "type": "FRAME",
+                        "visible": true,
+                        "absoluteBoundingBox": {
+                          "x": 2309,
+                          "y": 1290.546875,
+                          "width": 550,
+                          "height": 261.5625
+                        },
+                        "absoluteRenderBounds": {
+                          "x": 2309,
+                          "y": 1290.546875,
+                          "width": 550,
+                          "height": 261.5625
+                        },
+                        "size": {
+                          "x": 550,
+                          "y": 261.5625
+                        },
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        },
+                        "blendMode": "PASS_THROUGH",
+                        "opacity": 1,
+                        "isMask": false,
+                        "fills": [],
+                        "strokes": [],
+                        "strokeWeight": 1,
+                        "strokeAlign": "INSIDE",
+                        "cornerRadius": 0,
+                        "effects": [],
+                        "clipsContent": false,
+                        "layoutMode": "VERTICAL",
+                        "primaryAxisSizingMode": "FIXED",
+                        "counterAxisSizingMode": "FIXED",
+                        "primaryAxisAlignItems": "MIN",
+                        "counterAxisAlignItems": "MIN",
+                        "itemSpacing": 0,
+                        "counterAxisSpacing": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "paddingBottom": 20,
+                        "layoutWrap": "NO_WRAP",
+                        "layoutSizingHorizontal": "FILL",
+                        "layoutSizingVertical": "FIXED",
+                        "layoutGrow": 0,
+                        "layoutAlign": "STRETCH",
+                        "layoutPositioning": "AUTO",
+                        "children": [
+                          {
+                            "id": "9046:1066",
+                            "name": "Heading 2",
+                            "type": "FRAME",
+                            "visible": true,
+                            "absoluteBoundingBox": {
+                              "x": 2309,
+                              "y": 1290.546875,
+                              "width": 550,
+                              "height": 116
+                            },
+                            "absoluteRenderBounds": {
+                              "x": 2309,
+                              "y": 1290.546875,
+                              "width": 550,
+                              "height": 116
+                            },
+                            "size": {
+                              "x": 550,
+                              "y": 116
+                            },
+                            "constraints": {
+                              "horizontal": "MIN",
+                              "vertical": "MIN"
+                            },
+                            "blendMode": "PASS_THROUGH",
+                            "opacity": 1,
+                            "isMask": false,
+                            "fills": [],
+                            "strokes": [],
+                            "strokeWeight": 1,
+                            "strokeAlign": "INSIDE",
+                            "cornerRadius": 0,
+                            "effects": [],
+                            "clipsContent": false,
+                            "layoutMode": "VERTICAL",
+                            "primaryAxisSizingMode": "AUTO",
+                            "counterAxisSizingMode": "AUTO",
+                            "primaryAxisAlignItems": "MIN",
+                            "counterAxisAlignItems": "MIN",
+                            "itemSpacing": 0,
+                            "counterAxisSpacing": 0,
+                            "paddingLeft": 0,
+                            "paddingRight": 0,
+                            "paddingTop": 0,
+                            "paddingBottom": 0,
+                            "layoutWrap": "NO_WRAP",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "HUG",
+                            "layoutGrow": 0,
+                            "layoutAlign": "STRETCH",
+                            "layoutPositioning": "AUTO",
+                            "children": [
+                              {
+                                "id": "9046:1067",
+                                "name": "Join our movement for change",
+                                "type": "TEXT",
+                                "visible": true,
+                                "absoluteBoundingBox": {
+                                  "x": 2309,
+                                  "y": 1290.546875,
+                                  "width": 550,
+                                  "height": 116
+                                },
+                                "absoluteRenderBounds": {
+                                  "x": 2309.9599609375,
+                                  "y": 1301.370849609375,
+                                  "width": 454.736083984375,
+                                  "height": 102.35205078125
+                                },
+                                "size": {
+                                  "x": 550,
+                                  "y": 116
+                                },
+                                "constraints": {
+                                  "horizontal": "MIN",
+                                  "vertical": "MIN"
+                                },
+                                "blendMode": "PASS_THROUGH",
+                                "opacity": 1,
+                                "isMask": false,
+                                "fills": [
+                                  {
+                                    "type": "SOLID",
+                                    "visible": true,
+                                    "opacity": 1,
+                                    "blendMode": "NORMAL",
+                                    "color": {
+                                      "r": 0.1725490242242813,
+                                      "g": 0.22745098173618317,
+                                      "b": 0.01568627543747425,
+                                      "a": 1
+                                    }
+                                  }
+                                ],
+                                "strokes": [],
+                                "strokeWeight": 1,
+                                "strokeAlign": "OUTSIDE",
+                                "effects": [],
+                                "layoutSizingHorizontal": "FIXED",
+                                "layoutSizingVertical": "HUG",
+                                "layoutGrow": 0,
+                                "layoutAlign": "INHERIT",
+                                "layoutPositioning": "AUTO",
+                                "characters": "Join our movement for change",
+                                "style": {
+                                  "fontFamily": "DM Sans",
+                                  "fontPostScriptName": "DM Sans-SemiBold",
+                                  "fontWeight": 600,
+                                  "fontSize": 48,
+                                  "textAlignHorizontal": "LEFT",
+                                  "textAlignVertical": "TOP",
+                                  "letterSpacing": -1,
+                                  "lineHeightPx": 57.599998474121094,
+                                  "lineHeightUnit": "PIXELS",
+                                  "textDecoration": "NONE",
+                                  "textCase": "ORIGINAL"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "id": "9046:1069",
+                            "name": "Paragraph",
+                            "type": "FRAME",
+                            "visible": true,
+                            "absoluteBoundingBox": {
+                              "x": 2309,
+                              "y": 1406.546875,
+                              "width": 550,
+                              "height": 127
+                            },
+                            "absoluteRenderBounds": {
+                              "x": 2309,
+                              "y": 1406.546875,
+                              "width": 550,
+                              "height": 127
+                            },
+                            "size": {
+                              "x": 550,
+                              "y": 127
+                            },
+                            "constraints": {
+                              "horizontal": "MIN",
+                              "vertical": "MIN"
+                            },
+                            "blendMode": "PASS_THROUGH",
+                            "opacity": 1,
+                            "isMask": false,
+                            "fills": [],
+                            "strokes": [],
+                            "strokeWeight": 1,
+                            "strokeAlign": "INSIDE",
+                            "cornerRadius": 0,
+                            "effects": [],
+                            "clipsContent": false,
+                            "layoutMode": "VERTICAL",
+                            "primaryAxisSizingMode": "AUTO",
+                            "counterAxisSizingMode": "FIXED",
+                            "primaryAxisAlignItems": "MIN",
+                            "counterAxisAlignItems": "MIN",
+                            "itemSpacing": 0,
+                            "counterAxisSpacing": 0,
+                            "paddingLeft": 0,
+                            "paddingRight": 0,
+                            "paddingTop": 24,
+                            "paddingBottom": 0,
+                            "layoutWrap": "NO_WRAP",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "HUG",
+                            "layoutGrow": 0,
+                            "layoutAlign": "STRETCH",
+                            "layoutPositioning": "AUTO",
+                            "children": [
+                              {
+                                "id": "9046:1070",
+                                "name": "Join our non-profit organisation and be a part of ",
+                                "type": "TEXT",
+                                "visible": true,
+                                "absoluteBoundingBox": {
+                                  "x": 2309,
+                                  "y": 1430.546875,
+                                  "width": 550,
+                                  "height": 103
+                                },
+                                "absoluteRenderBounds": {
+                                  "x": 2309.447998046875,
+                                  "y": 1436.962890625,
+                                  "width": 534.389892578125,
+                                  "height": 88.7760009765625
+                                },
+                                "size": {
+                                  "x": 550,
+                                  "y": 103
+                                },
+                                "constraints": {
+                                  "horizontal": "MIN",
+                                  "vertical": "MIN"
+                                },
+                                "blendMode": "PASS_THROUGH",
+                                "opacity": 1,
+                                "isMask": false,
+                                "fills": [
+                                  {
+                                    "type": "SOLID",
+                                    "visible": true,
+                                    "opacity": 1,
+                                    "blendMode": "NORMAL",
+                                    "color": {
+                                      "r": 0.27450981736183167,
+                                      "g": 0.3176470696926117,
+                                      "b": 0.16470588743686676,
+                                      "a": 1
+                                    }
+                                  }
+                                ],
+                                "strokes": [],
+                                "strokeWeight": 1,
+                                "strokeAlign": "OUTSIDE",
+                                "effects": [],
+                                "layoutSizingHorizontal": "FIXED",
+                                "layoutSizingVertical": "HUG",
+                                "layoutGrow": 0,
+                                "layoutAlign": "INHERIT",
+                                "layoutPositioning": "AUTO",
+                                "characters": "Join our non-profit organisation and be a part of our movement for positive change. We empower communities, support vulnerable individuals and strive towards building an equitable society. Together, we can create a better world. Join us now!",
+                                "style": {
+                                  "fontFamily": "DM Sans",
+                                  "fontPostScriptName": "DM Sans-Regular",
+                                  "fontWeight": 400,
+                                  "fontSize": 16,
+                                  "textAlignHorizontal": "LEFT",
+                                  "textAlignVertical": "TOP",
+                                  "letterSpacing": 0,
+                                  "lineHeightPx": 25.600000381469727,
+                                  "lineHeightUnit": "PIXELS",
+                                  "textDecoration": "NONE",
+                                  "textCase": "ORIGINAL"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "9046:1073",
+                        "name": "Paragraph",
+                        "type": "FRAME",
+                        "visible": true,
+                        "absoluteBoundingBox": {
+                          "x": 2309,
+                          "y": 1552.109375,
+                          "width": 550,
+                          "height": 81.1875
+                        },
+                        "absoluteRenderBounds": {
+                          "x": 2309,
+                          "y": 1552.109375,
+                          "width": 550,
+                          "height": 81.1875
+                        },
+                        "size": {
+                          "x": 550,
+                          "y": 81.1875
+                        },
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        },
+                        "blendMode": "PASS_THROUGH",
+                        "opacity": 1,
+                        "isMask": false,
+                        "fills": [],
+                        "strokes": [],
+                        "strokeWeight": 1,
+                        "strokeAlign": "INSIDE",
+                        "cornerRadius": 0,
+                        "effects": [],
+                        "clipsContent": false,
+                        "layoutMode": "VERTICAL",
+                        "primaryAxisSizingMode": "FIXED",
+                        "counterAxisSizingMode": "FIXED",
+                        "primaryAxisAlignItems": "MIN",
+                        "counterAxisAlignItems": "MIN",
+                        "itemSpacing": 0,
+                        "counterAxisSpacing": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "paddingBottom": 30,
+                        "layoutWrap": "NO_WRAP",
+                        "layoutSizingHorizontal": "FILL",
+                        "layoutSizingVertical": "FIXED",
+                        "layoutGrow": 0,
+                        "layoutAlign": "STRETCH",
+                        "layoutPositioning": "AUTO",
+                        "children": [
+                          {
+                            "id": "9046:1076",
+                            "name": "Become part of a transformative movement by suppor",
+                            "type": "TEXT",
+                            "visible": true,
+                            "absoluteBoundingBox": {
+                              "x": 2309,
+                              "y": 1552.109375,
+                              "width": 550,
+                              "height": 52
+                            },
+                            "absoluteRenderBounds": {
+                              "x": 2309.76806640625,
+                              "y": 1558.525390625,
+                              "width": 540.254638671875,
+                              "height": 41.2960205078125
+                            },
+                            "size": {
+                              "x": 550,
+                              "y": 52
+                            },
+                            "constraints": {
+                              "horizontal": "MIN",
+                              "vertical": "MIN"
+                            },
+                            "blendMode": "PASS_THROUGH",
+                            "opacity": 1,
+                            "isMask": false,
+                            "fills": [
+                              {
+                                "type": "SOLID",
+                                "visible": true,
+                                "opacity": 1,
+                                "blendMode": "NORMAL",
+                                "color": {
+                                  "r": 0.27450981736183167,
+                                  "g": 0.3176470696926117,
+                                  "b": 0.16470588743686676,
+                                  "a": 1
+                                }
+                              }
+                            ],
+                            "strokes": [],
+                            "strokeWeight": 1,
+                            "strokeAlign": "OUTSIDE",
+                            "effects": [],
+                            "layoutSizingHorizontal": "FIXED",
+                            "layoutSizingVertical": "HUG",
+                            "layoutGrow": 0,
+                            "layoutAlign": "INHERIT",
+                            "layoutPositioning": "AUTO",
+                            "characters": "Become part of a transformative movement by supporting our non-profit organization. Together we can make lasting change.",
+                            "style": {
+                              "fontFamily": "DM Sans",
+                              "fontPostScriptName": "DM Sans-Regular",
+                              "fontWeight": 400,
+                              "fontSize": 16,
+                              "textAlignHorizontal": "LEFT",
+                              "textAlignVertical": "TOP",
+                              "letterSpacing": 0,
+                              "lineHeightPx": 25.600000381469727,
+                              "lineHeightUnit": "PIXELS",
+                              "textDecoration": "NONE",
+                              "textCase": "ORIGINAL"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "9046:1078",
+                        "name": "Container",
+                        "type": "FRAME",
+                        "visible": true,
+                        "absoluteBoundingBox": {
+                          "x": 2309,
+                          "y": 1633.296875,
+                          "width": 550,
+                          "height": 56
+                        },
+                        "absoluteRenderBounds": {
+                          "x": 2309,
+                          "y": 1633.296875,
+                          "width": 550,
+                          "height": 56
+                        },
+                        "size": {
+                          "x": 550,
+                          "y": 56
+                        },
+                        "constraints": {
+                          "horizontal": "MIN",
+                          "vertical": "MIN"
+                        },
+                        "blendMode": "PASS_THROUGH",
+                        "opacity": 1,
+                        "isMask": false,
+                        "fills": [],
+                        "strokes": [],
+                        "strokeWeight": 1,
+                        "strokeAlign": "INSIDE",
+                        "cornerRadius": 0,
+                        "effects": [],
+                        "clipsContent": false,
+                        "layoutSizingHorizontal": "FILL",
+                        "layoutSizingVertical": "FIXED",
+                        "layoutGrow": 0,
+                        "layoutAlign": "STRETCH",
+                        "layoutPositioning": "AUTO",
+                        "children": [
+                          {
+                            "id": "9046:1081",
+                            "name": "Link",
+                            "type": "FRAME",
+                            "visible": true,
+                            "absoluteBoundingBox": {
+                              "x": 2309,
+                              "y": 1633.296875,
+                              "width": 164.9375,
+                              "height": 56
+                            },
+                            "absoluteRenderBounds": {
+                              "x": 2309,
+                              "y": 1633.296875,
+                              "width": 164.9375,
+                              "height": 56
+                            },
+                            "size": {
+                              "x": 164.9375,
+                              "y": 56
+                            },
+                            "constraints": {
+                              "horizontal": "MIN",
+                              "vertical": "MIN"
+                            },
+                            "blendMode": "PASS_THROUGH",
+                            "opacity": 1,
+                            "isMask": false,
+                            "fills": [
+                              {
+                                "type": "SOLID",
+                                "visible": true,
+                                "opacity": 1,
+                                "blendMode": "NORMAL",
+                                "color": {
+                                  "r": 0.9686274528503418,
+                                  "g": 0.9764705896377563,
+                                  "b": 0.9450980424880981,
+                                  "a": 1
+                                }
+                              }
+                            ],
+                            "strokes": [
+                              {
+                                "type": "SOLID",
+                                "visible": true,
+                                "opacity": 1,
+                                "blendMode": "NORMAL",
+                                "color": {
+                                  "r": 0.1725490242242813,
+                                  "g": 0.22745098173618317,
+                                  "b": 0.01568627543747425,
+                                  "a": 1
+                                }
+                              }
+                            ],
+                            "strokeWeight": 1,
+                            "strokeAlign": "INSIDE",
+                            "cornerRadius": 8,
+                            "effects": [],
+                            "clipsContent": false,
+                            "layoutSizingHorizontal": "FIXED",
+                            "layoutSizingVertical": "FIXED",
+                            "layoutGrow": 0,
+                            "layoutAlign": "INHERIT",
+                            "layoutPositioning": "AUTO",
+                            "children": [
+                              {
+                                "id": "9046:1084",
+                                "name": "Register Now",
+                                "type": "TEXT",
+                                "visible": true,
+                                "absoluteBoundingBox": {
+                                  "x": 2334,
+                                  "y": 1652.296875,
+                                  "width": 115,
+                                  "height": 18
+                                },
+                                "absoluteRenderBounds": {
+                                  "x": 2335.40185546875,
+                                  "y": 1654.2828369140625,
+                                  "width": 113.125,
+                                  "height": 17.1900634765625
+                                },
+                                "size": {
+                                  "x": 115,
+                                  "y": 18
+                                },
+                                "constraints": {
+                                  "horizontal": "MIN",
+                                  "vertical": "MIN"
+                                },
+                                "blendMode": "PASS_THROUGH",
+                                "opacity": 1,
+                                "isMask": false,
+                                "fills": [
+                                  {
+                                    "type": "SOLID",
+                                    "visible": true,
+                                    "opacity": 1,
+                                    "blendMode": "NORMAL",
+                                    "color": {
+                                      "r": 0.1725490242242813,
+                                      "g": 0.22745098173618317,
+                                      "b": 0.01568627543747425,
+                                      "a": 1
+                                    }
+                                  }
+                                ],
+                                "strokes": [],
+                                "strokeWeight": 1,
+                                "strokeAlign": "OUTSIDE",
+                                "effects": [],
+                                "layoutSizingHorizontal": "FIXED",
+                                "layoutSizingVertical": "FIXED",
+                                "layoutGrow": 0,
+                                "layoutAlign": "INHERIT",
+                                "layoutPositioning": "AUTO",
+                                "characters": "Register Now",
+                                "style": {
+                                  "fontFamily": "DM Sans",
+                                  "fontPostScriptName": "DM Sans-Bold",
+                                  "fontWeight": 700,
+                                  "fontSize": 18,
+                                  "textAlignHorizontal": "CENTER",
+                                  "textAlignVertical": "TOP",
+                                  "letterSpacing": 0,
+                                  "lineHeightPx": 18,
+                                  "lineHeightUnit": "PIXELS",
+                                  "textDecoration": "NONE",
+                                  "textCase": "ORIGINAL"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "components": {},
+      "componentSets": {},
+      "styles": {
+        "S:5c2c0c9eee53f923e5af195496e517009e62f213,": {
+          "key": "5c2c0c9eee53f923e5af195496e517009e62f213",
+          "name": "USDTL Blue",
+          "styleType": "FILL",
+          "description": ""
+        },
+        "S:6971d4669b56390a4d25ccfb2983726caf34993b,": {
+          "key": "6971d4669b56390a4d25ccfb2983726caf34993b",
+          "name": "mainBlue",
+          "styleType": "FILL",
+          "description": ""
+        },
+        "S:933939623bd25d1f4a2e1da38288eb2fa23410f2,": {
+          "key": "933939623bd25d1f4a2e1da38288eb2fa23410f2",
+          "name": "alt blue",
+          "styleType": "FILL",
+          "description": ""
+        },
+        "S:e40fe4662ade06f10fe20585dbbcc232e0297f06,": {
+          "key": "e40fe4662ade06f10fe20585dbbcc232e0297f06",
+          "name": "green",
+          "styleType": "FILL",
+          "description": ""
+        },
+        "S:883cc30ecc9a4161d577c037bbebc2f56b543aa6,": {
+          "key": "883cc30ecc9a4161d577c037bbebc2f56b543aa6",
+          "name": "dark blue",
+          "styleType": "FILL",
+          "description": ""
+        },
+        "S:6fc7a500cf5ae4176330cc88fbbf1c671c02faa2,": {
+          "key": "6fc7a500cf5ae4176330cc88fbbf1c671c02faa2",
+          "name": "whte",
+          "styleType": "FILL",
+          "description": ""
+        },
+        "S:6e56491d1b401bd1be401b8f91038d86c4ba8f71,": {
+          "key": "6e56491d1b401bd1be401b8f91038d86c4ba8f71",
+          "name": "light green",
+          "styleType": "FILL",
+          "description": ""
+        },
+        "S:00c1b08aab5fbcbead0967905f6f60b56c57011a,": {
+          "key": "00c1b08aab5fbcbead0967905f6f60b56c57011a",
+          "name": "yellow",
+          "styleType": "FILL",
+          "description": ""
+        },
+        "S:55d6a2ea3d713383dc15e1fdc3213eb5c0e5ae15,": {
+          "key": "55d6a2ea3d713383dc15e1fdc3213eb5c0e5ae15",
+          "name": "text",
+          "styleType": "FILL",
+          "description": ""
+        },
+        "S:0bcbe9e88003ea854b3f2a551ff7e066a17f8eb4,": {
+          "key": "0bcbe9e88003ea854b3f2a551ff7e066a17f8eb4",
+          "name": "Teal Blue",
+          "styleType": "FILL",
+          "description": ""
+        },
+        "S:d280a924396d9bdaf4236fc7a6cfbcd7797795ce,": {
+          "key": "d280a924396d9bdaf4236fc7a6cfbcd7797795ce",
+          "name": "hero Grad",
+          "styleType": "FILL",
+          "description": ""
+        },
+        "S:1143462cc7da9329edf4e8a0c3aaebbdaa083de1,": {
+          "key": "1143462cc7da9329edf4e8a0c3aaebbdaa083de1",
+          "name": "Text",
+          "styleType": "TEXT",
+          "description": ""
+        }
+      }
+    }
+  }
+}

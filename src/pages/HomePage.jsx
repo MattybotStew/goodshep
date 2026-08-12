@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { newsItems, programs } from "../data/site";
 import ImpactSection from "../components/ImpactSection";
+import getInvolvedPhoto from "../assets/get-involved.png";
 import "./HomePage.css";
 
 function HomePage() {
@@ -112,6 +113,35 @@ function HomePage() {
 
       <ImpactSection />
 
+      <section className="home-involved" aria-label="Get Involved">
+        <div className="home-involved__card">
+          <div className="home-involved__media">
+            <img
+              className="home-involved__photo"
+              src={getInvolvedPhoto}
+              alt="Two smiling volunteers in Volunteer t-shirts holding donation boxes of medicine and food"
+            />
+          </div>
+          <div className="home-involved__body">
+            <p className="home-involved__label">Get Involved</p>
+            <h2>Join our movement for change</h2>
+            <p>
+              Join our non-profit organisation and be a part of our movement
+              for positive change. We empower communities, support vulnerable
+              individuals and strive towards building an equitable society.
+              Together, we can create a better world. Join us now!
+            </p>
+            <p>
+              Become part of a transformative movement by supporting our
+              non-profit organization. Together we can make lasting change.
+            </p>
+            <Link to="/support-gsm" className="home-involved__btn">
+              Register Now
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="home-news">
         <div className="home-wrap home-news__grid">
           <div>
@@ -150,48 +180,6 @@ function HomePage() {
                 <Link to="/events#fall-festival">Event details &rarr;</Link>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="home-involved">
-        <div className="home-wrap home-involved__inner">
-          <h2>Get Involved</h2>
-          <p>
-            Your support makes a difference in the lives of the men at Good
-            Shepherd Manor.
-          </p>
-          <div className="home-pathways">
-            <Link to="/ways-to-give" className="home-pathway">
-              <span className="home-pathway__icon" aria-hidden="true">
-                &#10084;
-              </span>
-              <h3>Donate</h3>
-              <p>
-                Your gift provides essential care, programs, and enrichment.
-              </p>
-              <span>Give now &rarr;</span>
-            </Link>
-            <Link to="/support-gsm" className="home-pathway">
-              <span className="home-pathway__icon" aria-hidden="true">
-                &#10003;
-              </span>
-              <h3>Volunteer</h3>
-              <p>
-                Attend an event or volunteer your time to support our community.
-              </p>
-              <span>Get involved &rarr;</span>
-            </Link>
-            <Link to="/careers" className="home-pathway">
-              <span className="home-pathway__icon" aria-hidden="true">
-                &#9679;
-              </span>
-              <h3>Careers</h3>
-              <p>
-                Join our team as a Direct Service Provider and make an impact.
-              </p>
-              <span>View openings &rarr;</span>
-            </Link>
           </div>
         </div>
       </section>
