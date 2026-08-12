@@ -132,10 +132,11 @@ Homepage wire is Figma node `9009:2` (`design/node-9009-2.png`). Section order:
 
 1. Hero — Figma `9046:787` (photo overlay, one CTA). Headline: “A Community of Compassion, Dignity, and Purpose.” Sub-headline: hands-on programs, caring services, and a supportive home. CTA: “Now Hiring! Apply Today” → `/careers`. Button uses GSM blue, not 04 lime. Home uses the **hero header** (transparent at top, white on scroll). Other pages keep the solid white header. To reuse the hero header, add the slug to `HERO_HEADER_PATHS` in `src/data/header.js`.
 2. Intro strip — Figma `9046:813` overlapping the hero: 01 Projects / 02 Get Involved / 03 Donate, greek body, Learn more.
-3. Mission — Figma `9046:901`: About Us + journey copy + Read More, staggered photo mosaic. Then Programs.
-3. Our Programs & Services — 4 cards + View all
-4. What’s Happening at GSM (3 news rows) + Upcoming Event
-5. Get Involved — Donate / Volunteer / Careers
+3. About Us / Mission — Figma `9046:901`: “A community of care, growth, and dignity for over 50 years.” + four paragraphs of real GSM copy + Read More, staggered photo mosaic.
+4. Our Impact — Figma `9046:948`: “Our Mission & Heritage: Serving with Dignity Since 1971” + mission statement + 4 counters (55 years / 100+ men / 4 programs / 1971 founded) + donate CTA band.
+5. Our Programs & Services — 4 icon-placeholder cards + View all.
+6. Get Involved — “Join our movement for change” split card (photo + Register Now → `/support-gsm`).
+7. What’s Happening at GSM (3 news rows) + Upcoming Event.
 
 Header nav on the wire: About, Programs, Get Involved, News, Careers, Contact + Donate. Do not replace this Home layout with the 04 01/02/03 / stories / partners pattern.
 

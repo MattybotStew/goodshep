@@ -106,12 +106,19 @@ function HomePage() {
       <ImpactSection />
 
       <section className="home-programs">
-        <div className="home-wrap">
-          <h2>Our Programs &amp; Services</h2>
-          <p className="home-lead">
-            We offer well-maintained residential facilities paired with a
-            comprehensive Health Care Program and meaningful day programs.
-          </p>
+        <div className="home-programs__container">
+          <div className="home-programs__header">
+            <div className="home-programs__intro">
+              <h2>Our Programs &amp; Services</h2>
+              <p>
+                We offer well-maintained residential facilities paired with a
+                comprehensive Health Care Program and meaningful day programs.
+              </p>
+            </div>
+            <Link to="/programs" className="home-programs__more">
+              View all programs &rarr;
+            </Link>
+          </div>
           <div className="home-program-grid">
             {programs.map((p) => (
               <article className="home-program-card" key={p.path}>
@@ -124,9 +131,6 @@ function HomePage() {
               </article>
             ))}
           </div>
-          <Link to="/programs" className="home-more">
-            View all programs &rarr;
-          </Link>
         </div>
       </section>
 

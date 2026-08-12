@@ -247,16 +247,45 @@
 
 .home-programs {
   background: #fafcfe;
-  padding: 64px 0;
+  padding: 64px 24px;
 }
 
-.home-lead {
+.home-programs__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-programs__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.home-programs__intro h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #002a4e;
+  text-align: left;
+  margin: 0 0 20px;
+}
+
+.home-programs__intro p {
   font-size: 16px;
-  color: #4b4d50;
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto 32px;
+  color: #303336;
   line-height: 1.6;
+  margin: 0;
+  max-width: 600px;
+}
+
+.home-programs__more {
+  flex-shrink: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0089df;
 }
 
 .home-program-grid {
