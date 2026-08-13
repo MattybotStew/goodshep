@@ -302,6 +302,84 @@ a {
   overflow: visible;
 }
 
+.signup-band {
+  background: var(--ast-color-4);
+  border-top: 1px solid var(--ast-color-6);
+}
+
+.signup-band__inner {
+  max-width: var(--ast-container);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: end;
+  padding: 56px 40px;
+}
+
+.signup-band__copy h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: var(--ast-color-2);
+  margin-bottom: 8px;
+}
+
+.signup-band__copy p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ast-color-3);
+  margin: 0;
+}
+
+.signup-band__form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.signup-band__form label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ast-color-2);
+}
+
+.signup-band__row {
+  display: flex;
+  gap: 8px;
+}
+
+.signup-band__form input {
+  flex: 1;
+  min-width: 0;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 12px 14px;
+  border: 1px solid var(--ast-color-6);
+  border-radius: 8px;
+  background: var(--ast-color-5);
+  color: var(--ast-color-2);
+}
+
+.signup-band__btn {
+  flex-shrink: 0;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 18px 24px;
+  border: none;
+  border-radius: 8px;
+  background: var(--ast-color-0);
+  color: var(--ast-color-5);
+  cursor: pointer;
+}
+
+.signup-band__btn:hover {
+  background: var(--ast-color-1);
+}
+
 /* Figma footer 9046:1259 — 4 columns + bottom bar, hero background */
 .footer {
   background: var(--hero-bg);
@@ -431,7 +509,8 @@ a {
 @media (max-width: 921px) {
   .header__inner,
   .footer__inner,
-  .footer__bottom-inner {
+  .footer__bottom-inner,
+  .signup-band__inner {
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -496,16 +575,30 @@ a {
     padding: 10px 16px;
   }
 
-  .footer__inner {
+  .footer__inner,
+  .signup-band__inner {
     grid-template-columns: 1fr 1fr;
     gap: 32px;
   }
 }
 
 @media (max-width: 544px) {
+  .signup-band__inner,
   .footer__inner {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .signup-band__form {
+    align-items: stretch;
+  }
+
+  .signup-band__form label {
+    text-align: left;
+  }
+
+  .signup-band__row {
+    flex-direction: column;
   }
 
   .footer__brand,

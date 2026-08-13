@@ -213,6 +213,33 @@ function Layout() {
         <Outlet />
       </main>
 
+      <section className="signup-band" aria-labelledby="signup-band-heading">
+        <div className="signup-band__inner">
+          <div className="signup-band__copy">
+            <h2 id="signup-band-heading">Newsletter</h2>
+            <p>Sign up for updates and stories from GSM.</p>
+          </div>
+          <form
+            className="signup-band__form"
+            onSubmit={(event) => event.preventDefault()}
+          >
+            <label htmlFor="signup-email">Email address</label>
+            <div className="signup-band__row">
+              <input
+                id="signup-email"
+                type="email"
+                name="email"
+                autoComplete="email"
+                required
+              />
+              <button type="submit" className="signup-band__btn">
+                Sign Up
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
       <footer className="footer">
         <div className="footer__inner">
           <div className="footer__brand">
