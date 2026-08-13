@@ -1,13 +1,8 @@
 import { Link } from "react-router-dom";
 import { programs, stories } from "../data/site";
 import ImpactSection from "../components/ImpactSection";
-import getInvolvedPhoto from "../assets/get-involved.png";
-import storyOnePhoto from "../assets/home-stories/story-1.png";
-import storyTwoPhoto from "../assets/home-stories/story-2.png";
 import readMoreArrow from "../assets/home-stories/read-more-arrow.svg";
 import "./HomePage.css";
-
-const storyPhotos = [storyOnePhoto, storyTwoPhoto];
 
 const partnerLogos = [
   "Brothers of the Good Shepherd",
@@ -151,11 +146,7 @@ function HomePage() {
       <section className="home-involved" aria-label="Get Involved">
         <div className="home-involved__card">
           <div className="home-involved__media">
-            <img
-              className="home-involved__photo"
-              src={getInvolvedPhoto}
-              alt="Two smiling volunteers in Volunteer t-shirts holding donation boxes of medicine and food"
-            />
+            <div className="home-involved__photo" aria-hidden="true" />
           </div>
           <div className="home-involved__body">
             <p className="home-involved__label">Get Involved</p>
@@ -194,11 +185,7 @@ function HomePage() {
                 key={story.path}
               >
                 <div className="home-stories__card-inner">
-                  <img
-                    className="home-stories__photo"
-                    src={storyPhotos[index]}
-                    alt=""
-                  />
+                  <div className="home-stories__photo" aria-hidden="true" />
                   <div className="home-stories__copy">
                     <h3>{story.title}</h3>
                     <p>{story.excerpt}</p>
