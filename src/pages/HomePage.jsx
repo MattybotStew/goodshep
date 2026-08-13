@@ -1,8 +1,22 @@
 import { Link } from "react-router-dom";
-import { newsItems, programs } from "../data/site";
+import { programs, stories } from "../data/site";
 import ImpactSection from "../components/ImpactSection";
 import getInvolvedPhoto from "../assets/get-involved.png";
+import storyOnePhoto from "../assets/home-stories/story-1.png";
+import storyTwoPhoto from "../assets/home-stories/story-2.png";
+import readMoreArrow from "../assets/home-stories/read-more-arrow.svg";
 import "./HomePage.css";
+
+const storyPhotos = [storyOnePhoto, storyTwoPhoto];
+
+const partnerLogos = [
+  "Brothers of the Good Shepherd",
+  "Special Olympics",
+  "IDHS",
+  "Community Partners",
+  "Local Health Network",
+  "GSM Foundation",
+];
 
 function HomePage() {
   return (
@@ -163,44 +177,56 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="home-news">
-        <div className="home-wrap home-news__grid">
-          <div>
-            <h2>What&rsquo;s Happening at GSM</h2>
-            <div className="home-feed">
-              {newsItems.map((item) => (
-                <article className="home-feed-item" key={item.title}>
-                  <div className="home-feed-item__thumb" aria-hidden="true" />
-                  <div>
-                    <span className="home-feed-item__meta">
-                      {item.date} &middot; {item.tag}
-                    </span>
-                    <h3>{item.title}</h3>
-                    <p>{item.excerpt}</p>
+      <section className="home-stories" aria-label="Stories and partners">
+        <div className="home-stories__inner">
+          <header className="home-stories__header">
+            <h2>Inspiring tales of transformation</h2>
+            <p>
+              Get inspired by the remarkable stories of transformation through
+              Good Shepherd Manor. Join us in making a positive impact today.
+            </p>
+          </header>
+
+          <div className="home-stories__cards">
+            {stories.map((story, index) => (
+              <article
+                className={`home-stories__card${index === 0 ? " home-stories__card--left" : " home-stories__card--right"}`}
+                key={story.path}
+              >
+                <div className="home-stories__card-inner">
+                  <img
+                    className="home-stories__photo"
+                    src={storyPhotos[index]}
+                    alt=""
+                  />
+                  <div className="home-stories__copy">
+                    <h3>{story.title}</h3>
+                    <p>{story.excerpt}</p>
                   </div>
-                </article>
-              ))}
-            </div>
-            <Link to="/news" className="home-more home-more--left">
-              View all news &rarr;
-            </Link>
+                  <Link to={story.path} className="home-stories__link">
+                    Read More
+                    <img
+                      className="home-stories__link-icon"
+                      src={readMoreArrow}
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </Link>
+                </div>
+              </article>
+            ))}
           </div>
 
-          <div>
-            <h2>Upcoming Event</h2>
-            <div className="home-event">
-              <div className="home-event__img" aria-hidden="true" />
-              <div className="home-event__body">
-                <span className="home-event__date">October 2026</span>
-                <h3>35th Annual Fall Festival</h3>
-                <p>
-                  A family-friendly event supporting Good Shepherd Manor&rsquo;s
-                  mission by funding essential programs and services for the men
-                  we serve.
-                </p>
-                <Link to="/events#fall-festival">Event details &rarr;</Link>
-              </div>
-            </div>
+          <div className="home-stories__partners">
+            <p className="home-stories__partners-label">Our Partners</p>
+            <ul className="home-stories__partners-row">
+              {partnerLogos.map((name) => (
+                <li key={name}>
+                  <span className="home-stories__partner-logo" aria-hidden="true" />
+                  <span className="visually-hidden">{name}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
