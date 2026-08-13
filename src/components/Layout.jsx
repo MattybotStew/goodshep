@@ -1,16 +1,102 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useId, useRef, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
-import { HERO_HEADER_PATHS } from '../data/header'
+import { HERO_HEADER_PATHS, NAV_ITEMS, isChildActive, isNavItemActive } from '../data/header'
 import './Layout.css'
 
-const navLinks = [
-  { label: 'About', path: '/about' },
-  { label: 'Programs', path: '/programs' },
-  { label: 'Get Involved', path: '/support-gsm' },
-  { label: 'News', path: '/news' },
-  { label: 'Careers', path: '/careers' },
-  { label: 'Contact', path: '/contact' },
-]
+function HeaderNav() {
+  const location = useLocation()
+  const navId = useId()
+  const navRef = useRef(null)
+  const [openKey, setOpenKey] = useState(null)
+
+  useEffect(() => {
+    setOpenKey(null)
+  }, [location.pathname, location.hash])
+
+  useEffect(() => {
+    const onKey = (event) => {
+      if (event.key === 'Escape') setOpenKey(null)
+    }
+    const onPointer = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setOpenKey(null)
+      }
+    }
+    document.addEventListener('keydown', onKey)
+    document.addEventListener('pointerdown', onPointer)
+    return () => {
+      document.removeEventListener('keydown', onKey)
+      document.removeEventListener('pointerdown', onPointer)
+    }
+  }, [])
+
+  return (
+    <nav className="header__nav" ref={navRef} aria-label="Primary">
+      <ul className="header__nav-list">
+        {NAV_ITEMS.map((item) => {
+          const hasChildren = Boolean(item.children?.length)
+          const isOpen = openKey === item.path
+          const isActive = isNavItemActive(item, location)
+          const submenuId = `${navId}-${item.path.replace(/\W+/g, '-')}`
+
+          return (
+            <li
+              key={item.path}
+              className={[
+                'header__nav-item',
+                hasChildren ? 'header__nav-item--has-children' : '',
+                isOpen ? 'is-open' : '',
+              ].filter(Boolean).join(' ')}
+            >
+              <div className="header__nav-parent">
+                <NavLink
+                  to={item.path}
+                  end={item.path !== '/programs'}
+                  className={() =>
+                    isActive ? 'header__nav-link is-active' : 'header__nav-link'
+                  }
+                >
+                  {item.label}
+                </NavLink>
+                {hasChildren && (
+                  <button
+                    type="button"
+                    className="header__nav-toggle"
+                    aria-expanded={isOpen}
+                    aria-controls={submenuId}
+                    aria-label={`${item.label} submenu`}
+                    onClick={() => setOpenKey(isOpen ? null : item.path)}
+                  >
+                    <span className="header__nav-caret" aria-hidden="true" />
+                  </button>
+                )}
+              </div>
+              {hasChildren && (
+                <ul className="header__dropdown" id={submenuId}>
+                  {item.children.map((child) => (
+                    <li key={child.path}>
+                      <NavLink
+                        to={child.path}
+                        end
+                        className={() =>
+                          isChildActive(child.path, location)
+                            ? 'header__dropdown-link is-active'
+                            : 'header__dropdown-link'
+                        }
+                      >
+                        {child.label}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          )
+        })}
+      </ul>
+    </nav>
+  )
+}
 
 function Layout() {
   const [hiringDismissed, setHiringDismissed] = useState(false)
@@ -91,19 +177,7 @@ function Layout() {
             <span className="header__logo-mark" aria-hidden="true" />
             <span className="header__logo-text">Good Shepherd Manor</span>
           </Link>
-          <nav className="header__nav">
-            {navLinks.map((link) => (
-              <NavLink
-                key={link.path}
-                to={link.path}
-                className={({ isActive }) =>
-                  isActive ? 'header__nav-link is-active' : 'header__nav-link'
-                }
-              >
-                {link.label}
-              </NavLink>
-            ))}
-          </nav>
+          <HeaderNav />
           <Link to="/ways-to-give" className="header__donate">
             Donate
           </Link>
