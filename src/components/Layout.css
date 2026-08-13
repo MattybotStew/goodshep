@@ -385,6 +385,7 @@ a {
   background: var(--hero-bg);
   color: var(--ast-color-6);
   border-top: 1px solid rgba(255, 255, 255, 0.16);
+  font-variation-settings: "opsz" 14;
 }
 
 .footer__inner {
@@ -430,14 +431,14 @@ a {
   margin-top: 20px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 25.6px;
   color: var(--ast-color-6);
 }
 
 .footer__heading {
   font-size: 22px;
   font-weight: 600;
-  line-height: 1.6;
+  line-height: 35.2px;
   color: var(--ast-color-5);
 }
 
@@ -452,7 +453,7 @@ a {
 .footer__contact {
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 25.6px;
   color: var(--ast-color-6);
 }
 
@@ -478,7 +479,8 @@ a {
 
 .footer__copy {
   font-size: 16px;
-  line-height: 1.6;
+  font-weight: 400;
+  line-height: 25.6px;
   color: var(--ast-color-5);
 }
 
