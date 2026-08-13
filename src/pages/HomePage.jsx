@@ -4,15 +4,6 @@ import ImpactSection from "../components/ImpactSection";
 import readMoreArrow from "../assets/home-stories/read-more-arrow.svg";
 import "./HomePage.css";
 
-const partnerLogos = [
-  "Brothers of the Good Shepherd",
-  "Special Olympics",
-  "IDHS",
-  "Community Partners",
-  "Local Health Network",
-  "GSM Foundation",
-];
-
 function HomePage() {
   return (
     <div className="home">
@@ -168,7 +159,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="home-stories" aria-label="Stories and partners">
+      <section className="home-stories" aria-label="Stories">
         <div className="home-stories__inner">
           <header className="home-stories__header">
             <h2>Inspiring tales of transformation</h2>
@@ -202,18 +193,6 @@ function HomePage() {
                 </div>
               </article>
             ))}
-          </div>
-
-          <div className="home-stories__partners">
-            <p className="home-stories__partners-label">Our Partners</p>
-            <ul className="home-stories__partners-row">
-              {partnerLogos.map((name) => (
-                <li key={name}>
-                  <span className="home-stories__partner-logo" aria-hidden="true" />
-                  <span className="visually-hidden">{name}</span>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       </section>

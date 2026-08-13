@@ -454,46 +454,6 @@
   height: 18px;
 }
 
-.home-stories__partners {
-  padding-top: 60px;
-}
-
-.home-stories__partners-label {
-  margin: 0 0 40px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--ast-color-2);
-}
-
-.home-stories__partners-row {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 0;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.home-stories__partners-row li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 66px;
-  padding: 12px 24px;
-}
-
-.home-stories__partner-logo {
-  display: block;
-  width: 104px;
-  height: 40px;
-  border-radius: 4px;
-  background: linear-gradient(180deg, #c8d4e0 0%, #a8bdd0 100%);
-  opacity: 0.85;
-}
-
 .home-impact {
   background: linear-gradient(180deg, #f1f5f9 88%, #fafcfe 100%);
   padding: 48px 24px;
@@ -755,10 +715,6 @@
     padding-top: 32px;
   }
 
-  .home-stories__partners-row {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .home-involved__media {
     padding-right: 0;
   }
@@ -798,10 +754,6 @@
   .home-intro__card,
   .home-program-grid {
     grid-template-columns: 1fr;
-  }
-
-  .home-stories__partners-row {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .home-stories__card {
