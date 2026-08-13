@@ -180,7 +180,7 @@
 
 .program-subnav {
   position: sticky;
-  top: 0;
+  top: 72px; /* offset below sticky header */
   z-index: 90;
   background: var(--ast-color-5);
   border-bottom: 1px solid var(--ast-color-6);
@@ -217,7 +217,7 @@
   margin: 0 auto;
   padding: 72px 40px;
   border-bottom: 1px solid var(--ast-color-6);
-  scroll-margin-top: 80px;
+  scroll-margin-top: 140px;
 }
 
 .section-block--reverse {

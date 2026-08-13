@@ -723,6 +723,66 @@
   .home-news__grid {
     grid-template-columns: 1fr;
   }
+
+  /* Impact section responsive */
+  .home-impact__header {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .home-impact__col h2 {
+    font-size: 36px;
+  }
+
+  .home-impact__stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .home-impact__stat {
+    border-right: none;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #c8d4e0;
+  }
+
+  .home-impact__stat:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+
+  .home-impact__cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .home-impact__cta-content h3 {
+    font-size: 28px;
+  }
+
+  .home-impact__cta-content p {
+    font-size: 16px;
+  }
+
+  /* Programs header wraps */
+  .home-programs__header {
+    flex-wrap: wrap;
+  }
+
+  .home-programs__intro h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-hero h1 {
+    font-size: 36px;
+  }
+
+  /* Impact header's fixed 550px column overflows at tablet sizes */
+  .home-impact__header {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }
 
 @media (max-width: 600px) {

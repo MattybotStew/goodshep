@@ -140,7 +140,7 @@ a {
   font-size: 16px;
   font-weight: 700;
   color: var(--ast-color-2);
-  padding: 8px 0;
+  padding: 12px 0;
 }
 
 .header__nav-link:hover,
@@ -162,6 +162,86 @@ a {
 
 .header__donate:hover {
   background: var(--ast-color-1);
+}
+
+/* Mobile-only donate inside the nav drawer — hidden on desktop */
+.header__donate--mobile {
+  display: none;
+}
+
+/* Hamburger toggle — hidden on desktop */
+.header__menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.header__menu-icon,
+.header__menu-icon::before,
+.header__menu-icon::after {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--ast-color-2);
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.header__menu-icon {
+  position: relative;
+}
+
+.header__menu-icon::before,
+.header__menu-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 24px;
+}
+
+.header__menu-icon::before {
+  top: -7px;
+}
+
+.header__menu-icon::after {
+  top: 7px;
+}
+
+/* Hamburger → X animation */
+.header__menu-toggle.is-open .header__menu-icon {
+  background: transparent;
+}
+
+.header__menu-toggle.is-open .header__menu-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.header__menu-toggle.is-open .header__menu-icon::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* Hero header: transparent icon bars */
+.layout--hero-header .header:not(.is-solid) .header__menu-icon,
+.layout--hero-header .header:not(.is-solid) .header__menu-icon::before,
+.layout--hero-header .header:not(.is-solid) .header__menu-icon::after {
+  background: var(--ast-color-5);
+}
+
+.layout--hero-header .header:not(.is-solid) .header__menu-toggle.is-open .header__menu-icon {
+  background: transparent;
+}
+
+.layout--hero-header .header:not(.is-solid) .header__menu-toggle.is-open .header__menu-icon::before,
+.layout--hero-header .header:not(.is-solid) .header__menu-toggle.is-open .header__menu-icon::after {
+  background: var(--ast-color-5);
 }
 
 /* Hero header: sit on the hero with no gap under the alert.
@@ -248,6 +328,13 @@ a {
   gap: 8px;
 }
 
+.footer__links a {
+  display: inline-block;
+  padding: 4px 0;
+  min-height: 44px;
+  line-height: 36px;
+}
+
 .footer__links a:hover,
 .footer__social:hover,
 .footer__utility a:hover {
@@ -296,6 +383,10 @@ a {
 .footer__utility a {
   font-size: 13px;
   color: #6a8aaa;
+  display: inline-block;
+  padding: 6px 0;
+  min-height: 44px;
+  line-height: 32px;
 }
 
 .footer__bottom {
@@ -321,13 +412,75 @@ a {
     flex-wrap: wrap;
   }
 
+  /* Show hamburger */
+  .header__menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Hide desktop donate */
+  .header__donate--desktop {
+    display: none;
+  }
+
+  /* Mobile nav drawer — hidden by default, slides in from right */
   .header__nav {
-    order: 3;
-    flex-basis: 100%;
-    gap: 16px;
-    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(320px, 85vw);
+    height: 100vh;
+    height: 100dvh;
+    background: var(--ast-color-5);
+    flex-direction: column;
+    align-items: stretch;
     justify-content: flex-start;
-    padding-top: 8px;
+    gap: 0;
+    padding: 80px 24px 32px;
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.12);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 200;
+    overflow-y: auto;
+    flex: none;
+  }
+
+  .header__nav.is-open {
+    transform: translateX(0);
+  }
+
+  .header__nav-link {
+    padding: 14px 0;
+    font-size: 18px;
+    border-bottom: 1px solid var(--ast-color-6);
+  }
+
+  .header__nav-link:last-of-type {
+    border-bottom: none;
+  }
+
+  /* Show mobile donate inside drawer */
+  .header__donate--mobile {
+    display: inline-block;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  /* Hamburger z-index above drawer */
+  .header__menu-toggle {
+    z-index: 210;
+    position: relative;
+  }
+
+  /* Backdrop when open */
+  .header__nav.is-open::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    right: min(320px, 85vw);
+    background: rgba(0, 20, 36, 0.4);
+    z-index: -1;
   }
 
   .footer__inner {

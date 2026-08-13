@@ -126,6 +126,10 @@
   font-size: 16px;
   font-weight: 700;
   color: var(--ast-color-0);
+  min-height: 44px;
+  line-height: 44px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .text-link:hover {
@@ -458,8 +462,7 @@
   .impact__grid,
   .story-grid,
   .work-grid,
-  .form-grid,
-  .list-row {
+  .form-grid {
     grid-template-columns: 1fr;
   }
 
@@ -469,5 +472,15 @@
 
   .cta-band {
     padding: 64px 24px;
+  }
+
+  /* list-row: keep meta + title on one row, action link wraps below */
+  .list-row {
+    grid-template-columns: 100px 1fr;
+    gap: 12px;
+  }
+
+  .list-row > :last-child {
+    grid-column: 1 / -1;
   }
 }

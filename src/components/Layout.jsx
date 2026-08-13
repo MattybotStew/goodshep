@@ -15,10 +15,22 @@ const navLinks = [
 function Layout() {
   const [hiringDismissed, setHiringDismissed] = useState(false)
   const [headerSolid, setHeaderSolid] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const headerRef = useRef(null)
   const layoutRef = useRef(null)
   const location = useLocation()
   const heroHeader = HERO_HEADER_PATHS.includes(location.pathname)
+
+  /* Close mobile menu on route change */
+  useEffect(() => {
+    setMobileMenuOpen(false)
+  }, [location.pathname])
+
+  /* Lock body scroll when mobile menu is open */
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [mobileMenuOpen])
 
   useEffect(() => {
     if (location.hash) {
@@ -91,7 +103,19 @@ function Layout() {
             <span className="header__logo-mark" aria-hidden="true" />
             <span className="header__logo-text">Good Shepherd Manor</span>
           </Link>
-          <nav className="header__nav">
+          <button
+            className={`header__menu-toggle ${mobileMenuOpen ? 'is-open' : ''}`}
+            onClick={() => setMobileMenuOpen((v) => !v)}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="main-nav"
+            aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+          >
+            <span className="header__menu-icon" aria-hidden="true" />
+          </button>
+          <nav
+            id="main-nav"
+            className={`header__nav ${mobileMenuOpen ? 'is-open' : ''}`}
+          >
             {navLinks.map((link) => (
               <NavLink
                 key={link.path}
@@ -103,8 +127,11 @@ function Layout() {
                 {link.label}
               </NavLink>
             ))}
+            <Link to="/ways-to-give" className="header__donate header__donate--mobile">
+              Donate
+            </Link>
           </nav>
-          <Link to="/ways-to-give" className="header__donate">
+          <Link to="/ways-to-give" className="header__donate header__donate--desktop">
             Donate
           </Link>
         </div>
