@@ -1,7 +1,32 @@
 import { useEffect, useId, useRef, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import { HERO_HEADER_PATHS, NAV_ITEMS, isChildActive, isNavItemActive } from '../data/header'
+import facebookIcon from '../assets/footer/facebook.svg'
+import twitterIcon from '../assets/footer/twitter.svg'
+import instagramIcon from '../assets/footer/instagram.svg'
+import youtubeIcon from '../assets/footer/youtube.svg'
 import './Layout.css'
+
+const FOOTER_ABOUT = [
+  { label: 'Our History', path: '/about#history' },
+  { label: 'Mission, Vision & Values', path: '/about#mission' },
+  { label: 'Our Programs', path: '/programs' },
+  { label: 'Affiliations', path: '/about#affiliations' },
+]
+
+const FOOTER_GIVE = [
+  { label: 'Ways to Give', path: '/ways-to-give' },
+  { label: 'GSM Foundation', path: '/support-gsm' },
+  { label: 'Shepherd Endowment Society', path: '/shepherd-endowment-society' },
+  { label: 'Events', path: '/events' },
+]
+
+const FOOTER_SOCIALS = [
+  { name: 'Facebook', href: 'https://www.facebook.com', icon: facebookIcon },
+  { name: 'Twitter', icon: twitterIcon },
+  { name: 'Instagram', icon: instagramIcon },
+  { name: 'YouTube', icon: youtubeIcon },
+]
 
 function HeaderNav() {
   const location = useLocation()
@@ -190,53 +215,88 @@ function Layout() {
 
       <footer className="footer">
         <div className="footer__inner">
-          <div className="footer__col">
-            <h3 className="footer__heading">Good Shepherd Manor</h3>
+          <div className="footer__brand">
+            <Link to="/" className="footer__logo">
+              <span className="footer__logo-mark" aria-hidden="true" />
+              <span className="footer__logo-text">Good Shepherd Manor</span>
+            </Link>
+            <p className="footer__tagline">
+              A community of care, growth, and dignity for over 50 years.
+            </p>
+          </div>
+
+          <nav className="footer__nav" aria-label="About">
+            <h3 className="footer__heading">About Us</h3>
+            <ul className="footer__links">
+              {FOOTER_ABOUT.map((item) => (
+                <li key={item.path}>
+                  <Link to={item.path}>{item.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <nav className="footer__nav" aria-label="Ways to give">
+            <h3 className="footer__heading">Ways To Give</h3>
+            <ul className="footer__links">
+              {FOOTER_GIVE.map((item) => (
+                <li key={item.path}>
+                  <Link to={item.path}>{item.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="footer__contact-col">
+            <h3 className="footer__heading">Contact Info</h3>
             <p className="footer__contact">(815) 472-3700</p>
             <p className="footer__contact">P.O. Box 260</p>
             <p className="footer__contact">4129 N. State Route 1-17</p>
             <p className="footer__contact">Momence, IL 60954</p>
           </div>
+        </div>
 
-          <div className="footer__col">
-            <h3 className="footer__heading">Quick Links</h3>
-            <ul className="footer__links">
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/programs">Programs</Link></li>
-              <li><Link to="/support-gsm">Support GSM</Link></li>
-              <li><Link to="/news">News</Link></li>
-              <li><Link to="/careers">Careers</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+        <div className="footer__bottom">
+          <div className="footer__bottom-inner">
+            <p className="footer__copy">
+              &copy; 2026 The Good Shepherd Manor. All rights reserved.{' '}
+              <Link to="/privacy">Privacy Policy</Link>
+              {' · '}
+              <Link to="/about#accessibility">Accessibility Statement</Link>
+            </p>
+            <ul className="footer__socials">
+              {FOOTER_SOCIALS.map((item) => (
+                <li key={item.name}>
+                  {item.href ? (
+                    <a
+                      href={item.href}
+                      className="footer__social"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={item.icon}
+                        alt={item.name}
+                        width={18}
+                        height={18}
+                        className="footer__social-icon"
+                      />
+                    </a>
+                  ) : (
+                    <span className="footer__social" aria-hidden="true">
+                      <img
+                        src={item.icon}
+                        alt=""
+                        width={18}
+                        height={18}
+                        className="footer__social-icon"
+                      />
+                    </span>
+                  )}
+                </li>
+              ))}
             </ul>
           </div>
-
-          <div className="footer__col">
-            <h3 className="footer__heading">Newsletter</h3>
-            <p className="footer__newsletter-text">Sign up for updates and stories from GSM.</p>
-            <form className="footer__newsletter" onSubmit={(e) => e.preventDefault()}>
-              <label htmlFor="footer-email" className="visually-hidden">Email address</label>
-              <input
-                id="footer-email"
-                type="email"
-                name="email"
-                placeholder="Email address"
-                className="footer__newsletter-input"
-                autoComplete="email"
-              />
-              <button type="submit" className="footer__newsletter-btn">Sign Up</button>
-            </form>
-            <a href="https://www.facebook.com" className="footer__social" target="_blank" rel="noreferrer">
-              Facebook
-            </a>
-            <div className="footer__utility">
-              <Link to="/privacy">Privacy Policy</Link>
-              <Link to="/about#accessibility">Accessibility Statement</Link>
-              <Link to="/sitemap">Sitemap (prototype)</Link>
-            </div>
-          </div>
-        </div>
-        <div className="footer__bottom">
-          <p>&copy; 2026 The Good Shepherd Manor. All rights reserved.</p>
         </div>
       </footer>
     </div>

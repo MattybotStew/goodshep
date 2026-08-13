@@ -302,116 +302,136 @@ a {
   overflow: visible;
 }
 
-/* Figma homepage footer: navy, 3 columns */
+/* Figma footer 9046:1259 — 4 columns + bottom bar, hero background */
 .footer {
-  background: #002a4e;
-  color: #c8d4e0;
-  border-top: none;
+  background: var(--hero-bg);
+  color: var(--ast-color-6);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .footer__inner {
-  max-width: 1200px;
+  max-width: var(--ast-container);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1.3fr;
-  gap: 40px;
-  padding: 48px 24px 32px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 50px;
+  padding: 45px 40px 28px;
 }
 
-.footer__col {
+.footer__brand,
+.footer__nav,
+.footer__contact-col {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  align-items: flex-start;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__logo-mark {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--ast-color-5);
+}
+
+.footer__logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.25px;
+  color: var(--ast-color-5);
+}
+
+.footer__tagline {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--ast-color-6);
 }
 
 .footer__heading {
-  font-size: 16px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 8px;
-}
-
-.footer__contact,
-.footer__links a,
-.footer__newsletter-text,
-.footer__social {
-  font-size: 14px;
-  color: #a8bdd0;
+  font-size: 22px;
+  font-weight: 600;
   line-height: 1.6;
+  color: var(--ast-color-5);
 }
 
 .footer__links {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  margin-top: 20px;
+}
+
+.footer__links a,
+.footer__contact {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--ast-color-6);
 }
 
 .footer__links a:hover,
-.footer__social:hover,
-.footer__utility a:hover {
-  color: #ffffff;
-}
-
-.footer__newsletter {
-  display: flex;
-  gap: 8px;
-  margin: 8px 0 12px;
-}
-
-.footer__newsletter-input {
-  flex: 1;
-  padding: 8px 12px;
-  border: 1px solid #3a5a7a;
-  border-radius: 4px;
-  background: #012345;
-  color: #ffffff;
-  font-size: 14px;
-  font-family: inherit;
-}
-
-.footer__newsletter-btn {
-  background: var(--ast-color-0);
+.footer__copy a:hover {
   color: var(--ast-color-5);
-  border: none;
-  padding: 12px 16px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  font-family: inherit;
-}
-
-.footer__newsletter-btn:hover {
-  background: var(--ast-color-1);
-}
-
-.footer__utility {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.footer__utility a {
-  font-size: 13px;
-  color: #6a8aaa;
 }
 
 .footer__bottom {
-  border-top: 1px solid #012345;
-  padding: 16px 24px;
-  text-align: center;
+  border-top: 1px solid rgba(200, 212, 224, 0.35);
 }
 
-.footer__bottom p {
-  font-size: 13px;
-  color: #6a8aaa;
+.footer__bottom-inner {
+  max-width: var(--ast-container);
+  min-height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 40px;
+}
+
+.footer__copy {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ast-color-5);
+}
+
+.footer__copy a {
+  color: var(--ast-color-6);
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin-left: auto;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
 }
 
 @media (max-width: 921px) {
   .header__inner,
   .footer__inner,
-  .footer__bottom {
+  .footer__bottom-inner {
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -477,7 +497,8 @@ a {
   }
 
   .footer__inner {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
   }
 }
 
@@ -487,7 +508,18 @@ a {
     text-align: center;
   }
 
-  .footer__newsletter {
+  .footer__brand,
+  .footer__nav,
+  .footer__contact-col {
+    align-items: center;
+  }
+
+  .footer__bottom-inner {
     flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__socials {
+    margin-left: 0;
   }
 }
