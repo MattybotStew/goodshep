@@ -11,4 +11,11 @@
   --ast-color-7: #000000;
   --ast-container: 1200px;
   --ast-font: 'DM Sans', sans-serif;
+  --hero-bg:
+    linear-gradient(
+      180deg,
+      rgba(0, 20, 36, 0.45) 0%,
+      rgba(0, 20, 36, 0.62) 100%
+    ),
+    linear-gradient(135deg, #1a3348 0%, #2c4a63 40%, #0d1c28 100%);
 }
