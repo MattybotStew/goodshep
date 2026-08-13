@@ -2,6 +2,12 @@
 
 A new **Vite + React** frontend project.
 
+## Shareable preview
+
+https://mattybotstew.github.io/goodshep/
+
+GitHub Pages builds from `main`. First time only: **Settings → Pages → Source → GitHub Actions**, then re-run the **GitHub Pages** workflow (or push to `main`).
+
 ## Getting started
 
 ```bash
