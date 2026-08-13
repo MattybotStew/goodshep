@@ -28,16 +28,18 @@ const FOOTER_SOCIALS = [
   { name: 'YouTube', icon: youtubeIcon },
 ]
 
-function HeaderNav() {
+function HeaderNav({ mobileOpen, onClose }) {
   const location = useLocation()
   const navId = useId()
   const navRef = useRef(null)
   const [openKey, setOpenKey] = useState(null)
 
+  /* Close desktop dropdowns on route change */
   useEffect(() => {
     setOpenKey(null)
   }, [location.pathname, location.hash])
 
+  /* Close desktop dropdowns on outside click / Escape */
   useEffect(() => {
     const onKey = (event) => {
       if (event.key === 'Escape') setOpenKey(null)
@@ -56,7 +58,25 @@ function HeaderNav() {
   }, [])
 
   return (
-    <nav className="header__nav" ref={navRef} aria-label="Primary">
+    <nav
+      id="main-nav"
+      className={`header__nav${mobileOpen ? ' is-open' : ''}`}
+      ref={navRef}
+      aria-label="Primary"
+    >
+      {/* Mobile drawer header */}
+      <div className="header__drawer-head">
+        <span className="header__drawer-title">Menu</span>
+        <button
+          type="button"
+          className="header__drawer-close"
+          onClick={onClose}
+          aria-label="Close menu"
+        >
+          &times;
+        </button>
+      </div>
+
       <ul className="header__nav-list">
         {NAV_ITEMS.map((item) => {
           const hasChildren = Boolean(item.children?.length)
@@ -80,6 +100,7 @@ function HeaderNav() {
                   className={() =>
                     isActive ? 'header__nav-link is-active' : 'header__nav-link'
                   }
+                  onClick={onClose}
                 >
                   {item.label}
                 </NavLink>
@@ -108,6 +129,7 @@ function HeaderNav() {
                             ? 'header__dropdown-link is-active'
                             : 'header__dropdown-link'
                         }
+                        onClick={onClose}
                       >
                         {child.label}
                       </NavLink>
@@ -119,6 +141,13 @@ function HeaderNav() {
           )
         })}
       </ul>
+      <Link
+        to="/ways-to-give"
+        className="header__donate header__donate--drawer"
+        onClick={onClose}
+      >
+        Donate
+      </Link>
     </nav>
   )
 }
@@ -126,10 +155,34 @@ function HeaderNav() {
 function Layout() {
   const [hiringDismissed, setHiringDismissed] = useState(false)
   const [headerSolid, setHeaderSolid] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const headerRef = useRef(null)
   const layoutRef = useRef(null)
   const location = useLocation()
   const heroHeader = HERO_HEADER_PATHS.includes(location.pathname)
+
+  /* Close the mobile drawer on route change */
+  useEffect(() => {
+    setMobileMenuOpen(false)
+  }, [location.pathname, location.hash])
+
+  /* Lock body scroll while the mobile drawer is open */
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? 'hidden' : ''
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [mobileMenuOpen])
+
+  /* Close the mobile drawer on Escape */
+  useEffect(() => {
+    if (!mobileMenuOpen) return
+    const onKey = (event) => {
+      if (event.key === 'Escape') setMobileMenuOpen(false)
+    }
+    document.addEventListener('keydown', onKey)
+    return () => document.removeEventListener('keydown', onKey)
+  }, [mobileMenuOpen])
 
   useEffect(() => {
     if (location.hash) {
@@ -202,11 +255,36 @@ function Layout() {
             <span className="header__logo-mark" aria-hidden="true" />
             <span className="header__logo-text">Good Shepherd Manor</span>
           </Link>
-          <HeaderNav />
+          <HeaderNav
+            mobileOpen={mobileMenuOpen}
+            onClose={() => setMobileMenuOpen(false)}
+          />
           <Link to="/ways-to-give" className="header__donate">
             Donate
           </Link>
+          <button
+            type="button"
+            className={`header__menu-toggle${mobileMenuOpen ? ' is-open' : ''}`}
+            onClick={() => setMobileMenuOpen((open) => !open)}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="main-nav"
+            aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+          >
+            <span className="header__menu-icon" aria-hidden="true" />
+          </button>
         </div>
+        {/* Scrim sits inside <header> so it shares the header's stacking
+            context (z-index 100) — above all normal-flow page content —
+            while the drawer (z-index 200 within the same context) stays on top. */}
+        {mobileMenuOpen && (
+          <button
+            type="button"
+            className="header__scrim"
+            onClick={() => setMobileMenuOpen(false)}
+            aria-label="Close menu"
+            tabIndex={-1}
+          />
+        )}
       </header>
 
       <main className="layout__main">
