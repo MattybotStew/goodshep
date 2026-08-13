@@ -420,8 +420,10 @@
   display: block;
   width: 100%;
   aspect-ratio: 486 / 299;
-  object-fit: cover;
   border-radius: 16px;
+  background:
+    linear-gradient(160deg, rgba(0, 42, 78, 0.12), rgba(0, 137, 223, 0.22)),
+    #c8d4e0;
 }
 
 .home-stories__copy h3 {
@@ -649,8 +651,10 @@
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
   border-radius: 16px;
+  background:
+    linear-gradient(160deg, rgba(0, 42, 78, 0.12), rgba(0, 137, 223, 0.22)),
+    #c8d4e0;
   box-shadow: 0 24px 64px -24px rgba(44, 58, 4, 0.4);
 }
 
