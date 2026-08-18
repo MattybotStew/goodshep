@@ -105,6 +105,21 @@ function HomePage() {
         </div>
       </section>
 
+      <section className="home-donate-band" aria-label="Donate">
+        <div className="home-donate-band__inner">
+          <div className="home-donate-band__copy">
+            <h2>We can create a better tomorrow</h2>
+            <p>
+              Every dollar counts and helps us bring hope and essential resources to
+              those in need.
+            </p>
+          </div>
+          <Link to="/ways-to-give" className="home-donate-band__btn">
+            Donate Now
+          </Link>
+        </div>
+      </section>
+
       <section className="home-programs">
         <div className="home-programs__container">
           <div className="home-programs__header">
@@ -130,31 +145,6 @@ function HomePage() {
                 </Link>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="home-involved" aria-label="Get Involved">
-        <div className="home-involved__card">
-          <div className="home-involved__media">
-            <div className="home-involved__photo" aria-hidden="true" />
-          </div>
-          <div className="home-involved__body">
-            <p className="home-involved__label">Get Involved</p>
-            <h2>Join our movement for change</h2>
-            <p>
-              Join our non-profit organisation and be a part of our movement
-              for positive change. We empower communities, support vulnerable
-              individuals and strive towards building an equitable society.
-              Together, we can create a better world. Join us now!
-            </p>
-            <p>
-              Become part of a transformative movement by supporting our
-              non-profit organization. Together we can make lasting change.
-            </p>
-            <Link to="/support-gsm" className="home-involved__btn">
-              Register Now
-            </Link>
           </div>
         </div>
       </section>

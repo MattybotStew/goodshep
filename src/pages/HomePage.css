@@ -150,8 +150,16 @@
   color: #0089df;
 }
 
+.home-impact,
 .home-mission {
   background: #f1f5f9;
+}
+
+.home-impact {
+  padding: 48px 24px;
+}
+
+.home-mission {
   padding: 40px 24px 96px;
 }
 
@@ -454,11 +462,6 @@
   height: 18px;
 }
 
-.home-impact {
-  background: linear-gradient(180deg, #f1f5f9 88%, #fafcfe 100%);
-  padding: 48px 24px;
-}
-
 .home-impact__container {
   max-width: 1200px;
   margin: 0 auto;
@@ -534,7 +537,14 @@
   margin: 0;
 }
 
-.home-impact__cta {
+.home-donate-band {
+  background: #fafcfe;
+  padding: 48px 24px;
+}
+
+.home-donate-band__inner {
+  max-width: 1200px;
+  margin: 0 auto;
   background: #0089df;
   border-radius: 16px;
   padding: 32px;
@@ -544,11 +554,11 @@
   justify-content: space-between;
 }
 
-.home-impact__cta-content {
+.home-donate-band__copy {
   flex: 1;
 }
 
-.home-impact__cta-content h3 {
+.home-donate-band__copy h2 {
   font-size: 40px;
   font-weight: 600;
   line-height: 1.3;
@@ -556,9 +566,10 @@
   color: #ffffff;
   margin: 0 0 8px;
   max-width: 500px;
+  text-align: left;
 }
 
-.home-impact__cta-content p {
+.home-donate-band__copy p {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.6;
@@ -567,7 +578,7 @@
   max-width: 400px;
 }
 
-.home-impact__btn {
+.home-donate-band__btn {
   padding: 16px 32px;
   font-size: 18px;
   font-weight: 700;
@@ -579,86 +590,7 @@
   flex-shrink: 0;
 }
 
-.home-impact__btn:hover {
-  background: #f0f0f0;
-}
-
-.home-involved {
-  background: #f1f5f9;
-  padding: 80px 24px;
-}
-
-.home-involved__card {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding-bottom: 100px;
-}
-
-.home-involved__media {
-  padding-right: 40px;
-}
-
-.home-involved__photo {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: 16px;
-  background:
-    linear-gradient(160deg, rgba(0, 42, 78, 0.12), rgba(0, 137, 223, 0.22)),
-    #c8d4e0;
-  box-shadow: 0 24px 64px -24px rgba(44, 58, 4, 0.4);
-}
-
-.home-involved__body {
-  padding: 43px 0 0 40px;
-}
-
-.home-involved__label {
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #002a4e;
-  margin: 0 0 16px;
-}
-
-.home-involved__body h2 {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -1px;
-  color: #002a4e;
-  text-align: left;
-  margin: 0 0 24px;
-}
-
-.home-involved__body p {
-  font-size: 16px;
-  color: #303336;
-  line-height: 1.6;
-  margin: 0 0 20px;
-}
-
-.home-involved__body p:last-of-type {
-  margin: 0 0 30px;
-}
-
-.home-involved__btn {
-  display: inline-block;
-  padding: 19px 25px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1;
-  color: #002a4e;
-  background: #f1f5f9;
-  border: 1px solid #002a4e;
-  border-radius: 8px;
-}
-
-.home-involved__btn:hover {
+.home-donate-band__btn:hover {
   background: #f0f0f0;
 }
 
@@ -675,8 +607,7 @@
   .home-intro__card,
   .home-mission__inner,
   .home-program-grid,
-  .home-stories__cards,
-  .home-involved__card {
+  .home-stories__cards {
     grid-template-columns: 1fr;
   }
 
@@ -715,18 +646,6 @@
     padding-top: 32px;
   }
 
-  .home-involved__media {
-    padding-right: 0;
-  }
-
-  .home-involved__body {
-    padding: 32px 24px 0;
-  }
-
-  .home-involved__card {
-    padding-bottom: 48px;
-  }
-
   .home-intro__col {
     border-right: none;
     border-bottom: 1px solid #e8edf2;
@@ -763,23 +682,24 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .home-impact__cta {
+  .home-donate-band__inner {
     flex-direction: column;
     align-items: stretch;
     text-align: center;
   }
 
-  .home-impact__cta-content h3 {
+  .home-donate-band__copy h2 {
     font-size: 28px;
     max-width: none;
+    text-align: left;
   }
 
-  .home-impact__cta-content p {
+  .home-donate-band__copy p {
     font-size: 16px;
     max-width: none;
   }
 
-  .home-impact__btn {
+  .home-donate-band__btn {
     align-self: center;
   }
 }
@@ -813,7 +733,7 @@
     border-bottom: none;
   }
 
-  .home-impact__btn {
+  .home-donate-band__btn {
     width: 100%;
     text-align: center;
   }
