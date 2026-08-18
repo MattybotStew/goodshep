@@ -362,7 +362,7 @@
   font-weight: 600;
   color: var(--ast-color-2);
   letter-spacing: -0.2px;
-  margin: 0 0 8px;
+  margin: 8px 0 8px;
 }
 
 .rte p {
@@ -373,11 +373,16 @@
 }
 
 .rte p:last-child,
-.rte ul:last-child {
+.rte ul:last-child,
+.rte ol:last-child,
+.rte blockquote:last-child,
+.rte figure:last-child,
+.rte .rte-callout:last-child {
   margin-bottom: 0;
 }
 
-.rte ul {
+.rte ul,
+.rte ol {
   margin: 0 0 16px;
   padding-left: 22px;
   display: flex;
@@ -389,6 +394,89 @@
   font-size: 17px;
   line-height: 1.6;
   color: var(--ast-color-3);
+}
+
+.rte blockquote {
+  margin: 0 0 20px;
+  padding: 4px 0 4px 20px;
+  border-left: 3px solid var(--ast-color-0);
+}
+
+.rte blockquote p {
+  font-size: 18px;
+  font-style: italic;
+  color: var(--ast-color-2);
+  margin-bottom: 8px;
+}
+
+.rte blockquote cite {
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--ast-color-3);
+}
+
+.rte-figure {
+  margin: 8px 0 24px;
+}
+
+.rte-figure .img-ph {
+  min-height: 220px;
+}
+
+.rte-figure figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ast-color-3);
+}
+
+.rte-callout {
+  margin: 8px 0 24px;
+  padding: 16px 20px;
+  background: var(--ast-color-4);
+  border-radius: 8px;
+}
+
+.rte-callout strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ast-color-0);
+  margin-bottom: 8px;
+}
+
+.rte-callout p {
+  margin: 0;
+}
+
+.rte-gallery {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid var(--ast-color-6);
+}
+
+.rte-gallery h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--ast-color-2);
+  letter-spacing: -0.4px;
+  line-height: 1.25;
+  margin: 0 0 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.gallery__item {
+  min-height: 140px;
+  margin: 0;
 }
 
 .history-list {
@@ -674,5 +762,9 @@
   .history-list li {
     grid-template-columns: 1fr;
     gap: 6px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
   }
 }

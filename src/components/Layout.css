@@ -346,6 +346,21 @@ a {
   justify-content: flex-start;
 }
 
+/* Child program pages: shorter than the Programs landing hero */
+.home-hero--compact {
+  min-height: 380px;
+  padding: 140px 24px 56px;
+}
+
+.home-hero--compact h1 {
+  font-size: 48px;
+}
+
+.home-hero--compact p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
 @media (max-width: 900px) {
   .home-hero {
     min-height: 560px;
@@ -363,6 +378,15 @@ a {
 
   .home-hero--left .home-hero__inner {
     padding: 0 24px;
+  }
+
+  .home-hero--compact {
+    min-height: 300px;
+    padding: 112px 24px 48px;
+  }
+
+  .home-hero--compact h1 {
+    font-size: 32px;
   }
 }
 
