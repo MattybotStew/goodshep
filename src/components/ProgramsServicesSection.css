@@ -1,0 +1,120 @@
+.programs-services {
+  background: #fafcfe;
+  padding: 64px 24px 88px;
+}
+
+.programs-services__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.programs-services__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.programs-services__intro h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #002a4e;
+  text-align: left;
+  margin: 0 0 20px;
+}
+
+.programs-services__intro p {
+  font-size: 16px;
+  color: #303336;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 600px;
+}
+
+.programs-services__more {
+  flex-shrink: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0089df;
+}
+
+.programs-services__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 42, 78, 0.12);
+}
+
+.programs-services__card {
+  padding: 32px 28px 36px;
+  border-right: 1px solid #e8edf2;
+  display: flex;
+  flex-direction: column;
+}
+
+.programs-services__card:last-child {
+  border-right: none;
+}
+
+.programs-services__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #daebf7;
+  margin: 0 0 16px;
+}
+
+.programs-services__card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2em;
+  color: #002a4e;
+  margin: 0 0 10px;
+}
+
+.programs-services__card p {
+  font-size: 16px;
+  color: #4b4d50;
+  line-height: 1.5;
+  margin: 0 0 20px;
+  flex: 1;
+}
+
+.programs-services__link {
+  font-size: 16px;
+  font-weight: 700;
+  color: #002a4e;
+}
+
+.programs-services__link:hover {
+  color: #0089df;
+}
+
+@media (max-width: 900px) {
+  .programs-services__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .programs-services__card {
+    border-right: none;
+    border-bottom: 1px solid #e8edf2;
+  }
+
+  .programs-services__card:last-child {
+    border-bottom: none;
+  }
+
+  .programs-services__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .programs-services__intro h2 {
+    font-size: 36px;
+  }
+}

@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { programs, stories } from "../data/site";
+import { stories } from "../data/site";
 import { LOREM, LOREM_LONG, LOREM_SHORT } from "../data/placeholders";
 import AboutMissionSection from "../components/AboutMissionSection";
 import HomeIntroStrip from "../components/HomeIntroStrip";
 import ImpactSection from "../components/ImpactSection";
+import ProgramsServicesSection from "../components/ProgramsServicesSection";
 import readMoreArrow from "../assets/home-stories/read-more-arrow.svg";
 import "./HomePage.css";
 
@@ -25,31 +26,7 @@ function HomePage() {
 
       <ImpactSection />
 
-      <section className="home-programs">
-        <div className="home-programs__container">
-          <div className="home-programs__header">
-            <div className="home-programs__intro">
-              <h2>Our Programs &amp; Services</h2>
-              <p>{LOREM}</p>
-            </div>
-            <Link to="/programs" className="home-programs__more">
-              View all programs &rarr;
-            </Link>
-          </div>
-          <div className="home-program-grid">
-            {programs.map((p) => (
-              <article className="home-program-card" key={p.path}>
-                <div className="home-program-card__icon" aria-hidden="true" />
-                <h3>{p.homeName || p.name}</h3>
-                <p>{LOREM_SHORT}</p>
-                <Link to={p.path} className="home-program-card__link">
-                  Learn more &rarr;
-                </Link>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ProgramsServicesSection />
 
       <AboutMissionSection placeholderCopy />
 

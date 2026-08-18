@@ -43,117 +43,6 @@
   padding: 48px 24px;
 }
 
-.home-programs {
-  background: #fafcfe;
-  padding: 64px 24px;
-}
-
-.home-programs__container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.home-programs__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 24px;
-  margin-bottom: 32px;
-}
-
-.home-programs__intro h2 {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -1px;
-  color: #002a4e;
-  text-align: left;
-  margin: 0 0 20px;
-}
-
-.home-programs__intro p {
-  font-size: 16px;
-  color: #303336;
-  line-height: 1.6;
-  margin: 0;
-  max-width: 600px;
-}
-
-.home-programs__more {
-  flex-shrink: 0;
-  font-size: 18px;
-  font-weight: 700;
-  color: #0089df;
-}
-
-.home-program-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 24px;
-  background: #ffffff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 12px 32px rgba(0, 42, 78, 0.12);
-}
-
-.home-program-card {
-  padding: 32px 28px 36px;
-  border-right: 1px solid #e8edf2;
-  display: flex;
-  flex-direction: column;
-}
-
-.home-program-card:last-child {
-  border-right: none;
-}
-
-.home-program-card__icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  background: #daebf7;
-  margin: 0 0 16px;
-}
-
-.home-program-card h3 {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1.2em;
-  color: #002a4e;
-  margin: 0 0 10px;
-}
-
-.home-program-card p {
-  font-size: 16px;
-  color: #4b4d50;
-  line-height: 1.5;
-  margin: 0 0 20px;
-  flex: 1;
-}
-
-.home-program-card__link {
-  font-size: 16px;
-  font-weight: 700;
-  color: #002a4e;
-}
-
-.home-program-card__link:hover {
-  color: #0089df;
-}
-
-.home-more {
-  display: block;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 12px;
-}
-
-.home-more--left {
-  text-align: left;
-  padding: 16px 0 0;
-}
-
 .home-stories {
   background: #f1f5f9;
   padding: 100px 24px;
@@ -346,7 +235,6 @@
 }
 
 @media (max-width: 900px) {
-  .home-program-grid,
   .home-stories__cards {
     grid-template-columns: 1fr;
   }
@@ -391,15 +279,6 @@
     padding-top: 32px;
   }
 
-  .home-program-card {
-    border-right: none;
-    border-bottom: 1px solid #e8edf2;
-  }
-
-  .home-program-card:last-child {
-    border-bottom: none;
-  }
-
   /* Our Mission & Vision: full-width header, 2-col stats, stacked CTA */
   .home-impact__header {
     grid-template-columns: 1fr;
@@ -416,10 +295,6 @@
 }
 
 @media (max-width: 600px) {
-  .home-program-grid {
-    grid-template-columns: 1fr;
-  }
-
   .home-stories__card {
     padding: 0 24px 32px;
   }
