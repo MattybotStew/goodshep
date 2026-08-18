@@ -1,26 +1,11 @@
-import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import { LOREM, LOREM_LONG } from '../data/placeholders'
 import '../styles/starter.css'
 
 const events = [
-  {
-    id: 'fall-festival',
-    title: 'Fall Festival',
-    when: 'October 2026',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  },
-  {
-    id: 'golf',
-    title: 'Golf Invitational',
-    when: 'Summer',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-  {
-    id: 'family',
-    title: 'Family Events',
-    when: 'Year-round',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
-  },
+  { id: 'fall-festival', title: 'Fall Festival', when: 'October 2026' },
+  { id: 'golf', title: 'Golf Invitational', when: 'Summer' },
+  { id: 'family', title: 'Family Events', when: 'Year-round' },
 ]
 
 function EventsPage() {
@@ -29,26 +14,18 @@ function EventsPage() {
       <PageHero
         crumbs={[{ label: 'Support GSM', to: '/support-gsm' }, { label: 'Events' }]}
         title="Events"
-        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        lede={LOREM_LONG}
       />
 
-      {events.map((e, i) => (
-        <section
-          key={e.id}
-          id={e.id}
-          className={`split anchor ${i % 2 === 1 ? 'band--alt' : ''}`}
-        >
-          <div className={`wrap split__inner ${i % 2 === 1 ? 'split--flip' : ''}`}>
-            <div className="split__copy">
-              <span className="eyebrow">{e.when}</span>
-              <h2>{e.title}</h2>
-              <p>{e.text}</p>
-            </div>
-            <div className={`img-ph img-ph--tall ${i % 2 === 1 ? 'img-ph--soft' : ''}`} aria-hidden="true" />
-          </div>
-        </section>
-      ))}
-
+      <div className="page-body">
+        {events.map((e) => (
+          <section className="rte anchor" id={e.id} key={e.id}>
+            <h2>{e.title}</h2>
+            <p>{e.when}</p>
+            <p>{LOREM_LONG}</p>
+          </section>
+        ))}
+      </div>
     </article>
   )
 }

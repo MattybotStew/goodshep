@@ -15,12 +15,6 @@ export const healthData = {
       'Ut labore et dolore magna aliqua',
     ],
   },
-  features: [
-    { icon: '\u2695', title: '24/7 Nursing', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { icon: '\u271A', title: 'On-site Clinic', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { icon: '\u2697', title: 'Pharmacy', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-    { icon: '\u27BF', title: 'Transportation', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-  ],
   sections: [
     {
       id: 'nursing',
@@ -74,15 +68,5 @@ export const healthData = {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       ],
     },
-  ],
-  cta: {
-    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
-    primary: { label: 'Contact Us', path: '/contact' },
-    secondary: { label: 'Schedule a Visit', path: '/contact#visit' },
-  },
-  related: [
-    { name: 'Community Day Services', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', path: '/programs/community-day-services' },
-    { name: 'Residential Living', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', path: '/programs/residential-living' },
-    { name: 'Vocational Program', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', path: '/programs/vocational' },
   ],
 }

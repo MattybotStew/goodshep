@@ -9,13 +9,13 @@ function NotFoundPage() {
         title="Page not found"
         lede="That address is not one of the 15 main pages."
       />
-      <section className="band">
-        <div className="wrap">
-          <Link to="/" className="btn btn--primary">Back to Home</Link>
-          {' '}
-          <Link to="/sitemap" className="text-link">Prototype sitemap</Link>
-        </div>
-      </section>
+      <div className="page-body">
+        <section className="rte">
+          <p>
+            <Link to="/" className="text-link">Back to Home</Link>
+          </p>
+        </section>
+      </div>
     </article>
   )
 }

@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
 
-function PageHero({ crumbs = [], title, lede }) {
+function PageHero({ crumbs = [], title, lede, align = 'center' }) {
+  const alignClass = align === 'left' ? ' home-hero--left' : ''
+
   return (
-    <section className="home-hero home-hero--page">
+    <section className={`home-hero home-hero--page${alignClass}`}>
       <div className="home-hero__photo" aria-hidden="true" />
       <div className="home-hero__inner">
         {crumbs.length > 0 && (

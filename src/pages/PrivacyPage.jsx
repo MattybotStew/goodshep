@@ -1,4 +1,5 @@
 import PageHero from '../components/PageHero'
+import { LOREM, LOREM_LONG } from '../data/placeholders'
 import '../styles/starter.css'
 
 function PrivacyPage() {
@@ -7,20 +8,15 @@ function PrivacyPage() {
       <PageHero
         crumbs={[{ label: 'Privacy Policy' }]}
         title="Privacy Policy"
-        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        lede={LOREM_LONG}
       />
-      <section className="band band--narrow">
-        <div className="wrap prose">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-            ut aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </section>
+      <div className="page-body">
+        <section className="rte">
+          <h2>How we use this site</h2>
+          <p>{LOREM}</p>
+          <p>{LOREM_LONG}</p>
+        </section>
+      </div>
     </article>
   )
 }

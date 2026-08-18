@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import { newsItems } from '../data/site'
+import { LOREM_LONG } from '../data/placeholders'
 import '../styles/starter.css'
 
 function NewsPage() {
@@ -9,27 +10,26 @@ function NewsPage() {
       <PageHero
         crumbs={[{ label: 'News' }]}
         title="News & Updates"
-        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        lede={LOREM_LONG}
       />
 
-      <section className="band">
-        <div className="wrap">
-          <span className="eyebrow">Stories</span>
-          <h2 style={{ marginBottom: 32 }}>What is happening at GSM</h2>
-          <div className="story-grid">
+      <div className="page-body">
+        <section className="rte">
+          <h2>What is happening at GSM</h2>
+          <ul className="rte-links">
             {newsItems.map((item) => (
-              <article className="story-card" key={item.title}>
-                <div className="story-card__img" aria-hidden="true" />
-                <span className="eyebrow">{item.date} · {item.tag}</span>
+              <li key={item.title}>
                 <h3>{item.title}</h3>
+                <p>{item.date} · {item.tag}</p>
                 <p>{item.excerpt}</p>
-                <Link to={item.path} className="text-link">Read More &rarr;</Link>
-              </article>
+                <Link to={item.path} className="text-link">
+                  {item.title}
+                </Link>
+              </li>
             ))}
-          </div>
-        </div>
-      </section>
-
+          </ul>
+        </section>
+      </div>
     </article>
   )
 }

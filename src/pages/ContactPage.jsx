@@ -1,4 +1,5 @@
 import PageHero from '../components/PageHero'
+import { LOREM, LOREM_LONG } from '../data/placeholders'
 import '../styles/starter.css'
 
 function ContactPage() {
@@ -11,14 +12,16 @@ function ContactPage() {
       <PageHero
         crumbs={[{ label: 'Contact' }]}
         title="Contact Us"
-        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        lede={LOREM_LONG}
       />
 
-      <section className="band">
-        <div className="wrap form-grid">
+      <div className="page-body">
+        <div className="form-grid">
           <form onSubmit={onSubmit} id="visit">
-            <span className="eyebrow">Contact form</span>
-            <h2 style={{ marginBottom: 20 }}>Send a message</h2>
+            <div className="rte">
+              <h2>Send a message</h2>
+              <p>{LOREM}</p>
+            </div>
             <div className="field">
               <label htmlFor="name">Name</label>
               <input id="name" name="name" autoComplete="name" required />
@@ -57,45 +60,33 @@ function ContactPage() {
               Momence, IL 60954
             </p>
             <h3>Hours</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <p>{LOREM}</p>
             <h3>Map</h3>
             <div className="map-ph" aria-label="Map placeholder" />
           </aside>
         </div>
-      </section>
 
-      <section className="band band--alt" id="staff">
-        <div className="wrap">
-          <span className="eyebrow">Staff directory</span>
-          <h2>Who to ask</h2>
-          <div className="list-row">
-            <span className="list-row__meta">Main</span>
-            <div>
+        <section className="rte anchor" id="staff">
+          <h2>Staff directory</h2>
+          <ul className="rte-links">
+            <li>
               <h3>Front office</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. (815) 472-3700</p>
-            </div>
-          </div>
-          <div className="list-row">
-            <span className="list-row__meta">Giving</span>
-            <div>
+              <p>{LOREM} (815) 472-3700</p>
+            </li>
+            <li>
               <h3>GSM Foundation</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div className="list-row">
-            <span className="list-row__meta">Hiring</span>
-            <div>
+              <p>{LOREM}</p>
+            </li>
+            <li>
               <h3>Careers</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+              <p>{LOREM}</p>
+            </li>
+          </ul>
+        </section>
 
-      <section className="band" id="thank">
-        <div className="wrap" style={{ maxWidth: 640 }}>
-          <span className="eyebrow">Thank a staff member</span>
-          <h2>Send a note of thanks</h2>
+        <section className="rte anchor" id="thank">
+          <h2>Thank a staff member</h2>
+          <p>{LOREM}</p>
           <form onSubmit={onSubmit}>
             <div className="field">
               <label htmlFor="thank-from">Your name</label>
@@ -111,8 +102,8 @@ function ContactPage() {
             </div>
             <button type="submit" className="btn btn--primary">Send thanks</button>
           </form>
-        </div>
-      </section>
+        </section>
+      </div>
     </article>
   )
 }

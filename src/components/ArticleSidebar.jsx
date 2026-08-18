@@ -1,40 +1,49 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
+import { healthData } from '../data/health'
+import { communityDay } from '../data/programs'
 import { programs } from '../data/site'
 import './ArticleSidebar.css'
 
-const SERVICES = [
-  { name: 'Digital Den', path: '/programs/community-day-services#digital-den' },
-  { name: 'Nursing Services', path: '/programs/health-well-being#nursing' },
-  { name: 'On-site Clinic', path: '/programs/health-well-being#clinic' },
-  { name: 'Pharmacy Services', path: '/programs/health-well-being#pharmacy' },
-  { name: 'Community Supports', path: '/programs/health-well-being#supports' },
-  { name: 'Transportation Assistance', path: '/programs/health-well-being#transportation' },
-]
+const SECTIONS_BY_PATH = {
+  '/programs/community-day-services': communityDay.sections,
+  '/programs/health-well-being': healthData.sections,
+}
 
 function ArticleSidebar() {
+  const { pathname, hash } = useLocation()
+
   return (
     <aside className="article-sidebar">
-      <nav aria-label="Programs and services">
+      <nav aria-label="Programs">
         <p className="article-sidebar__label">Programs</p>
         <ul className="article-sidebar__list">
-          {programs.map((p) => (
-            <li key={p.path}>
-              <NavLink
-                to={p.path}
-                className={({ isActive }) => (isActive ? 'is-active' : undefined)}
-              >
-                {p.name}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-        <p className="article-sidebar__label">Services</p>
-        <ul className="article-sidebar__list">
-          {SERVICES.map((s) => (
-            <li key={s.path}>
-              <Link to={s.path}>{s.name}</Link>
-            </li>
-          ))}
+          {programs.map((p) => {
+            const sections = pathname === p.path ? SECTIONS_BY_PATH[p.path] : null
+            return (
+              <li key={p.path}>
+                <NavLink
+                  to={p.path}
+                  className={({ isActive }) => (isActive ? 'is-active' : undefined)}
+                >
+                  {p.name}
+                </NavLink>
+                {sections?.length > 0 && (
+                  <ul className="article-sidebar__sections">
+                    {sections.map((s) => (
+                      <li key={s.id}>
+                        <Link
+                          to={`${p.path}#${s.id}`}
+                          className={hash === `#${s.id}` ? 'is-active' : undefined}
+                        >
+                          {s.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            )
+          })}
         </ul>
       </nav>
     </aside>

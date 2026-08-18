@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import { jobs } from '../data/site'
+import { LOREM, LOREM_LONG } from '../data/placeholders'
 import '../styles/starter.css'
 
 function CareersPage() {
@@ -9,46 +10,36 @@ function CareersPage() {
       <PageHero
         crumbs={[{ label: 'Careers' }]}
         title="Careers"
-        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        lede={LOREM_LONG}
       />
 
-      <section className="split">
-        <div className="wrap split__inner">
-          <div className="split__copy">
-            <span className="eyebrow">Benefits</span>
-            <h2>A job that stays with people</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <ul>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit sed do eiusmod</li>
-              <li>Tempor incididunt ut labore et dolore</li>
-              <li>Magna aliqua ut enim ad minim veniam</li>
-            </ul>
-          </div>
-          <div className="img-ph img-ph--tall" aria-hidden="true" />
-        </div>
-      </section>
+      <div className="page-body">
+        <section className="rte">
+          <h2>Benefits</h2>
+          <p>{LOREM}</p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit sed do eiusmod</li>
+            <li>Tempor incididunt ut labore et dolore</li>
+            <li>Magna aliqua ut enim ad minim veniam</li>
+          </ul>
+        </section>
 
-      <section className="band band--alt" id="openings">
-        <div className="wrap">
-          <span className="eyebrow">Job openings</span>
-          <h2>Now hiring</h2>
-          {jobs.map((job) => (
-            <div className="list-row" key={job.title}>
-              <span className="list-row__meta">{job.type}</span>
-              <div>
+        <section className="rte" id="openings">
+          <h2>Job openings</h2>
+          <ul className="rte-links">
+            {jobs.map((job, i) => (
+              <li key={`${job.title}-${job.type}-${i}`}>
                 <h3>{job.title}</h3>
-                <p>{job.note}</p>
-              </div>
-              <Link to="/contact" className="text-link">Apply &rarr;</Link>
-            </div>
-          ))}
-        </div>
-      </section>
-
+                <p>{job.type}. {job.note}</p>
+                <Link to="/contact" className="text-link">
+                  Apply for {job.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </div>
     </article>
   )
 }

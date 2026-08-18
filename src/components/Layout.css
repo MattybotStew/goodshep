@@ -325,6 +325,27 @@ a {
   padding: 160px 24px 120px;
 }
 
+/* About-style inner pages: left-aligned copy in the site container (Astra 04 About) */
+.home-hero--left {
+  text-align: left;
+}
+
+.home-hero--left .home-hero__inner {
+  max-width: var(--ast-container);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.home-hero--left p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.home-hero--left .page-hero__crumbs {
+  justify-content: flex-start;
+}
+
 @media (max-width: 900px) {
   .home-hero {
     min-height: 560px;
@@ -338,6 +359,10 @@ a {
   .home-hero--page {
     min-height: 520px;
     padding: 120px 24px 72px;
+  }
+
+  .home-hero--left .home-hero__inner {
+    padding: 0 24px;
   }
 }
 

@@ -36,6 +36,29 @@
   color: var(--ast-color-0);
 }
 
+.article-sidebar__sections {
+  list-style: none;
+  margin: 0 0 8px;
+  padding: 0 0 4px 12px;
+  border: 0;
+}
+
+.article-sidebar__sections li {
+  border: 0;
+}
+
+.article-sidebar__sections a {
+  padding: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ast-color-3);
+}
+
+.article-sidebar__sections a:hover,
+.article-sidebar__sections a.is-active {
+  color: var(--ast-color-0);
+}
+
 @media (max-width: 921px) {
   .article-sidebar {
     position: static;
