@@ -1,6 +1,8 @@
-# goodShepard
+# goodShepherd
 
-A new **Vite + React** frontend project.
+Good Shepherd Manor **wireframe prototype** (Vite + React). Production is WordPress on WP Engine (Astra + Elementor).
+
+**AI agents:** read [`AGENTS.md`](AGENTS.md) first (canonical IA, slugs, stack, homepage wire). For Figma MCP, see [`FIGMA.md`](FIGMA.md).
 
 ## Getting started
 
