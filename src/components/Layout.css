@@ -327,7 +327,7 @@ a {
       rgba(0, 20, 36, 0.45) 0%,
       rgba(0, 20, 36, 0.62) 100%
     ),
-    linear-gradient(135deg, #31475a 0%, #415c73 40%, #25333e 100%);
+    linear-gradient(135deg, #485c6d 0%, #566e82 40%, #3d4953 100%);
   border-top: 1px solid rgba(255, 255, 255, 0.16);
 }
 
