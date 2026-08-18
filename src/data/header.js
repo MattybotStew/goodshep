@@ -18,7 +18,7 @@ export const NAV_ITEMS = [
     ],
   },
   {
-    label: 'Programs',
+    label: 'Programs & Services',
     path: '/programs',
     children: [
       { label: 'Programs & Services', path: '/programs' },

@@ -4,7 +4,7 @@ const navGroups = [
   { name: 'About', pages: [
     { name: 'About Us', page: 2, sections: ['Our History', 'Mission, Vision & Values', 'Affiliations', 'Accessibility Statement'] },
   ]},
-  { name: 'Programs', pages: [
+  { name: 'Programs & Services', pages: [
     { name: 'Programs & Services', page: 3, note: 'Landing' },
     { name: 'Community Day Services', page: 4, sections: ['Digital Den'] },
     { name: 'Vocational Program', page: 5, note: 'TBD' },
