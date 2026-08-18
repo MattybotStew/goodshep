@@ -321,8 +321,14 @@ a {
 }
 
 .signup-band {
-  background: var(--ast-color-4);
-  border-top: 1px solid var(--ast-color-6);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 20, 36, 0.45) 0%,
+      rgba(0, 20, 36, 0.62) 100%
+    ),
+    linear-gradient(135deg, #31475a 0%, #415c73 40%, #25333e 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .signup-band__inner {
@@ -340,14 +346,14 @@ a {
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: -0.5px;
-  color: var(--ast-color-2);
+  color: var(--ast-color-5);
   margin-bottom: 8px;
 }
 
 .signup-band__copy p {
   font-size: 16px;
   line-height: 1.6;
-  color: var(--ast-color-3);
+  color: var(--ast-color-6);
   margin: 0;
 }
 
@@ -360,7 +366,7 @@ a {
 .signup-band__form label {
   font-size: 14px;
   font-weight: 700;
-  color: var(--ast-color-2);
+  color: var(--ast-color-5);
 }
 
 .signup-band__row {
