@@ -132,7 +132,7 @@ Homepage wire is Figma node `9009:2` (`design/node-9009-2.png`). Section order:
 
 1. Hero — Figma `9046:787` (photo overlay, one CTA). Headline: “A Community of Compassion, Dignity, and Purpose.” Sub-headline: hands-on programs, caring services, and a supportive home. CTA: “Now Hiring! Apply Today” → `/careers`. Button uses GSM blue, not 04 lime. Home uses the **hero header** (transparent at top, white on scroll). Other pages keep the solid white header. To reuse the hero header, add the slug to `HERO_HEADER_PATHS` in `src/data/header.js`.
 2. Intro strip — Figma `9046:813` overlapping the hero: 01 Projects / 02 Get Involved / 03 Donate, greek body, Learn more.
-3. Our Impact — Figma `9046:948`: “Our Mission & Vision: Serving with Dignity Since 1971” + mission statement + 4 counters (55 years / 100+ men / 4 programs / 1971 founded). No donate band in this section.
+3. Our Impact — Figma `9046:948`: “Our Mission & Vision: Serving with Dignity” + mission statement + 4 counters (55 years / 100+ men / 4 programs / 1971 founded). No donate band in this section.
 4. About Us / Mission — Figma `9046:901`: “A community of care, growth, and dignity for over 50 years.” + four paragraphs of real GSM copy + Read More, staggered photo mosaic. Shares `#f1f5f9` background with Our Impact (no gradient seam).
 5. Donate CTA band — standalone section below About: “We can create a better tomorrow” + Donate Now → `/ways-to-give`.
 6. Our Programs & Services — 4 icon-placeholder cards + View all.

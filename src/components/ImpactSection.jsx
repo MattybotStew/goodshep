@@ -7,7 +7,7 @@ export default function ImpactSection() {
         <div className="home-impact__intro">
           <div className="home-impact__header">
             <div className="home-impact__col">
-              <h2>Our Mission &amp; Vision: Serving with Dignity Since 1971</h2>
+              <h2>Our Mission &amp; Vision: Serving with Dignity</h2>
             </div>
             <div className="home-impact__col">
               <p>

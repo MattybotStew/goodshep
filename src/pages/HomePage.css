@@ -160,7 +160,7 @@
 }
 
 .home-mission {
-  padding: 40px 24px 96px;
+  padding: 80px 24px 96px;
 }
 
 .home-mission__inner {
@@ -369,25 +369,37 @@
 }
 
 .home-stories__header {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
   margin-bottom: 20px;
 }
 
-.home-stories__header h2 {
+.home-stories__intro h2 {
   font-size: 48px;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: -1px;
   color: var(--ast-color-2);
   margin: 0 0 16px;
+  text-align: left;
 }
 
-.home-stories__header p {
+.home-stories__intro p {
   max-width: 744px;
-  margin: 0 auto;
+  margin: 0;
   font-size: 16px;
   line-height: 1.6;
   color: var(--ast-color-3);
+  text-align: left;
+}
+
+.home-stories__more {
+  flex-shrink: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0089df;
 }
 
 .home-stories__cards {
@@ -537,63 +549,6 @@
   margin: 0;
 }
 
-.home-donate-band {
-  background: #fafcfe;
-  padding: 48px 24px;
-}
-
-.home-donate-band__inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  background: #0089df;
-  border-radius: 16px;
-  padding: 32px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.home-donate-band__copy {
-  flex: 1;
-}
-
-.home-donate-band__copy h2 {
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 1.3;
-  letter-spacing: -0.5px;
-  color: #ffffff;
-  margin: 0 0 8px;
-  max-width: 500px;
-  text-align: left;
-}
-
-.home-donate-band__copy p {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #ffffff;
-  margin: 0;
-  max-width: 400px;
-}
-
-.home-donate-band__btn {
-  padding: 16px 32px;
-  font-size: 18px;
-  font-weight: 700;
-  color: #002a4e;
-  background: #ffffff;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  display: inline-block;
-  flex-shrink: 0;
-}
-
-.home-donate-band__btn:hover {
-  background: #f0f0f0;
-}
-
 @media (max-width: 900px) {
   .home-hero {
     min-height: 560px;
@@ -615,7 +570,12 @@
     padding: 64px 24px;
   }
 
-  .home-stories__header h2 {
+  .home-stories__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-stories__intro h2 {
     font-size: 36px;
   }
 
@@ -681,27 +641,6 @@
   .home-impact__stats {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .home-donate-band__inner {
-    flex-direction: column;
-    align-items: stretch;
-    text-align: center;
-  }
-
-  .home-donate-band__copy h2 {
-    font-size: 28px;
-    max-width: none;
-    text-align: left;
-  }
-
-  .home-donate-band__copy p {
-    font-size: 16px;
-    max-width: none;
-  }
-
-  .home-donate-band__btn {
-    align-self: center;
-  }
 }
 
 @media (max-width: 600px) {
@@ -731,10 +670,5 @@
 
   .home-impact__stat:last-child {
     border-bottom: none;
-  }
-
-  .home-donate-band__btn {
-    width: 100%;
-    text-align: center;
   }
 }

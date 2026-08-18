@@ -20,6 +20,7 @@ export const programs = [
   },
   {
     name: "Vocational Program",
+    homeName: "TBD Vocational Program",
     desc: "Meaningful work opportunities that build confidence and independence.",
     path: "/programs/vocational",
   },
@@ -44,11 +45,11 @@ export const stories = [
     tag: "Events",
   },
   {
-    title: "GSM's New Digital Den in Community Day Services",
+    title: "GSM Family Cookouts & MORE — Join us!",
     excerpt:
-      "The Communications Classroom, reimagined. New tables, tablets, computers, and headphones — made possible by this year’s Meet A Manor Need donors.",
-    path: "/programs/community-day-services#digital-den",
-    tag: "Programs",
+      "Family gatherings on campus throughout the year — visits, holiday moments, and celebrations with the men we serve.",
+    path: "/events#family",
+    tag: "Events",
   },
 ];
 

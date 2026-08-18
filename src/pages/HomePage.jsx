@@ -56,70 +56,6 @@ function HomePage() {
 
       <ImpactSection />
 
-      <section className="home-mission">
-        <div className="home-mission__inner">
-          <div className="home-mission__copy">
-            <p className="home-mission__eyebrow">About Us</p>
-            <h2>A community of care, growth, and dignity for over 50 years.</h2>
-            <p>
-              Good Shepherd Manor is a residential facility for 124 men with
-              developmental disabilities in Momence, IL, about 45 miles south of
-              Chicago. The Brothers of the Good Shepherd and our professional
-              staff are dedicated to providing high standards of care.
-            </p>
-            <p>
-              We offer academic and vocational stimulation to prevent regression
-              and develop skills. Our programs and daily activities stimulate
-              the body, mind, and spirit through broad-range health care,
-              instruction in functional life skills, vocational training,
-              recreation, and Special Olympics competition. A Work Center
-              provides meaningful jobs for local industry, including sorting,
-              packaging, and assembling.
-            </p>
-            <p>
-              Our growth has included extensive phases of building
-              handicapped-accessible group homes, including a home for residents
-              with Alzheimer&rsquo;s Disease. In 2004, our 7,000 square foot
-              infirmary opened to provide on-site medical, wellness, and
-              rehabilitative care.
-            </p>
-            <p>
-              With the support of individual donations and fundraising events,
-              we continue to meet the needs of our residents as they age,
-              ensuring a secure and caring future for all.
-            </p>
-            <Link to="/about" className="home-mission__btn">
-              Read More
-            </Link>
-          </div>
-          <div className="home-mission__mosaic" aria-hidden="true">
-            <div className="home-mission__col">
-              <div className="home-mission__ph home-mission__ph--tall" />
-              <div className="home-mission__ph home-mission__ph--short" />
-            </div>
-            <div className="home-mission__col home-mission__col--offset">
-              <div className="home-mission__ph home-mission__ph--short" />
-              <div className="home-mission__ph home-mission__ph--tall" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="home-donate-band" aria-label="Donate">
-        <div className="home-donate-band__inner">
-          <div className="home-donate-band__copy">
-            <h2>We can create a better tomorrow</h2>
-            <p>
-              Every dollar counts and helps us bring hope and essential resources to
-              those in need.
-            </p>
-          </div>
-          <Link to="/ways-to-give" className="home-donate-band__btn">
-            Donate Now
-          </Link>
-        </div>
-      </section>
-
       <section className="home-programs">
         <div className="home-programs__container">
           <div className="home-programs__header">
@@ -138,7 +74,7 @@ function HomePage() {
             {programs.map((p) => (
               <article className="home-program-card" key={p.path}>
                 <div className="home-program-card__icon" aria-hidden="true" />
-                <h3>{p.name}</h3>
+                <h3>{p.homeName || p.name}</h3>
                 <p>{p.desc}</p>
                 <Link to={p.path} className="home-program-card__link">
                   Learn more &rarr;
@@ -149,14 +85,54 @@ function HomePage() {
         </div>
       </section>
 
+      <section className="home-mission">
+        <div className="home-mission__inner">
+          <div className="home-mission__copy">
+            <p className="home-mission__eyebrow">About Us</p>
+            <h2>A community of care, growth, and dignity for over 50 years.</h2>
+            <p>
+              Good Shepherd Manor is home to 124 men with developmental
+              disabilities on our campus in Momence, Illinois, about 45 miles
+              south of Chicago. The Brothers of the Good Shepherd and our
+              professional staff have provided high standards of care.
+            </p>
+            <p>
+              Our programs stimulate the body, mind, and spirit through health
+              care, life-skills instruction, vocational training, recreation,
+              and Special Olympics. From accessible group homes to a 7,000
+              square foot infirmary, we continue to grow so every man we serve
+              can live with dignity and security.
+            </p>
+            <Link to="/about" className="home-mission__btn">
+              Read More
+            </Link>
+          </div>
+          <div className="home-mission__mosaic" aria-hidden="true">
+            <div className="home-mission__col">
+              <div className="home-mission__ph home-mission__ph--tall" />
+              <div className="home-mission__ph home-mission__ph--short" />
+            </div>
+            <div className="home-mission__col home-mission__col--offset">
+              <div className="home-mission__ph home-mission__ph--short" />
+              <div className="home-mission__ph home-mission__ph--tall" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="home-stories" aria-label="Stories">
         <div className="home-stories__inner">
           <header className="home-stories__header">
-            <h2>Inspiring tales of transformation</h2>
-            <p>
-              Get inspired by the remarkable stories of transformation through
-              Good Shepherd Manor. Join us in making a positive impact today.
-            </p>
+            <div className="home-stories__intro">
+              <h2>What&rsquo;s Happening at GSM</h2>
+              <p>
+                From our annual Fall Festival to family cookouts on campus,
+                there&rsquo;s always something happening at Good Shepherd Manor.
+              </p>
+            </div>
+            <Link to="/events" className="home-stories__more">
+              See all events &rarr;
+            </Link>
           </header>
 
           <div className="home-stories__cards">
