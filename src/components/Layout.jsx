@@ -3,9 +3,6 @@ import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import { HERO_HEADER_PATHS, NAV_ITEMS, isChildActive, isNavItemActive } from '../data/header'
 import GetInvolvedCta from './GetInvolvedCta'
 import facebookIcon from '../assets/footer/facebook.svg'
-import twitterIcon from '../assets/footer/twitter.svg'
-import instagramIcon from '../assets/footer/instagram.svg'
-import youtubeIcon from '../assets/footer/youtube.svg'
 import './Layout.css'
 
 const FOOTER_ABOUT = [
@@ -23,10 +20,11 @@ const FOOTER_GIVE = [
 ]
 
 const FOOTER_SOCIALS = [
-  { name: 'Facebook', href: 'https://www.facebook.com', icon: facebookIcon },
-  { name: 'Twitter', icon: twitterIcon },
-  { name: 'Instagram', icon: instagramIcon },
-  { name: 'YouTube', icon: youtubeIcon },
+  {
+    name: 'Facebook',
+    href: 'https://www.facebook.com/goodshepherdmanormomence/',
+    icon: facebookIcon,
+  },
 ]
 
 function HeaderNav({ mobileOpen, onClose }) {

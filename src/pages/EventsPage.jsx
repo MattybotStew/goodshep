@@ -1,5 +1,5 @@
 import PageHero from '../components/PageHero'
-import { LOREM, LOREM_LONG } from '../data/placeholders'
+import { LOREM_LONG } from '../data/placeholders'
 import '../styles/starter.css'
 
 const events = [

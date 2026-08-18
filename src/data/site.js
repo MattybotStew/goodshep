@@ -1,10 +1,3 @@
-export const stats = [
-  { value: "55", label: "Years serving our community" },
-  { value: "100+", label: "Men supported daily" },
-  { value: "4", label: "Core programs offered" },
-  { value: "1971", label: "Founded in Momence, IL" },
-];
-
 export const impactStats = [
   { value: "55", label: "Years serving our community" },
   { value: "100+", label: "Men supported daily" },
@@ -15,23 +8,19 @@ export const impactStats = [
 export const programs = [
   {
     name: "Community Day Services",
-    desc: "Classrooms, activities, and our Digital Den for skill-building and enrichment.",
     path: "/programs/community-day-services",
   },
   {
     name: "Vocational Program",
     homeName: "TBD Vocational Program",
-    desc: "Meaningful work opportunities that build confidence and independence.",
     path: "/programs/vocational",
   },
   {
     name: "Residential Living",
-    desc: "Well-maintained homes with 24/7 compassionate care and support.",
     path: "/programs/residential-living",
   },
   {
     name: "Health & Well Being",
-    desc: "On-site nursing, clinic, pharmacy, and community health supports.",
     path: "/programs/health-well-being",
   },
 ];
@@ -39,15 +28,11 @@ export const programs = [
 export const stories = [
   {
     title: "GSM's 35th Annual Fall Festival",
-    excerpt:
-      "Saturday, September 12 on campus. No admission fee and no parking fees. This family-friendly event funds essential programs and services for over 100 men.",
     path: "/events#fall-festival",
     tag: "Events",
   },
   {
     title: "GSM Family Cookouts & MORE — Join us!",
-    excerpt:
-      "Family gatherings on campus throughout the year — visits, holiday moments, and celebrations with the men we serve.",
     path: "/events#family",
     tag: "Events",
   },
