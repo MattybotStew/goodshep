@@ -3,85 +3,127 @@ import PageHero from '../components/PageHero'
 import { affiliations } from '../data/site'
 import '../styles/starter.css'
 
+const lorem =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+const loremLong =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+
+const values = [
+  { title: 'Changing Lives', desc: lorem },
+  { title: 'Building Futures', desc: lorem },
+  { title: 'Movement for Change', desc: lorem },
+  { title: 'Lasting Impact', desc: lorem },
+]
+
 function AboutPage() {
   return (
     <article>
       <PageHero
         crumbs={[{ label: 'About Us' }]}
         title="About Us"
-        lede="A home and a community in Momence, Illinois — serving men with intellectual and developmental disabilities since 1971."
+        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi."
       />
 
-      <section className="split" id="mission">
+      {/* Intro split — template: “Making the world a better place” */}
+      <section className="split">
         <div className="wrap split__inner">
           <div className="split__copy">
-            <span className="eyebrow">Mission, Vision & Values</span>
-            <h2>Why we exist</h2>
-            <p>
-              To serve the needs of men with intellectual and developmental disabilities
-              who are not capable of earning their own livelihood or meeting their basic
-              needs in a non-structured environment.
-            </p>
-            <p>
-              We strive to improve and maintain skills that enhance the quality of life
-              for all our residents.
-            </p>
+            <span className="eyebrow">About GSM</span>
+            <h2>Making the world a better place</h2>
+            <p>{loremLong}</p>
           </div>
           <div className="img-ph img-ph--tall" aria-hidden="true" />
         </div>
       </section>
 
-      <section className="split band--alt" id="history">
+      {/* Two image cards — template: Changing Lives / Building Futures */}
+      <section className="band band--alt">
+        <div className="wrap">
+          <div className="work-grid">
+            <article className="work-card">
+              <div className="work-card__img" aria-hidden="true" />
+              <div className="work-card__body">
+                <h3>Changing Lives</h3>
+                <p>{lorem}</p>
+              </div>
+            </article>
+            <article className="work-card">
+              <div className="work-card__img" aria-hidden="true" />
+              <div className="work-card__body">
+                <h3>Building Futures</h3>
+                <p>{lorem}</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* Three numbered cards — GSM sections in the template's numbered slot */}
+      <section className="band">
+        <div className="wrap">
+          <div className="num-grid">
+            <article className="num-card anchor" id="history">
+              <div className="num-card__index">01.</div>
+              <h3>Our History</h3>
+              <p>{lorem}</p>
+            </article>
+            <article className="num-card anchor" id="affiliations">
+              <div className="num-card__index">02.</div>
+              <h3>Affiliations</h3>
+              <p>{lorem}</p>
+              <div className="partners">
+                {affiliations.map((name) => (
+                  <span className="partner-pill" key={name}>{name}</span>
+                ))}
+              </div>
+            </article>
+            <article className="num-card anchor" id="accessibility">
+              <div className="num-card__index">03.</div>
+              <h3>Accessibility</h3>
+              <p>{lorem}</p>
+              <Link to="/contact" className="text-link">Contact us about accessibility &rarr;</Link>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* Donate band — template: “Make a Difference Today” */}
+      <section className="cta-band">
+        <div className="wrap">
+          <h2>Make a Difference Today</h2>
+          <p>{loremLong}</p>
+          <Link to="/ways-to-give" className="btn btn--light">Donate Today</Link>
+        </div>
+      </section>
+
+      {/* Vision & Mission split — template: “Our Vision & Mission” */}
+      <section className="split band--alt anchor" id="mission">
         <div className="wrap split__inner split--flip">
           <div className="split__copy">
-            <span className="eyebrow">Our History</span>
-            <h2>More than fifty years in Momence</h2>
-            <p>
-              Good Shepherd Manor opened in 1971. The campus has grown from a single
-              home into a community of residences, day programs, vocational work, and
-              on-site health services.
-            </p>
-            <p>
-              The mission has not changed: a structured, compassionate home for men
-              who need one.
-            </p>
+            <span className="eyebrow">Our Vision & Mission</span>
+            <h2>Serving with dignity</h2>
+            <p>{loremLong}</p>
           </div>
           <div className="img-ph img-ph--tall img-ph--soft" aria-hidden="true" />
         </div>
       </section>
 
-      <section className="band" id="affiliations">
+      {/* Four value cards — template: Changing lives / Building futures / Movement for change / Lasting impact */}
+      <section className="band">
         <div className="wrap">
-          <span className="eyebrow">Affiliations</span>
-          <h2>Partners in care</h2>
-          <p className="prose" style={{ marginBottom: 24, maxWidth: 640 }}>
-            We work with state agencies, local health providers, and community partners
-            so residents can stay connected to services beyond our campus.
-          </p>
-          <div className="partners">
-            {affiliations.map((name) => (
-              <span className="partner-pill" key={name}>{name}</span>
+          <div className="work-grid work-grid--four">
+            {values.map((v) => (
+              <article className="work-card" key={v.title}>
+                <div className="work-card__img" aria-hidden="true" />
+                <div className="work-card__body">
+                  <h3>{v.title}</h3>
+                  <p>{v.desc}</p>
+                </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
-
-      <section className="band band--alt anchor" id="accessibility">
-        <div className="wrap prose" style={{ maxWidth: 760 }}>
-          <span className="eyebrow">Accessibility Statement</span>
-          <h2>This site should work for everyone</h2>
-          <p>
-            Good Shepherd Manor is committed to providing a website that is accessible
-            to the widest possible audience, regardless of technology or ability.
-          </p>
-          <p>
-            We aim to meet WCAG 2.2 Level AA. If you have trouble using any part of
-            this site, please contact us and we will help.
-          </p>
-          <Link to="/contact" className="text-link">Contact us about accessibility &rarr;</Link>
-        </div>
-      </section>
-
     </article>
   )
 }
