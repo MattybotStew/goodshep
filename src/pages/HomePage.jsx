@@ -54,6 +54,8 @@ function HomePage() {
         </div>
       </section>
 
+      <ImpactSection />
+
       <section className="home-mission">
         <div className="home-mission__inner">
           <div className="home-mission__copy">
@@ -102,8 +104,6 @@ function HomePage() {
           </div>
         </div>
       </section>
-
-      <ImpactSection />
 
       <section className="home-programs">
         <div className="home-programs__container">
