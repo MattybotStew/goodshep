@@ -377,6 +377,110 @@
   color: var(--ast-color-0);
 }
 
+/* Article layout: sidebar + main content */
+.article {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 56px;
+  align-items: start;
+  max-width: var(--ast-container);
+  margin: 0 auto;
+  padding: 64px 40px;
+}
+
+.article__main {
+  min-width: 0;
+}
+
+/* Flatten the program bands inside the article main column */
+.article__main .program-overview,
+.article__main .program-features {
+  padding: 0;
+  background: transparent;
+}
+
+.article__main .program-overview__inner,
+.article__main .program-features__inner {
+  max-width: none;
+  margin: 0;
+}
+
+.article__main .program-overview__inner {
+  gap: 40px;
+}
+
+.article__main .program-subnav__inner {
+  max-width: none;
+  margin: 0;
+  padding: 12px 0;
+}
+
+.article__main .section-block {
+  max-width: none;
+  margin: 0;
+  padding: 48px 0;
+  gap: 40px;
+}
+
+.program-overview,
+.program-features,
+.program-sections {
+  border-bottom: 1px solid var(--ast-color-6);
+  margin-bottom: 48px;
+}
+
+/* Video + gallery */
+.program-video,
+.program-gallery {
+  padding: 0 0 48px;
+  border-bottom: 1px solid var(--ast-color-6);
+  margin-bottom: 48px;
+}
+
+.program-video h2,
+.program-gallery h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--ast-color-2);
+  letter-spacing: -0.25px;
+  margin-bottom: 8px;
+}
+
+.program-video__lede,
+.program-gallery__lede {
+  font-size: 16px;
+  color: var(--ast-color-3);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.video-embed {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--ast-color-6);
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.gallery__item {
+  min-height: 160px;
+  margin: 0;
+}
+
 @media (max-width: 921px) {
   .program-hero__title {
     font-size: 36px;
@@ -408,5 +512,14 @@
   .section-block,
   .section-block--reverse {
     padding: 48px 24px;
+  }
+
+  .article {
+    grid-template-columns: 1fr;
+    padding: 48px 24px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
   }
 }

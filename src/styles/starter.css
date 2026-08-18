@@ -500,132 +500,11 @@
   color: var(--ast-color-3);
 }
 
-/* Programs & Services — article layout */
-.article {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 56px;
-  align-items: start;
-}
-
-.article__sidebar {
-  position: sticky;
-  top: 120px;
-}
-
-.article-nav__label {
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--ast-color-0);
-  margin: 0 0 10px;
-}
-
-.article-nav__list {
-  list-style: none;
-  margin: 0 0 24px;
-  padding: 0;
-  border-top: 1px solid var(--ast-color-6);
-}
-
-.article-nav__list li {
-  border-bottom: 1px solid var(--ast-color-6);
-}
-
-.article-nav__list a {
-  display: block;
-  padding: 10px 0;
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--ast-color-2);
-}
-
-.article-nav__list a:hover {
-  color: var(--ast-color-0);
-}
-
-.program-section {
-  padding: 32px 0;
-  border-bottom: 1px solid var(--ast-color-6);
-}
-
-.program-section h2 {
-  font-size: 32px;
-  font-weight: 600;
-  color: var(--ast-color-2);
-  letter-spacing: -0.5px;
-  margin: 0 0 16px;
-}
-
-.program-section p {
-  font-size: 16px;
-  color: var(--ast-color-3);
-  line-height: 1.7;
-  margin-bottom: 12px;
-}
-
-.service-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-top: 20px;
-}
-
-.service-block {
-  background: var(--ast-color-4);
-  border: 1px solid var(--ast-color-6);
-  border-radius: 10px;
-  padding: 18px;
-}
-
-.service-block h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--ast-color-2);
-  margin-bottom: 8px;
-}
-
-.service-block p {
-  margin-bottom: 0;
-  font-size: 15px;
-}
-
-.video-embed {
-  position: relative;
-  aspect-ratio: 16 / 9;
-  border-radius: 12px;
-  overflow: hidden;
-  background: var(--ast-color-6);
-  margin-top: 20px;
-}
-
-.video-embed iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 20px;
-}
-
-.gallery__item {
-  min-height: 180px;
-  margin: 0;
-}
-
 @media (max-width: 921px) {
   .wrap {
     padding: 0 24px;
   }
 
-  .page-hero h1,
   .split h2,
   .impact h2,
   .cta-band h2,
@@ -655,23 +534,6 @@
   .timeline__photo {
     width: 100%;
     height: 180px;
-  }
-
-  .article {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .article__sidebar {
-    position: static;
-  }
-
-  .service-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery {
-    grid-template-columns: 1fr 1fr;
   }
 
   .cta-band {

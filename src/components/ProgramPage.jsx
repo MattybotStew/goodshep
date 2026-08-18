@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom'
+import ArticleSidebar from './ArticleSidebar'
+import { LOREM_SHORT } from '../data/placeholders'
 import './ProgramPage.css'
+
+const galleryItems = [1, 2, 3, 4, 5, 6]
 
 function ProgramPage({ data }) {
   const {
@@ -30,6 +34,11 @@ function ProgramPage({ data }) {
         </div>
       </section>
 
+      {/* ---------- Article: sidebar + main ---------- */}
+      <div className="article">
+        <ArticleSidebar />
+
+        <div className="article__main">
       {/* ---------- Overview ---------- */}
       {overview && (
         <section className="program-overview">
@@ -117,6 +126,34 @@ function ProgramPage({ data }) {
           ))}
         </section>
       )}
+
+          {/* Video */}
+          <section className="program-video">
+            <h2>Watch our video</h2>
+            <p className="program-video__lede">{LOREM_SHORT}</p>
+            <div className="video-embed">
+              <iframe
+                src="https://www.youtube.com/embed/Y9wAUu4rNzE"
+                title="Good Shepherd Manor video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
+          </section>
+
+          {/* Photo gallery */}
+          <section className="program-gallery">
+            <h2>Photo gallery</h2>
+            <p className="program-gallery__lede">{LOREM_SHORT}</p>
+            <div className="gallery">
+              {galleryItems.map((i) => (
+                <div className="img-ph gallery__item" key={i} aria-hidden="true" />
+              ))}
+            </div>
+          </section>
+        </div>
+      </div>
 
       {/* ---------- CTA Band ---------- */}
       {cta && (
