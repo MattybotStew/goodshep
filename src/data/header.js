@@ -1,5 +1,22 @@
 /** Pages that use the transparent → white header. Add slugs to reuse it. */
-export const HERO_HEADER_PATHS = ['/']
+export const HERO_HEADER_PATHS = [
+  '/',
+  '/about',
+  '/programs',
+  '/programs/community-day-services',
+  '/programs/vocational',
+  '/programs/residential-living',
+  '/programs/health-well-being',
+  '/support-gsm',
+  '/ways-to-give',
+  '/shepherd-endowment-society',
+  '/events',
+  '/news',
+  '/newsletters',
+  '/careers',
+  '/contact',
+  '/privacy',
+]
 
 /**
  * Header nav — 6 items from AGENTS.md / SitemapPage.jsx.
@@ -11,8 +28,8 @@ export const NAV_ITEMS = [
     path: '/about',
     children: [
       { label: 'About Us', path: '/about' },
-      { label: 'Our History', path: '/about#history' },
       { label: 'Mission, Vision & Values', path: '/about#mission' },
+      { label: 'Our History', path: '/about#history' },
       { label: 'Affiliations', path: '/about#affiliations' },
       { label: 'Accessibility', path: '/about#accessibility' },
     ],

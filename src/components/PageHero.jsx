@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom'
 
 function PageHero({ crumbs = [], title, lede }) {
   return (
-    <header className="page-hero">
-      <div className="wrap">
+    <section className="home-hero home-hero--page">
+      <div className="home-hero__photo" aria-hidden="true" />
+      <div className="home-hero__inner">
         {crumbs.length > 0 && (
           <nav className="page-hero__crumbs" aria-label="Breadcrumb">
             <Link to="/">Home</Link>
@@ -18,7 +19,7 @@ function PageHero({ crumbs = [], title, lede }) {
         <h1>{title}</h1>
         {lede && <p>{lede}</p>}
       </div>
-    </header>
+    </section>
   )
 }
 

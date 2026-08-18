@@ -130,7 +130,7 @@ Duplicate those same layouts for GSM Foundation, Endowment, Events, Newsletters,
 
 Homepage wire is Figma node `9009:2` (`design/node-9009-2.png`). Section order:
 
-1. Hero — Figma `9046:787` (photo overlay, one CTA). Headline: “A Community of Compassion, Dignity, and Purpose.” Sub-headline: hands-on programs, caring services, and a supportive home. CTA: “Now Hiring! Apply Today” → `/careers`. Button uses GSM blue, not 04 lime. Home uses the **hero header** (transparent at top, white on scroll). Other pages keep the solid white header. To reuse the hero header, add the slug to `HERO_HEADER_PATHS` in `src/data/header.js`.
+1. Hero — Figma `9046:787` (photo overlay, one CTA). Headline: “A Community of Compassion, Dignity, and Purpose.” Sub-headline: hands-on programs, caring services, and a supportive home. CTA: “Now Hiring! Apply Today” → `/careers`. Button uses GSM blue, not 04 lime. **Every page uses the hero header** (transparent at top, white on scroll) — `PageHero` renders the shared `.home-hero` photo-overlay hero, and the slug list is `HERO_HEADER_PATHS` in `src/data/header.js`. The sitemap artifact (`/sitemap`) keeps its own header.
 2. Intro strip — Figma `9046:813` overlapping the hero: 01 Projects / 02 Get Involved / 03 Donate, greek body, Learn more.
 3. Our Impact — Figma `9046:948`: “Our Mission & Vision: Serving with Dignity” + mission statement + 4 counters (55 years / 100+ men / 4 programs / 1971 founded). No donate band in this section.
 4. About Us / Mission — Figma `9046:901`: “A community of care, growth, and dignity for over 50 years.” + four paragraphs of real GSM copy + Read More, staggered photo mosaic. Shares `#f1f5f9` background with Our Impact (no gradient seam).
@@ -197,6 +197,8 @@ Use these for copy, section order, and IA. Do not treat their CSS as a spec.
 | `src/components/Layout.jsx` | Nav labels, footer contact, hiring banner, Donate |
 | `src/components/ProgramPage.jsx` | Program page **section order** only |
 | `design/sitemap-structure.md` | Figma extract (older; SitemapPage wins on conflicts) |
+
+> **Current state (client review round):** Home retains real, reviewed copy. All subpage body copy, program data (`programs.js` / `health.js`), news/job excerpts, and the global Get Involved CTA are placeholder **lorem ipsum** pending client copy review. Keep headings, titles, slugs, eyebrow labels, and IA as-is; only descriptive body copy is placeholder.
 
 Health & Well Being is the first program to build. Its section IDs: `nursing`, `clinic`, `pharmacy`, `supports`, `transportation`.
 

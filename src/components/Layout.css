@@ -261,6 +261,86 @@ a {
   display: none;
 }
 
+/* Home-style full-bleed hero (shared by Home and hero-header pages) */
+.home-hero {
+  position: relative;
+  z-index: 1;
+  min-height: 864px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 120px 24px 200px;
+  overflow: visible;
+}
+
+.home-hero__photo {
+  position: absolute;
+  inset: 0;
+  background: var(--hero-bg);
+}
+
+.home-hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1080px;
+}
+
+.home-hero h1 {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: #ffffff;
+  margin: 0 0 20px;
+}
+
+.home-hero p {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.5;
+  max-width: 740px;
+  margin: 0 auto 28px;
+}
+
+/* Breadcrumb on the hero (Home has none; hero-header pages do) */
+.home-hero .page-hero__crumbs {
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 24px;
+}
+
+.home-hero .page-hero__crumbs a {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.home-hero .page-hero__crumbs a:hover {
+  color: #80c5ff;
+}
+
+/* Sub-page hero: same look, shorter, no overlap strip below */
+.home-hero--page {
+  min-height: 620px;
+  padding: 160px 24px 120px;
+}
+
+@media (max-width: 900px) {
+  .home-hero {
+    min-height: 560px;
+    padding: 96px 24px 64px;
+  }
+
+  .home-hero h1 {
+    font-size: 40px;
+  }
+
+  .home-hero--page {
+    min-height: 520px;
+    padding: 120px 24px 72px;
+  }
+}
+
 /* Hero header: sit on the hero with no gap under the alert.
    Height comes from Layout measuring the header. */
 .layout--hero-header .header {

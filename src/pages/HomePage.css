@@ -19,48 +19,7 @@
   margin-bottom: 12px;
 }
 
-.home-hero {
-  position: relative;
-  z-index: 1;
-  min-height: 864px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #ffffff;
-  padding: 120px 24px 200px;
-  overflow: visible;
-}
-
-.home-hero__photo {
-  position: absolute;
-  inset: 0;
-  background: var(--hero-bg);
-}
-
-.home-hero__inner {
-  position: relative;
-  z-index: 1;
-  max-width: 1080px;
-}
-
-.home-hero h1 {
-  font-size: 72px;
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  color: #ffffff;
-  margin: 0 0 20px;
-}
-
-.home-hero p {
-  font-size: 20px;
-  color: #ffffff;
-  line-height: 1.5;
-  max-width: 740px;
-  margin: 0 auto 28px;
-}
-
+/* Home-style full-bleed hero lives in Layout.css (shared with hero-header pages). */
 .home-btn {
   display: inline-block;
   padding: 18px 28px;
@@ -550,15 +509,6 @@
 }
 
 @media (max-width: 900px) {
-  .home-hero {
-    min-height: 560px;
-    padding: 96px 24px 64px;
-  }
-
-  .home-hero h1 {
-    font-size: 40px;
-  }
-
   .home-intro__card,
   .home-mission__inner,
   .home-program-grid,
