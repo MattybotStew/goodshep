@@ -119,6 +119,7 @@
   position: relative;
   z-index: 2;
   margin-top: 40px;
+  transform: scaleX(-1);
 }
 
 .home-mission--overlap .home-mission__ph {
