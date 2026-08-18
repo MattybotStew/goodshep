@@ -1,19 +1,9 @@
 import { Link } from 'react-router-dom'
+import AboutMissionSection from '../components/AboutMissionSection'
+import HomeIntroStrip from '../components/HomeIntroStrip'
 import PageHero from '../components/PageHero'
 import { affiliations } from '../data/site'
 import '../styles/starter.css'
-
-const lorem =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-const loremLong =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-
-const values = [
-  { title: 'Changing Lives', desc: lorem },
-  { title: 'Building Futures', desc: lorem },
-  { title: 'Movement for Change', desc: lorem },
-  { title: 'Lasting Impact', desc: lorem },
-]
 
 function AboutPage() {
   return (
@@ -21,107 +11,91 @@ function AboutPage() {
       <PageHero
         crumbs={[{ label: 'About Us' }]}
         title="About Us"
-        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi."
+        lede="Good Shepherd Manor is a residential community in Momence, Illinois, serving men with intellectual and developmental disabilities with compassion, dignity, and purpose."
       />
 
-      {/* Intro split — template: “Making the world a better place” */}
-      <section className="split">
+      <AboutMissionSection showReadMore={false} overlapHero compactBottom />
+
+      <HomeIntroStrip variant="about" />
+
+      <section className="split anchor" id="mission">
         <div className="wrap split__inner">
           <div className="split__copy">
-            <span className="eyebrow">About GSM</span>
-            <h2>Making the world a better place</h2>
-            <p>{loremLong}</p>
+            <span className="eyebrow">Mission, Vision &amp; Values</span>
+            <h2>Why we exist</h2>
+            <p>
+              To serve the needs of men with intellectual and developmental
+              disabilities who are not capable of earning their own livelihood
+              or meeting their basic needs in a non-structured environment. We
+              strive to improve and maintain skills that enhance the quality of
+              life for all our residents.
+            </p>
+            <p>
+              Our vision is a community where every man is known, valued, and
+              supported to grow in body, mind, and spirit — with dignity,
+              purpose, and belonging at the center of daily life on campus.
+            </p>
           </div>
           <div className="img-ph img-ph--tall" aria-hidden="true" />
         </div>
       </section>
 
-      {/* Two image cards — template: Changing Lives / Building Futures */}
-      <section className="band band--alt">
-        <div className="wrap">
-          <div className="work-grid">
-            <article className="work-card">
-              <div className="work-card__img" aria-hidden="true" />
-              <div className="work-card__body">
-                <h3>Changing Lives</h3>
-                <p>{lorem}</p>
-              </div>
-            </article>
-            <article className="work-card">
-              <div className="work-card__img" aria-hidden="true" />
-              <div className="work-card__body">
-                <h3>Building Futures</h3>
-                <p>{lorem}</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      {/* Three numbered cards — GSM sections in the template's numbered slot */}
-      <section className="band">
-        <div className="wrap">
-          <div className="num-grid">
-            <article className="num-card anchor" id="history">
-              <div className="num-card__index">01.</div>
-              <h3>Our History</h3>
-              <p>{lorem}</p>
-            </article>
-            <article className="num-card anchor" id="affiliations">
-              <div className="num-card__index">02.</div>
-              <h3>Affiliations</h3>
-              <p>{lorem}</p>
-              <div className="partners">
-                {affiliations.map((name) => (
-                  <span className="partner-pill" key={name}>{name}</span>
-                ))}
-              </div>
-            </article>
-            <article className="num-card anchor" id="accessibility">
-              <div className="num-card__index">03.</div>
-              <h3>Accessibility</h3>
-              <p>{lorem}</p>
-              <Link to="/contact" className="text-link">Contact us about accessibility &rarr;</Link>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      {/* Donate band — template: “Make a Difference Today” */}
-      <section className="cta-band">
-        <div className="wrap">
-          <h2>Make a Difference Today</h2>
-          <p>{loremLong}</p>
-          <Link to="/ways-to-give" className="btn btn--light">Donate Today</Link>
-        </div>
-      </section>
-
-      {/* Vision & Mission split — template: “Our Vision & Mission” */}
-      <section className="split band--alt anchor" id="mission">
+      <section className="split band--alt anchor" id="history">
         <div className="wrap split__inner split--flip">
           <div className="split__copy">
-            <span className="eyebrow">Our Vision & Mission</span>
-            <h2>Serving with dignity</h2>
-            <p>{loremLong}</p>
+            <span className="eyebrow">Our History</span>
+            <h2>More than fifty years in Momence</h2>
+            <p>
+              Good Shepherd Manor was founded in 1971 to provide a structured,
+              supportive home for men with intellectual and developmental
+              disabilities. What began as a single campus has grown into a
+              community of group homes, day programs, and on-site health
+              services.
+            </p>
+            <p>
+              Over the decades, GSM has expanded with handicapped-accessible
+              residences, a Work Center for meaningful employment, and a
+              7,000-square-foot infirmary — always with the same commitment to
+              care, growth, and dignity.
+            </p>
           </div>
           <div className="img-ph img-ph--tall img-ph--soft" aria-hidden="true" />
         </div>
       </section>
 
-      {/* Four value cards — template: Changing lives / Building futures / Movement for change / Lasting impact */}
-      <section className="band">
+      <section className="band anchor" id="affiliations">
         <div className="wrap">
-          <div className="work-grid work-grid--four">
-            {values.map((v) => (
-              <article className="work-card" key={v.title}>
-                <div className="work-card__img" aria-hidden="true" />
-                <div className="work-card__body">
-                  <h3>{v.title}</h3>
-                  <p>{v.desc}</p>
-                </div>
-              </article>
+          <span className="eyebrow">Affiliations</span>
+          <h2>Partners in care</h2>
+          <p className="prose" style={{ marginBottom: 24, maxWidth: 640 }}>
+            Good Shepherd Manor is supported by the Brothers of the Good
+            Shepherd and community partners who share our commitment to serving
+            men with intellectual and developmental disabilities.
+          </p>
+          <div className="partners">
+            {affiliations.map((name) => (
+              <span className="partner-pill" key={name}>{name}</span>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="band band--alt anchor" id="accessibility">
+        <div className="wrap prose" style={{ maxWidth: 760 }}>
+          <span className="eyebrow">Accessibility Statement</span>
+          <h2>This site should work for everyone</h2>
+          <p>
+            Good Shepherd Manor is committed to ensuring digital accessibility
+            for people with disabilities. We continually improve the user
+            experience for everyone and apply relevant accessibility standards.
+          </p>
+          <p>
+            We aim to meet WCAG 2.2 Level AA. If you have trouble using any part
+            of this site, please contact us and we will help.
+          </p>
+          <Link to="/contact" className="text-link">
+            Contact us about accessibility &rarr;
+          </Link>
         </div>
       </section>
     </article>

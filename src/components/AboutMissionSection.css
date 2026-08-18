@@ -1,0 +1,161 @@
+.home-mission {
+  background: #f1f5f9;
+  padding: 80px 24px 96px;
+}
+
+.home-mission__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 409px 1fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.home-mission__eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #002a4e;
+  margin: 0 0 16px;
+}
+
+.home-mission__copy h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  color: #002a4e;
+  text-align: left;
+  margin: 0 0 24px;
+  max-width: 409px;
+}
+
+.home-mission__copy p {
+  font-size: 16px;
+  color: #4b4d50;
+  line-height: 1.6;
+  margin: 0 0 16px;
+  max-width: 409px;
+}
+
+.home-mission__btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 16px 24px;
+  border: 1px solid #002a4e;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #002a4e;
+}
+
+.home-mission__btn:hover {
+  background: #002a4e;
+  color: #ffffff;
+}
+
+.home-mission__mosaic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.home-mission__col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home-mission__col--offset {
+  padding-top: 80px;
+}
+
+.home-mission__ph {
+  border-radius: 16px;
+  background:
+    linear-gradient(160deg, rgba(0, 42, 78, 0.12), rgba(0, 137, 223, 0.22)),
+    #c8d4e0;
+}
+
+.home-mission__ph--tall {
+  min-height: 339px;
+}
+
+.home-mission__ph--short {
+  min-height: 248px;
+}
+
+/* About page: mosaic straddles hero bottom (mirrors home-intro overlap) */
+.home-mission--overlap {
+  position: relative;
+  z-index: 3;
+  margin-top: -140px;
+  padding: 0 24px 80px;
+  background: transparent;
+}
+
+.home-mission--overlap::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 140px;
+  bottom: 0;
+  background: #f1f5f9;
+  z-index: -1;
+}
+
+.home-mission--overlap .home-mission__copy {
+  padding-top: 260px;
+}
+
+.home-mission--overlap .home-mission__inner {
+  padding-bottom: 120px;
+}
+
+.home-mission--overlap .home-mission__mosaic {
+  position: relative;
+  z-index: 2;
+  margin-top: 40px;
+}
+
+.home-mission--overlap .home-mission__ph {
+  box-shadow: 0 12px 32px rgba(0, 42, 78, 0.18);
+}
+
+.home-mission--compact-bottom {
+  padding-bottom: 48px;
+}
+
+.home-mission--overlap.home-mission--compact-bottom {
+  padding-bottom: 32px;
+}
+
+@media (max-width: 900px) {
+  .home-mission__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .home-mission__copy h2 {
+    font-size: 36px;
+  }
+
+  .home-mission__col--offset {
+    padding-top: 0;
+  }
+
+  .home-mission--overlap {
+    margin-top: 20px;
+    padding-bottom: 64px;
+  }
+
+  .home-mission--overlap::before {
+    top: 0;
+  }
+
+  .home-mission--overlap .home-mission__copy {
+    padding-top: 132px;
+  }
+}

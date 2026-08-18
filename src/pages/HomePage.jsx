@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { programs, stories } from "../data/site";
+import AboutMissionSection from "../components/AboutMissionSection";
+import HomeIntroStrip from "../components/HomeIntroStrip";
 import ImpactSection from "../components/ImpactSection";
 import readMoreArrow from "../assets/home-stories/read-more-arrow.svg";
 import "./HomePage.css";
@@ -22,37 +24,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="home-intro" aria-label="Ways to engage">
-        <div className="home-intro__card">
-          <article className="home-intro__col">
-            <p className="home-intro__num">01.</p>
-            <h2>Projects</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore.
-            </p>
-            <Link to="/programs">Learn more &rarr;</Link>
-          </article>
-          <article className="home-intro__col">
-            <p className="home-intro__num">02.</p>
-            <h2>Get Involved</h2>
-            <p>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo.
-            </p>
-            <Link to="/support-gsm">Learn more &rarr;</Link>
-          </article>
-          <article className="home-intro__col">
-            <p className="home-intro__num">03.</p>
-            <h2>Donate</h2>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
-            </p>
-            <Link to="/ways-to-give">Learn more &rarr;</Link>
-          </article>
-        </div>
-      </section>
+      <HomeIntroStrip variant="home" />
 
       <ImpactSection />
 
@@ -85,40 +57,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="home-mission">
-        <div className="home-mission__inner">
-          <div className="home-mission__copy">
-            <p className="home-mission__eyebrow">About Us</p>
-            <h2>A community of care, growth, and dignity for over 50 years.</h2>
-            <p>
-              Good Shepherd Manor is home to 124 men with developmental
-              disabilities on our campus in Momence, Illinois, about 45 miles
-              south of Chicago. The Brothers of the Good Shepherd and our
-              professional staff have provided high standards of care.
-            </p>
-            <p>
-              Our programs stimulate the body, mind, and spirit through health
-              care, life-skills instruction, vocational training, recreation,
-              and Special Olympics. From accessible group homes to a 7,000
-              square foot infirmary, we continue to grow so every man we serve
-              can live with dignity and security.
-            </p>
-            <Link to="/about" className="home-mission__btn">
-              Read More
-            </Link>
-          </div>
-          <div className="home-mission__mosaic" aria-hidden="true">
-            <div className="home-mission__col">
-              <div className="home-mission__ph home-mission__ph--tall" />
-              <div className="home-mission__ph home-mission__ph--short" />
-            </div>
-            <div className="home-mission__col home-mission__col--offset">
-              <div className="home-mission__ph home-mission__ph--short" />
-              <div className="home-mission__ph home-mission__ph--tall" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <AboutMissionSection />
 
       <section className="home-stories" aria-label="Stories">
         <div className="home-stories__inner">
