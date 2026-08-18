@@ -5,7 +5,7 @@ const PATHWAYS = [
   {
     icon: '\u2764',
     title: 'Donate',
-    description: 'Your gift provides essential care, programs, and enrichment.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     linkLabel: 'Give now \u2192',
     path: '/ways-to-give',
   },
@@ -13,7 +13,7 @@ const PATHWAYS = [
     icon: '\u2713',
     title: 'Volunteer',
     description:
-      'Attend an event or volunteer your time to support our community.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     linkLabel: 'Get involved \u2192',
     path: '/events',
   },
@@ -21,7 +21,7 @@ const PATHWAYS = [
     icon: '\u25CF',
     title: 'Careers',
     description:
-      'Join our team as a Direct Service Provider and make an impact.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     linkLabel: 'View openings \u2192',
     path: '/careers',
   },
@@ -34,8 +34,8 @@ export default function GetInvolvedCta() {
         <header className="global-cta__header">
           <h2 id="global-cta-heading">Get Involved</h2>
           <p>
-            Your support makes a difference in the lives of the men at Good
-            Shepherd Manor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </header>
         <div className="global-cta__grid">

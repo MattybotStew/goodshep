@@ -9,7 +9,7 @@ function CareersPage() {
       <PageHero
         crumbs={[{ label: 'Careers' }]}
         title="Careers"
-        lede="Direct Service Providers are the heart of Good Shepherd Manor. Come work where you are needed."
+        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       />
 
       <section className="split">
@@ -18,14 +18,14 @@ function CareersPage() {
             <span className="eyebrow">Benefits</span>
             <h2>A job that stays with people</h2>
             <p>
-              DSPs support residents in daily living, activities, and community life.
-              Shifts are real work. The men you meet will remember you.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <ul>
-              <li>Competitive pay for the region</li>
-              <li>Health benefits for eligible full-time staff</li>
-              <li>Training and a team that works the same houses</li>
-              <li>A campus you can walk — not a scattered caseload</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit sed do eiusmod</li>
+              <li>Tempor incididunt ut labore et dolore</li>
+              <li>Magna aliqua ut enim ad minim veniam</li>
             </ul>
           </div>
           <div className="img-ph img-ph--tall" aria-hidden="true" />

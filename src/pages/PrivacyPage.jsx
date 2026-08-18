@@ -7,17 +7,17 @@ function PrivacyPage() {
       <PageHero
         crumbs={[{ label: 'Privacy Policy' }]}
         title="Privacy Policy"
-        lede="How this site handles the information you share with us."
+        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       />
       <section className="band band--narrow">
         <div className="wrap prose">
           <p>
-            Good Shepherd Manor respects your privacy. Contact and newsletter forms
-            collect only what we need to reply or send updates.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <p>
-            We do not sell personal information. Full legal copy will replace this
-            placeholder before launch.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat.
           </p>
         </div>
       </section>

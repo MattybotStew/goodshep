@@ -6,19 +6,19 @@ const paths = [
   {
     index: '01.',
     title: 'Ways to Give',
-    desc: 'One-time gifts, monthly giving, and memorial donations.',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     path: '/ways-to-give',
   },
   {
     index: '02.',
     title: 'Shepherd Endowment',
-    desc: 'A lasting gift that steadies the Manor for the next generation.',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
     path: '/shepherd-endowment-society',
   },
   {
     index: '03.',
     title: 'Events',
-    desc: 'Fall Festival, Golf Invitational, and family gatherings.',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     path: '/events',
   },
 ]
@@ -29,7 +29,7 @@ function FoundationPage() {
       <PageHero
         crumbs={[{ label: 'Support GSM' }]}
         title="GSM Foundation"
-        lede="The Foundation raises friends and funds so Good Shepherd Manor can keep being home."
+        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       />
 
       <section className="split">
@@ -38,12 +38,12 @@ function FoundationPage() {
             <span className="eyebrow">Support GSM</span>
             <h2>How the Foundation serves the Manor</h2>
             <p>
-              The GSM Foundation supports residential care, day programs, and enrichment
-              that operating funds alone cannot cover.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <p>
-              Give, join the Endowment Society, or show up at an event — every path
-              stays with the men who live here.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+              ut aliquip ex ea commodo consequat.
             </p>
           </div>
           <div className="img-ph img-ph--tall" aria-hidden="true" />

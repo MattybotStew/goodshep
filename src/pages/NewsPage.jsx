@@ -9,7 +9,7 @@ function NewsPage() {
       <PageHero
         crumbs={[{ label: 'News' }]}
         title="News & Updates"
-        lede="Stories from campus, program updates, and press. Individual posts do not count against the 15-page SOW."
+        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       />
 
       <section className="band">

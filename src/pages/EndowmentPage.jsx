@@ -8,7 +8,7 @@ function EndowmentPage() {
       <PageHero
         crumbs={[{ label: 'Support GSM', to: '/support-gsm' }, { label: 'Shepherd Endowment Society' }]}
         title="Shepherd Endowment Society"
-        lede="A society of friends who invest in Good Shepherd Manor beyond a single year."
+        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       />
 
       <section className="split">
@@ -17,12 +17,12 @@ function EndowmentPage() {
             <span className="eyebrow">Lasting support</span>
             <h2>Stewardship that outlives a gift</h2>
             <p>
-              The Shepherd Endowment Society recognizes donors who make a planned or
-              endowed gift. The principal is held; earnings help sustain care.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <p>
-              Membership details and recognition levels will be confirmed with the
-              Foundation before launch.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+              ut aliquip ex ea commodo consequat.
             </p>
             <Link to="/contact" className="text-link">Ask about joining &rarr;</Link>
           </div>

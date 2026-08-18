@@ -11,7 +11,7 @@ function ContactPage() {
       <PageHero
         crumbs={[{ label: 'Contact' }]}
         title="Contact Us"
-        lede="Call, write, or send a note. We will get back to you."
+        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       />
 
       <section className="band">
@@ -57,7 +57,7 @@ function ContactPage() {
               Momence, IL 60954
             </p>
             <h3>Hours</h3>
-            <p>Campus is staffed 24/7. Office inquiries are answered on weekdays.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             <h3>Map</h3>
             <div className="map-ph" aria-label="Map placeholder" />
           </aside>
@@ -72,21 +72,21 @@ function ContactPage() {
             <span className="list-row__meta">Main</span>
             <div>
               <h3>Front office</h3>
-              <p>General questions, visits, and directions. (815) 472-3700</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. (815) 472-3700</p>
             </div>
           </div>
           <div className="list-row">
             <span className="list-row__meta">Giving</span>
             <div>
               <h3>GSM Foundation</h3>
-              <p>Donations, events, and the Endowment Society.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
           <div className="list-row">
             <span className="list-row__meta">Hiring</span>
             <div>
               <h3>Careers</h3>
-              <p>Direct Service Provider openings and applications.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
         </div>

@@ -1,25 +1,25 @@
 export const healthData = {
   name: 'Health & Well Being',
   tagline:
-    'Comprehensive on-site health services that keep our residents healthy, safe, and connected to the care they need.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   overview: {
     imagePosition: 'right',
     paragraphs: [
-      'The Health & Well Being program at Good Shepherd Manor provides a full spectrum of medical care and health support services designed specifically for men with intellectual and developmental disabilities. Our dedicated nursing staff and on-site clinic ensure that residents receive consistent, personalized care in a familiar and comfortable environment.',
-      'From routine health monitoring to coordination with specialists and community providers, we are committed to maintaining and improving the physical and emotional well-being of every man we serve.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     ],
     bullets: [
-      '24/7 on-site nursing care',
-      'On-site clinic for routine medical needs',
-      'Pharmacy coordination and medication management',
-      'Transportation to and from medical appointments',
+      'Lorem ipsum dolor sit amet',
+      'Consectetur adipiscing elit',
+      'Sed do eiusmod tempor incididunt',
+      'Ut labore et dolore magna aliqua',
     ],
   },
   features: [
-    { icon: '\u2695', title: '24/7 Nursing', desc: 'Round-the-clock professional nursing care on site.' },
-    { icon: '\u271A', title: 'On-site Clinic', desc: 'Routine medical care without leaving home.' },
-    { icon: '\u2697', title: 'Pharmacy', desc: 'Coordinated medication management and refills.' },
-    { icon: '\u27BF', title: 'Transportation', desc: 'Rides to and from all medical appointments.' },
+    { icon: '\u2695', title: '24/7 Nursing', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+    { icon: '\u271A', title: 'On-site Clinic', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+    { icon: '\u2697', title: 'Pharmacy', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+    { icon: '\u27BF', title: 'Transportation', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
   ],
   sections: [
     {
@@ -27,13 +27,13 @@ export const healthData = {
       title: 'Nursing Services',
       imagePosition: 'right',
       paragraphs: [
-        'Our licensed nursing staff is on-site around the clock to provide skilled nursing care, health monitoring, and emergency response. Each resident has an individualized care plan reviewed regularly by our nursing team.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       ],
       bullets: [
-        'Medication administration and monitoring',
-        'Regular health assessments and vital sign checks',
-        'Wound care and chronic condition management',
-        'Emergency response and coordination with 911',
+        'Lorem ipsum dolor sit amet',
+        'Consectetur adipiscing elit',
+        'Sed do eiusmod tempor incididunt',
+        'Ut labore et dolore magna aliqua',
       ],
     },
     {
@@ -41,13 +41,13 @@ export const healthData = {
       title: 'On-site Clinic',
       imagePosition: 'left',
       paragraphs: [
-        'Our on-site clinic brings primary care directly to our residents, reducing the need for stressful off-site visits for routine medical needs. The clinic is staffed on scheduled days with visiting physicians and nurse practitioners.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       ],
       bullets: [
-        'Routine physicals and health screenings',
-        'Vaccinations and flu shots',
-        'Lab work and diagnostic coordination',
-        'Specialist referrals when needed',
+        'Lorem ipsum dolor sit amet',
+        'Consectetur adipiscing elit',
+        'Sed do eiusmod tempor incididunt',
+        'Ut labore et dolore magna aliqua',
       ],
     },
     {
@@ -55,7 +55,7 @@ export const healthData = {
       title: 'Pharmacy Services',
       imagePosition: 'right',
       paragraphs: [
-        'We coordinate with local pharmacies to manage prescriptions, refills, and medication delivery. Our nursing staff oversees medication administration to ensure safety and adherence.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       ],
     },
     {
@@ -63,7 +63,7 @@ export const healthData = {
       title: 'Community Supports',
       imagePosition: 'left',
       paragraphs: [
-        'We connect residents with community health resources, specialists, and support services beyond what we provide on-site. This includes coordination with state agencies, disability service providers, and mental health professionals.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       ],
     },
     {
@@ -71,18 +71,18 @@ export const healthData = {
       title: 'Transportation Assistance',
       imagePosition: 'right',
       paragraphs: [
-        'Scheduling and transportation for doctor visits, specialist appointments, and hospital visits is coordinated by our staff. We ensure every resident gets to their appointments safely and on time.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       ],
     },
   ],
   cta: {
-    question: 'Want to learn more about our Health & Well Being services?',
+    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
     primary: { label: 'Contact Us', path: '/contact' },
     secondary: { label: 'Schedule a Visit', path: '/contact#visit' },
   },
   related: [
-    { name: 'Community Day Services', desc: 'Classrooms, activities, and our Digital Den.', path: '/programs/community-day-services' },
-    { name: 'Residential Living', desc: 'Well-maintained homes with 24/7 care.', path: '/programs/residential-living' },
-    { name: 'Vocational Program', desc: 'Meaningful work and skill-building.', path: '/programs/vocational' },
+    { name: 'Community Day Services', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', path: '/programs/community-day-services' },
+    { name: 'Residential Living', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', path: '/programs/residential-living' },
+    { name: 'Vocational Program', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', path: '/programs/vocational' },
   ],
 }

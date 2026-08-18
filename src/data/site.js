@@ -59,7 +59,7 @@ export const newsItems = [
     tag: "News",
     title: "GSM's 35th Annual Fall Festival",
     excerpt:
-      "This family-friendly event supports our mission by funding essential programs and services.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     path: "/events#fall-festival",
   },
   {
@@ -67,7 +67,7 @@ export const newsItems = [
     tag: "Programs",
     title: "GSM's New Digital Den in Community Day Services",
     excerpt:
-      "Our new technology classroom brings digital literacy and enrichment to residents.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
     path: "/programs/community-day-services#digital-den",
   },
   {
@@ -75,7 +75,7 @@ export const newsItems = [
     tag: "Events",
     title: "30th Anniversary Golf Invitational Sponsors",
     excerpt:
-      "Thank you to all our sponsors who made this year’s golf outing a tremendous success.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
     path: "/events#golf",
   },
 ];
@@ -89,11 +89,11 @@ export const jobs = [
   {
     title: "Direct Service Provider",
     type: "Full-time",
-    note: "Compassionate, caring men and women. Apply on Indeed or call/text 815-592-7423.",
+    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
   },
   {
     title: "Direct Service Provider",
     type: "Openings",
-    note: "Support 105 men on our 60-acre campus and 13 modern group homes.",
+    note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
   },
 ];

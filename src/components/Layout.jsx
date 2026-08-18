@@ -9,8 +9,8 @@ import youtubeIcon from '../assets/footer/youtube.svg'
 import './Layout.css'
 
 const FOOTER_ABOUT = [
-  { label: 'Our History', path: '/about#history' },
   { label: 'Mission, Vision & Values', path: '/about#mission' },
+  { label: 'Our History', path: '/about#history' },
   { label: 'Our Programs', path: '/programs' },
   { label: 'Affiliations', path: '/about#affiliations' },
 ]
@@ -298,7 +298,7 @@ function Layout() {
         <div className="signup-band__inner">
           <div className="signup-band__copy">
             <h2 id="signup-band-heading">Newsletter</h2>
-            <p>Sign up for updates and stories from GSM.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </div>
           <form
             className="signup-band__form"
@@ -329,7 +329,7 @@ function Layout() {
               <span className="footer__logo-text">Good Shepherd Manor</span>
             </Link>
             <p className="footer__tagline">
-              A community of care, growth, and dignity for over 50 years.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
 

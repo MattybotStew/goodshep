@@ -9,7 +9,7 @@ function ProgramsPage() {
       <PageHero
         crumbs={[{ label: 'Programs' }]}
         title="Programs & Services"
-        lede="Well-maintained homes, a full health program, and meaningful days — all on one campus."
+        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       />
 
       <section className="split">
@@ -18,9 +18,9 @@ function ProgramsPage() {
             <span className="eyebrow">Our Work</span>
             <h2>Four programs, one community</h2>
             <p>
-              Residents live here, spend their days here, and receive health care here.
-              Programs are designed to work together so no one is shuffled between
-              disconnected providers.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris.
             </p>
           </div>
           <div className="img-ph img-ph--tall" aria-hidden="true" />
@@ -35,7 +35,7 @@ function ProgramsPage() {
                 <div className="work-card__img" aria-hidden="true" />
                 <div className="work-card__body">
                   <h3>{p.name}</h3>
-                  <p>{p.desc}</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                   <span className="text-link">Learn more &rarr;</span>
                 </div>
               </Link>

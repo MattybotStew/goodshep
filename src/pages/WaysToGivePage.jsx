@@ -8,7 +8,7 @@ function WaysToGivePage() {
       <PageHero
         crumbs={[{ label: 'Support GSM', to: '/support-gsm' }, { label: 'Ways to Give' }]}
         title="Ways to Give"
-        lede="Join us in making a lasting difference. Your donation funds homes, programs, and daily care."
+        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       />
 
       <section className="split">
@@ -17,12 +17,12 @@ function WaysToGivePage() {
             <span className="eyebrow">Donate</span>
             <h2>Every gift stays on campus</h2>
             <p>
-              Donations support residential living, Community Day Services, vocational
-              work, and the Health & Well Being program.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <p>
-              Production will use the client’s existing processor. This wire shows
-              the layout only.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+              ut aliquip ex ea commodo consequat.
             </p>
           </div>
           <div className="img-ph img-ph--tall" aria-hidden="true" />
@@ -34,17 +34,17 @@ function WaysToGivePage() {
           <article className="num-card">
             <div className="num-card__index">01.</div>
             <h3>One-time gift</h3>
-            <p>Give once in any amount. Honor a resident, staff member, or family.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </article>
           <article className="num-card">
             <div className="num-card__index">02.</div>
             <h3>Monthly giving</h3>
-            <p>A recurring gift that we can plan around — groceries, fuel, nursing supplies.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </article>
           <article className="num-card">
             <div className="num-card__index">03.</div>
             <h3>Planned & memorial</h3>
-            <p>Bequests, the Endowment Society, and gifts in memory of someone you love.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             <Link to="/shepherd-endowment-society" className="text-link">Endowment Society &rarr;</Link>
           </article>
         </div>

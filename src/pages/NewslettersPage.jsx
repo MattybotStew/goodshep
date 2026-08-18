@@ -2,9 +2,9 @@ import PageHero from '../components/PageHero'
 import '../styles/starter.css'
 
 const issues = [
-  { date: 'Summer 2026', title: 'Summer family update', note: 'Campus news, Fall Festival save-the-date, and staff notes.' },
-  { date: 'Spring 2026', title: 'Spring family update', note: 'Digital Den opening and Easter on campus.' },
-  { date: 'Winter 2025', title: 'Winter family update', note: 'Holiday recap and ways to give before year-end.' },
+  { date: 'Summer 2026', title: 'Summer family update', note: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+  { date: 'Spring 2026', title: 'Spring family update', note: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+  { date: 'Winter 2025', title: 'Winter family update', note: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
 ]
 
 function NewslettersPage() {
@@ -17,7 +17,7 @@ function NewslettersPage() {
       <PageHero
         crumbs={[{ label: 'News', to: '/news' }, { label: 'Newsletters' }]}
         title="Newsletters & Family Resources"
-        lede="Archive plus signup. Individual issues are not counted as main pages."
+        lede="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       />
 
       <section className="split">
@@ -25,7 +25,7 @@ function NewslettersPage() {
           <div className="split__copy">
             <span className="eyebrow">Signup</span>
             <h2>Stay in the loop</h2>
-            <p>Families and friends receive updates from campus a few times a year.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
             <form onSubmit={onSubmit}>
               <div className="field">
                 <label htmlFor="nl-email">Email address</label>
