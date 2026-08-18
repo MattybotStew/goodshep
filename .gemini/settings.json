@@ -1,4 +1,7 @@
 {
+  "context": {
+    "fileName": ["AGENTS.md", "FIGMA.md", "GEMINI.md"]
+  },
   "mcpServers": {
     "figma": {
       "httpUrl": "https://mcp.figma.com/mcp"

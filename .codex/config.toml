@@ -1,2 +1,4 @@
+project_doc_fallback_filenames = ["FIGMA.md"]
+
 [mcp_servers.figma]
 url = "https://mcp.figma.com/mcp"

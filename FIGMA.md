@@ -1,5 +1,7 @@
 # Figma — all agents
 
+**Canonical project rules:** `AGENTS.md` (IA, stack, slugs, homepage wire). This file covers Figma MCP only.
+
 This project is wired to **Figma’s remote MCP server** at `https://mcp.figma.com/mcp`.
 Use it from Grok, Claude Code, Cursor, Cline, VS Code Copilot, Codex, and Gemini.
 
@@ -46,12 +48,13 @@ npm run figma:sync
 
 ## MCP configs in this folder
 
-| Tool | File |
-| ---- | ---- |
-| Claude / generic | `.mcp.json` |
-| Grok | `.grok/config.toml` |
-| Cursor | `.cursor/mcp.json` + `.cursor/rules/figma.mdc` |
-| VS Code / Copilot | `.vscode/mcp.json` |
-| Codex | `.codex/config.toml` |
-| Gemini CLI | `.gemini/settings.json` |
-| Claude Code project | `.claude/settings.json` |
+| Tool | Instructions | MCP config |
+| ---- | ------------ | ---------- |
+| All agents | `AGENTS.md` | — |
+| Claude Code | `CLAUDE.md` → `AGENTS.md` + `FIGMA.md` | `.claude/settings.json`, `.mcp.json` |
+| Cursor | `.cursor/rules/agents.mdc` + `figma.mdc` | `.cursor/mcp.json` |
+| Codex | `AGENTS.md` (+ `FIGMA.md` fallback) | `.codex/config.toml` |
+| Gemini CLI | `GEMINI.md` → `AGENTS.md` + `FIGMA.md` | `.gemini/settings.json` |
+| Grok | `AGENTS.md` (auto-discovered) | `.grok/config.toml` |
+| Cline | `AGENTS.md` (auto-discovered) | `.cline/settings.json` |
+| VS Code / Copilot | `AGENTS.md` | `.vscode/mcp.json` |

@@ -1,0 +1,11 @@
+---
+description: Good Shepherd Manor project rules
+globs:
+alwaysApply: true
+---
+
+# Project instructions
+
+- Read `AGENTS.md` before any work. It is the canonical source for IA, slugs, stack, and hard rules.
+- Read `FIGMA.md` before implementing from a Figma URL.
+- On conflicts: `AGENTS.md` wins over chat history; `src/pages/SitemapPage.jsx` wins over `design/sitemap-structure.md`.

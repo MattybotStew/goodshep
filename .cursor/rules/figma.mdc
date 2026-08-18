@@ -6,6 +6,7 @@ alwaysApply: true
 
 # Figma MCP
 
+- Project rules live in `AGENTS.md` (north star) and `FIGMA.md` (MCP workflow).
 - Use the official remote server at `https://mcp.figma.com/mcp`.
 - When implementing a design, paste a Figma URL and run `get_design_context` + `get_screenshot` before writing UI.
 - Treat MCP React/Tailwind as a design representation, not final code. Match this repo’s stack, tokens, and components.
