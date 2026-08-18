@@ -748,6 +748,40 @@
   .home-mission__col--offset {
     padding-top: 0;
   }
+
+  /* Our Mission & Vision: full-width header, 2-col stats, stacked CTA */
+  .home-impact__header {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .home-impact__col h2 {
+    font-size: 36px;
+  }
+
+  .home-impact__stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-impact__cta {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .home-impact__cta-content h3 {
+    font-size: 28px;
+    max-width: none;
+  }
+
+  .home-impact__cta-content p {
+    font-size: 16px;
+    max-width: none;
+  }
+
+  .home-impact__btn {
+    align-self: center;
+  }
 }
 
 @media (max-width: 600px) {
@@ -761,6 +795,25 @@
   }
 
   .home-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-impact__stats {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .home-impact__stat {
+    border-right: none;
+    border-bottom: 1px solid var(--ast-color-6);
+  }
+
+  .home-impact__stat:last-child {
+    border-bottom: none;
+  }
+
+  .home-impact__btn {
     width: 100%;
     text-align: center;
   }
