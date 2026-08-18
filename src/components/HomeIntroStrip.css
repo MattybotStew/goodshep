@@ -51,7 +51,8 @@
   margin: 0 0 16px;
 }
 
-.home-intro__col h2 {
+.home-intro__col h2,
+.home .home-intro__col h2 {
   font-size: 22px;
   font-weight: 700;
   color: #002a4e;

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { programs, stories } from "../data/site";
+import { LOREM, LOREM_LONG, LOREM_SHORT } from "../data/placeholders";
 import AboutMissionSection from "../components/AboutMissionSection";
 import HomeIntroStrip from "../components/HomeIntroStrip";
 import ImpactSection from "../components/ImpactSection";
@@ -13,11 +14,7 @@ function HomePage() {
         <div className="home-hero__photo" aria-hidden="true" />
         <div className="home-hero__inner">
           <h1>A Community of Compassion, Dignity, and Purpose.</h1>
-          <p>
-            Good Shepherd Manor provides hands-on programs, caring services, and
-            a supportive home for men with intellectual and developmental
-            disabilities.
-          </p>
+          <p>{LOREM_LONG}</p>
           <Link to="/careers" className="home-btn home-btn--blue">
             Now Hiring! Apply Today
           </Link>
@@ -33,10 +30,7 @@ function HomePage() {
           <div className="home-programs__header">
             <div className="home-programs__intro">
               <h2>Our Programs &amp; Services</h2>
-              <p>
-                We offer well-maintained residential facilities paired with a
-                comprehensive Health Care Program and meaningful day programs.
-              </p>
+              <p>{LOREM}</p>
             </div>
             <Link to="/programs" className="home-programs__more">
               View all programs &rarr;
@@ -47,7 +41,7 @@ function HomePage() {
               <article className="home-program-card" key={p.path}>
                 <div className="home-program-card__icon" aria-hidden="true" />
                 <h3>{p.homeName || p.name}</h3>
-                <p>{p.desc}</p>
+                <p>{LOREM_SHORT}</p>
                 <Link to={p.path} className="home-program-card__link">
                   Learn more &rarr;
                 </Link>
@@ -57,17 +51,14 @@ function HomePage() {
         </div>
       </section>
 
-      <AboutMissionSection />
+      <AboutMissionSection placeholderCopy />
 
       <section className="home-stories" aria-label="Stories">
         <div className="home-stories__inner">
           <header className="home-stories__header">
             <div className="home-stories__intro">
               <h2>What&rsquo;s Happening at GSM</h2>
-              <p>
-                From our annual Fall Festival to family cookouts on campus,
-                there&rsquo;s always something happening at Good Shepherd Manor.
-              </p>
+              <p>{LOREM}</p>
             </div>
             <Link to="/events" className="home-stories__more">
               See all events &rarr;
@@ -84,7 +75,7 @@ function HomePage() {
                   <div className="home-stories__photo" aria-hidden="true" />
                   <div className="home-stories__copy">
                     <h3>{story.title}</h3>
-                    <p>{story.excerpt}</p>
+                    <p>{LOREM_SHORT}</p>
                   </div>
                   <Link to={story.path} className="home-stories__link">
                     Read More
