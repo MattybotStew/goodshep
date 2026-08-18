@@ -30,11 +30,6 @@ function EndowmentPage() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <h2>Leave a legacy of care</h2>
-        <p>We will walk you or your advisor through how an endowed gift works.</p>
-        <Link to="/ways-to-give" className="btn btn--primary">Other ways to give</Link>
-      </section>
     </article>
   )
 }

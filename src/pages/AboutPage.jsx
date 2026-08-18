@@ -82,11 +82,6 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <h2>Come see the campus</h2>
-        <p>Schedule a visit or talk with our team about programs and admissions.</p>
-        <Link to="/contact" className="btn btn--primary">Contact Us</Link>
-      </section>
     </article>
   )
 }

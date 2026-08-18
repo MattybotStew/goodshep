@@ -1,6 +1,7 @@
 import { useEffect, useId, useRef, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import { HERO_HEADER_PATHS, NAV_ITEMS, isChildActive, isNavItemActive } from '../data/header'
+import GetInvolvedCta from './GetInvolvedCta'
 import facebookIcon from '../assets/footer/facebook.svg'
 import twitterIcon from '../assets/footer/twitter.svg'
 import instagramIcon from '../assets/footer/instagram.svg'
@@ -290,6 +291,8 @@ function Layout() {
       <main className="layout__main">
         <Outlet />
       </main>
+
+      <GetInvolvedCta />
 
       <section className="signup-band" aria-labelledby="signup-band-heading">
         <div className="signup-band__inner">

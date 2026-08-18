@@ -49,11 +49,6 @@ function CareersPage() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <h2>Now hiring Direct Service Providers</h2>
-        <p>Tell us about yourself. We will follow up about openings and shifts.</p>
-        <Link to="/contact" className="btn btn--primary">Apply Today</Link>
-      </section>
     </article>
   )
 }

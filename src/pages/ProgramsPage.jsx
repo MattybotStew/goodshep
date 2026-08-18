@@ -44,11 +44,6 @@ function ProgramsPage() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <h2>Questions about a program?</h2>
-        <p>We will walk families through what daily life looks like on campus.</p>
-        <Link to="/contact" className="btn btn--primary">Contact Us</Link>
-      </section>
     </article>
   )
 }

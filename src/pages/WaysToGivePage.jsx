@@ -50,14 +50,6 @@ function WaysToGivePage() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <h2>Ready to give?</h2>
-        <p>Use the donation form on the live site, or contact the Foundation for gifts of stock, vehicles, or planned giving.</p>
-        <div className="btn-row">
-          <Link to="/contact" className="btn btn--primary">Talk to the Foundation</Link>
-          <Link to="/events" className="btn btn--ghost">See events</Link>
-        </div>
-      </section>
     </article>
   )
 }

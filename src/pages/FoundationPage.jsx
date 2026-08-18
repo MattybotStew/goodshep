@@ -63,11 +63,6 @@ function FoundationPage() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <h2>We can create a better tomorrow</h2>
-        <p>A gift today becomes care, meals, and a familiar staff face tomorrow.</p>
-        <Link to="/ways-to-give" className="btn btn--primary">Donate Now</Link>
-      </section>
     </article>
   )
 }

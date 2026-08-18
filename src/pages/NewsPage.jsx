@@ -30,11 +30,6 @@ function NewsPage() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <h2>Get stories in your inbox</h2>
-        <p>Family resources and the newsletter live next door.</p>
-        <Link to="/newsletters" className="btn btn--primary">Newsletters</Link>
-      </section>
     </article>
   )
 }

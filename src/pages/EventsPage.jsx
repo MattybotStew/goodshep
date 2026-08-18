@@ -49,11 +49,6 @@ function EventsPage() {
         </section>
       ))}
 
-      <section className="cta-band">
-        <h2>Sponsor or volunteer</h2>
-        <p>Events run on friends, sponsors, and a few extra hands.</p>
-        <Link to="/contact" className="btn btn--primary">Get involved</Link>
-      </section>
     </article>
   )
 }
